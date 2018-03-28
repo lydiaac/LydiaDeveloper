@@ -1,0 +1,25 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:45:41.0 (317796)|EXECUTION_STARTED
+12:45:41.0 (338213)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+12:45:41.0 (7632298)|CODE_UNIT_FINISHED|VisualForce View State
+12:45:41.0 (8469197)|EXECUTION_FINISHED
+12:45:41.119 (119162656)|VF_PAGE_MESSAGE|Compile Error: Invalid type: parksServices.byCountry at line 26 column 13
+12:45:41.119 (130438785)|VF_SERIALIZE_VIEWSTATE_BEGIN|
+12:45:41.119 (134314632)|VF_SERIALIZE_VIEWSTATE_END
+12:45:41.140 (140631503)|CUMULATIVE_LIMIT_USAGE
+12:45:41.140 (140631503)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:45:41.140 (140631503)|CUMULATIVE_LIMIT_USAGE_END
+

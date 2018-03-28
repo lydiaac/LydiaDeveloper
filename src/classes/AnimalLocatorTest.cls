@@ -6,8 +6,6 @@ private class AnimalLocatorTest {
 
 
 
-
-
 		// Set mock callout class 
 	    Test.setMock(HttpCalloutMock.class, new AnimalLocatorMock()); 
 	    // This causes a fake response to be sent
@@ -21,7 +19,7 @@ private class AnimalLocatorTest {
 	    //System.assert(contentType == 'application/json');
 	    //String actualValue = response.getBody();
 	    //System.debug(response.getBody());
-	    String expectedValue ='majestic badger';
+	    String expectedValue ='chicken';
 	    System.assertEquals(actualValue, expectedValue);
 	    //System.assertEquals(200, response.getStatusCode());
 

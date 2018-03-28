@@ -1,0 +1,178 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: calculatorServices.CalculatorImplPort calculator = new  calculatorServices.CalculatorImplPort();
+Execute Anonymous: Double x = 1.0;
+Execute Anonymous: Double y = 2.0;
+Execute Anonymous: Double result = calculator.doAdd(x,y);
+Execute Anonymous: System.debug(result);
+12:32:31.1 (1196670)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:32:31.1 (1217733)|EXECUTION_STARTED
+12:32:31.1 (1222368)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:32:31.1 (2941143)|VARIABLE_SCOPE_BEGIN|[1]|calculator|calculatorServices.CalculatorImplPort|true|false
+12:32:31.1 (3141295)|VARIABLE_SCOPE_BEGIN|[4]|result|Double|false|false
+12:32:31.1 (3156728)|VARIABLE_SCOPE_BEGIN|[2]|x|Double|false|false
+12:32:31.1 (3167895)|VARIABLE_SCOPE_BEGIN|[3]|y|Double|false|false
+12:32:31.1 (3296843)|HEAP_ALLOCATE|[72]|Bytes:3
+12:32:31.1 (3363814)|HEAP_ALLOCATE|[77]|Bytes:152
+12:32:31.1 (3384900)|HEAP_ALLOCATE|[342]|Bytes:408
+12:32:31.1 (3397541)|HEAP_ALLOCATE|[355]|Bytes:408
+12:32:31.1 (3408280)|HEAP_ALLOCATE|[467]|Bytes:48
+12:32:31.1 (3432457)|HEAP_ALLOCATE|[139]|Bytes:6
+12:32:31.1 (3449550)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:9
+12:32:31.1 (3537849)|STATEMENT_EXECUTE|[1]
+12:32:31.1 (3541869)|STATEMENT_EXECUTE|[1]
+12:32:31.1 (3548109)|HEAP_ALLOCATE|[1]|Bytes:13
+12:32:31.1 (3608026)|HEAP_ALLOCATE|[1]|Bytes:36
+12:32:31.1 (3660891)|HEAP_ALLOCATE|[50]|Bytes:5
+12:32:31.1 (3690217)|HEAP_ALLOCATE|[56]|Bytes:5
+12:32:31.1 (3702513)|HEAP_ALLOCATE|[64]|Bytes:7
+12:32:31.1 (3732405)|SYSTEM_MODE_ENTER|false
+12:32:31.1 (3757927)|HEAP_ALLOCATE|[1]|Bytes:5
+12:32:31.1 (3778468)|CONSTRUCTOR_ENTRY|[1]|01p1r000007Yosz|<init>()
+12:32:31.1 (3807105)|VARIABLE_SCOPE_BEGIN|[60]|this|calculatorServices.CalculatorImplPort|true|false
+12:32:31.1 (3895096)|VARIABLE_ASSIGNMENT|[60]|this|{}|0x4b53dd33
+12:32:31.1 (3913221)|HEAP_ALLOCATE|[61]|Bytes:6
+12:32:31.1 (3962991)|STATEMENT_EXECUTE|[60]
+12:32:31.1 (3966817)|STATEMENT_EXECUTE|[61]
+12:32:31.1 (3971164)|HEAP_ALLOCATE|[61]|Bytes:61
+12:32:31.1 (3994936)|VARIABLE_ASSIGNMENT|[61]|this.endpoint_x|"https://th-apex-soap (41 more) ..."|0x4b53dd33
+12:32:31.1 (4005127)|STATEMENT_EXECUTE|[62]
+12:32:31.1 (4008636)|STATEMENT_EXECUTE|[63]
+12:32:31.1 (4010879)|STATEMENT_EXECUTE|[64]
+12:32:31.1 (4012782)|STATEMENT_EXECUTE|[65]
+12:32:31.1 (4014656)|STATEMENT_EXECUTE|[66]
+12:32:31.1 (4017460)|STATEMENT_EXECUTE|[67]
+12:32:31.1 (4019580)|STATEMENT_EXECUTE|[68]
+12:32:31.1 (4040166)|HEAP_ALLOCATE|[68]|Bytes:4
+12:32:31.1 (4108598)|HEAP_ALLOCATE|[68]|Bytes:27
+12:32:31.1 (4120905)|HEAP_ALLOCATE|[68]|Bytes:18
+12:32:31.1 (4153919)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:32:31.1 (4170059)|VARIABLE_ASSIGNMENT|[68]|this.ns_map_type_info|["http://calculator.se (7 more) ...","calculatorServices"]|0x4b53dd33
+12:32:31.1 (4181995)|CONSTRUCTOR_EXIT|[1]|01p1r000007Yosz|<init>()
+12:32:31.1 (4193062)|SYSTEM_MODE_EXIT|false
+12:32:31.1 (4241674)|VARIABLE_ASSIGNMENT|[1]|calculator|{"endpoint_x":"https://th-apex-soap (41 more) ...","ns_map_type_info":"0x3ea9ff63"}|0x4b53dd33
+12:32:31.1 (4255709)|STATEMENT_EXECUTE|[2]
+12:32:31.1 (4258928)|HEAP_ALLOCATE|[2]|Bytes:3
+12:32:31.1 (4288094)|HEAP_ALLOCATE|[2]|Bytes:28
+12:32:31.1 (4298308)|HEAP_ALLOCATE|[2]|Bytes:12
+12:32:31.1 (4309675)|VARIABLE_ASSIGNMENT|[2]|x|1.0
+12:32:31.1 (4318132)|STATEMENT_EXECUTE|[3]
+12:32:31.1 (4321192)|HEAP_ALLOCATE|[3]|Bytes:3
+12:32:31.1 (4331006)|HEAP_ALLOCATE|[3]|Bytes:28
+12:32:31.1 (4337988)|HEAP_ALLOCATE|[3]|Bytes:12
+12:32:31.1 (4348850)|VARIABLE_ASSIGNMENT|[3]|y|2.0
+12:32:31.1 (4356674)|STATEMENT_EXECUTE|[4]
+12:32:31.1 (4394853)|SYSTEM_MODE_ENTER|false
+12:32:31.1 (4405108)|HEAP_ALLOCATE|[4]|Bytes:5
+12:32:31.1 (4437362)|METHOD_ENTRY|[4]|01p1r000007Yosz|calculatorServices.CalculatorImplPort.doAdd(Double, Double)
+12:32:31.1 (4466198)|VARIABLE_SCOPE_BEGIN|[135]|this|calculatorServices.CalculatorImplPort|true|false
+12:32:31.1 (4497526)|VARIABLE_ASSIGNMENT|[135]|this|{"endpoint_x":"https://th-apex-soap (41 more) ...","ns_map_type_info":"0x3ea9ff63"}|0x4b53dd33
+12:32:31.1 (4505990)|VARIABLE_SCOPE_BEGIN|[135]|arg0|Double|false|false
+12:32:31.1 (4515023)|VARIABLE_ASSIGNMENT|[135]|arg0|1.0
+12:32:31.1 (4519824)|VARIABLE_SCOPE_BEGIN|[135]|arg1|Double|false|false
+12:32:31.1 (4527346)|VARIABLE_ASSIGNMENT|[135]|arg1|2.0
+12:32:31.1 (4538077)|STATEMENT_EXECUTE|[135]
+12:32:31.1 (4539903)|STATEMENT_EXECUTE|[136]
+12:32:31.1 (4688791)|HEAP_ALLOCATE|[136]|Bytes:28
+12:32:31.1 (4704204)|CONSTRUCTOR_ENTRY|[136]|01p1r000007Yosz|<init>()
+12:32:31.1 (4723521)|VARIABLE_SCOPE_BEGIN|[18]|this|calculatorServices.doAdd|true|false
+12:32:31.1 (4766573)|VARIABLE_ASSIGNMENT|[18]|this|{}|0x2aa94370
+12:32:31.1 (4785430)|STATEMENT_EXECUTE|[18]
+12:32:31.1 (4787706)|STATEMENT_EXECUTE|[19]
+12:32:31.1 (4789299)|STATEMENT_EXECUTE|[20]
+12:32:31.1 (4790585)|STATEMENT_EXECUTE|[21]
+12:32:31.1 (4799300)|HEAP_ALLOCATE|[21]|Bytes:4
+12:32:31.1 (4830842)|HEAP_ALLOCATE|[21]|Bytes:4
+12:32:31.1 (4840802)|HEAP_ALLOCATE|[21]|Bytes:1
+12:32:31.1 (4844875)|HEAP_ALLOCATE|[21]|Bytes:1
+12:32:31.1 (4848999)|HEAP_ALLOCATE|[21]|Bytes:5
+12:32:31.1 (4874624)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+12:32:31.1 (4889069)|VARIABLE_ASSIGNMENT|[21]|this.arg0_type_info|"List of size 6 too large to display"|0x2aa94370
+12:32:31.1 (4899643)|STATEMENT_EXECUTE|[22]
+12:32:31.1 (4909638)|HEAP_ALLOCATE|[22]|Bytes:4
+12:32:31.1 (4931857)|HEAP_ALLOCATE|[22]|Bytes:4
+12:32:31.1 (4961483)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+12:32:31.1 (4973417)|VARIABLE_ASSIGNMENT|[22]|this.arg1_type_info|"List of size 6 too large to display"|0x2aa94370
+12:32:31.1 (4981880)|STATEMENT_EXECUTE|[23]
+12:32:31.1 (4989521)|HEAP_ALLOCATE|[23]|Bytes:4
+12:32:31.1 (5022964)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+12:32:31.1 (5038081)|VARIABLE_ASSIGNMENT|[23]|this.apex_schema_type_info|["http://calculator.se (7 more) ...","false","false"]|0x2aa94370
+12:32:31.1 (5046623)|STATEMENT_EXECUTE|[24]
+12:32:31.1 (5053812)|HEAP_ALLOCATE|[24]|Bytes:4
+12:32:31.1 (5084317)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:32:31.1 (5095576)|VARIABLE_ASSIGNMENT|[24]|this.field_order_type_info|["arg0","arg1"]|0x2aa94370
+12:32:31.1 (5106295)|CONSTRUCTOR_EXIT|[136]|01p1r000007Yosz|<init>()
+12:32:31.1 (5114701)|VARIABLE_SCOPE_BEGIN|[136]|request_x|calculatorServices.doAdd|true|false
+12:32:31.1 (5146620)|VARIABLE_ASSIGNMENT|[136]|request_x|{"apex_schema_type_inf (1 more) ...":"0x725a85dc","arg0_type_info":"0x1208fa24","arg1_type_info":"0x58c70ef9","field_order_type_inf (1 more) ...":"0x4dbfe486"}|0x2aa94370
+12:32:31.1 (5157773)|STATEMENT_EXECUTE|[137]
+12:32:31.1 (5167473)|VARIABLE_ASSIGNMENT|[137]|this.arg0|1.0|0x2aa94370
+12:32:31.1 (5175434)|STATEMENT_EXECUTE|[138]
+12:32:31.1 (5182148)|VARIABLE_ASSIGNMENT|[138]|this.arg1|2.0|0x2aa94370
+12:32:31.1 (5189906)|STATEMENT_EXECUTE|[139]
+12:32:31.1 (5338903)|VARIABLE_SCOPE_BEGIN|[139]|response_x|calculatorServices.doAddResponse|true|false
+12:32:31.1 (5356181)|VARIABLE_ASSIGNMENT|[139]|response_x|null|
+12:32:31.1 (5363348)|STATEMENT_EXECUTE|[140]
+12:32:31.1 (5411341)|HEAP_ALLOCATE|[140]|Bytes:4
+12:32:31.1 (5463238)|VARIABLE_SCOPE_BEGIN|[140]|response_map_x|Map<String,calculatorServices.doAddResponse>|true|false
+12:32:31.1 (5487098)|VARIABLE_ASSIGNMENT|[140]|response_map_x|{}|0x6b6dec88
+12:32:31.1 (5495558)|STATEMENT_EXECUTE|[141]
+12:32:31.1 (5500025)|HEAP_ALLOCATE|[141]|Bytes:10
+12:32:31.1 (5556483)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+12:32:31.1 (5571782)|STATEMENT_EXECUTE|[142]
+12:32:31.1 (5581700)|HEAP_ALLOCATE|[146]|Bytes:4
+12:32:31.1 (5612113)|HEAP_ALLOCATE|[149]|Bytes:5
+12:32:31.1 (5621946)|HEAP_ALLOCATE|[151]|Bytes:13
+12:32:31.1 (5628339)|HEAP_ALLOCATE|[152]|Bytes:32
+12:32:31.1 (5665632)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+12:32:31.1 (323215761)|CALLOUT_REQUEST|[142]|<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><env:Header /><env:Body><m:doAdd xmlns:m="http://calculator.services/"><arg0>1.0</arg0><arg1>2.0</arg1></m:doAdd></env:Body></env:Envelope>
+12:32:31.1 (323283327)|CALLOUT_REQUEST|[142]|doAdd:[apex_schema_type_info=(http://calculator.services/, false, false), arg0=1.0, arg0_type_info=(arg0, http://calculator.services/, null, 0, 1, false), arg1=2.0, arg1_type_info=(arg1, http://calculator.services/, null, 0, 1, false), field_order_type_info=(arg0, arg1)]::SOAPAction="" Accept=text/xml User-Agent=SFDC-Callout/42.0 SFDC_STACK_DEPTH=1 Content-Type=text/xml; charset=UTF-8 
+12:32:31.1 (483322070)|CALLOUT_RESPONSE|[142]|<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:doAddResponse xmlns:ns2="http://calculator.services/"><return>3.0</return></ns2:doAddResponse></soap:Body></soap:Envelope>
+12:32:31.1 (483689808)|HEAP_ALLOCATE|[142]|Bytes:20
+12:32:31.1 (483706778)|VARIABLE_SCOPE_BEGIN|[26]|this|calculatorServices.doAddResponse|true|false
+12:32:31.1 (483771413)|VARIABLE_ASSIGNMENT|[26]|this|{}|0x5847a6bc
+12:32:31.1 (483807476)|STATEMENT_EXECUTE|[26]
+12:32:31.1 (483810314)|STATEMENT_EXECUTE|[27]
+12:32:31.1 (483811975)|STATEMENT_EXECUTE|[28]
+12:32:31.1 (483821356)|HEAP_ALLOCATE|[28]|Bytes:4
+12:32:31.1 (483865119)|HEAP_ALLOCATE|[28]|Bytes:6
+12:32:31.1 (483901596)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+12:32:31.1 (483918120)|VARIABLE_ASSIGNMENT|[28]|this.return_x_type_info|"List of size 6 too large to display"|0x5847a6bc
+12:32:31.1 (483925175)|STATEMENT_EXECUTE|[29]
+12:32:31.1 (483931434)|HEAP_ALLOCATE|[29]|Bytes:4
+12:32:31.1 (483959216)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+12:32:31.1 (483972412)|VARIABLE_ASSIGNMENT|[29]|this.apex_schema_type_info|["http://calculator.se (7 more) ...","false","false"]|0x5847a6bc
+12:32:31.1 (483978883)|STATEMENT_EXECUTE|[30]
+12:32:31.1 (483983863)|HEAP_ALLOCATE|[30]|Bytes:4
+12:32:31.1 (483996266)|HEAP_ALLOCATE|[30]|Bytes:8
+12:32:31.1 (484009241)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:32:31.1 (484016651)|VARIABLE_ASSIGNMENT|[30]|this.field_order_type_info|["return_x"]|0x5847a6bc
+12:32:31.1 (484058056)|HEAP_ALLOCATE|[142]|Bytes:12
+12:32:31.1 (484063159)|HEAP_ALLOCATE|[142]|Bytes:20
+12:32:31.1 (484086016)|VARIABLE_ASSIGNMENT|[142]|this.return_x|3.0|0x5847a6bc
+12:32:31.1 (484097790)|CALLOUT_RESPONSE|[142]|
+12:32:31.1 (484172234)|STATEMENT_EXECUTE|[154]
+12:32:31.1 (484230312)|VARIABLE_ASSIGNMENT|[154]|response_x|{"apex_schema_type_inf (1 more) ...":"0x1543dfc1","field_order_type_inf (1 more) ...":"0x40d133d7","return_x":3.0,"return_x_type_info":"0x65675db0"}|0x5847a6bc
+12:32:31.1 (484239450)|STATEMENT_EXECUTE|[155]
+12:32:31.1 (484249093)|METHOD_EXIT|[4]|01p1r000007Yosz|calculatorServices.CalculatorImplPort.doAdd(Double, Double)
+12:32:31.1 (484259055)|SYSTEM_MODE_EXIT|false
+12:32:31.1 (484275337)|VARIABLE_ASSIGNMENT|[4]|result|3.0
+12:32:31.1 (484281288)|STATEMENT_EXECUTE|[5]
+12:32:31.1 (484310117)|USER_DEBUG|[5]|DEBUG|3.0
+12:32:31.485 (485939744)|CUMULATIVE_LIMIT_USAGE
+12:32:31.485 (485939744)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:32:31.485 (485939744)|CUMULATIVE_LIMIT_USAGE_END
+
+12:32:31.1 (485985136)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:32:31.1 (486810166)|EXECUTION_FINISHED
