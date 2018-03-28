@@ -1,0 +1,75 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Http http = new Http();
+Execute Anonymous: HttpRequest request = new HttpRequest();
+Execute Anonymous: request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals');
+Execute Anonymous: request.setMethod('POST');
+Execute Anonymous: request.setHeader('Content-Type', 'application/json;charset=UTF-8');
+Execute Anonymous: // Set the body as a JSON object
+Execute Anonymous: request.setBody('{"name":"mighty moose"}');
+Execute Anonymous: HttpResponse response = http.send(request);
+Execute Anonymous: // Parse the JSON response
+Execute Anonymous: if (response.getStatusCode() != 201) {
+Execute Anonymous:     System.debug('The status code returned was not expected: ' +
+Execute Anonymous:         response.getStatusCode() + ' ' + response.getStatus());
+Execute Anonymous: } else {
+Execute Anonymous:     System.debug(response.getBody());
+Execute Anonymous: }
+12:53:08.1 (1358985)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:53:08.1 (1395664)|EXECUTION_STARTED
+12:53:08.1 (1402274)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:53:08.1 (1573992)|VARIABLE_SCOPE_BEGIN|[1]|http|System.Http|true|false
+12:53:08.1 (1595002)|VARIABLE_SCOPE_BEGIN|[2]|request|System.HttpRequest|true|false
+12:53:08.1 (1626249)|VARIABLE_SCOPE_BEGIN|[8]|response|System.HttpResponse|true|false
+12:53:08.1 (1843882)|HEAP_ALLOCATE|[72]|Bytes:3
+12:53:08.1 (1906696)|HEAP_ALLOCATE|[77]|Bytes:152
+12:53:08.1 (1933012)|HEAP_ALLOCATE|[342]|Bytes:408
+12:53:08.1 (1962930)|HEAP_ALLOCATE|[355]|Bytes:408
+12:53:08.1 (1984008)|HEAP_ALLOCATE|[467]|Bytes:48
+12:53:08.1 (2026601)|HEAP_ALLOCATE|[139]|Bytes:6
+12:53:08.1 (2056293)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:25
+12:53:08.1 (2265158)|STATEMENT_EXECUTE|[1]
+12:53:08.1 (2270114)|STATEMENT_EXECUTE|[1]
+12:53:08.1 (2619572)|VARIABLE_ASSIGNMENT|[1]|http|"System.Http[]"|0x2ea2d621
+12:53:08.1 (2635139)|STATEMENT_EXECUTE|[2]
+12:53:08.1 (2726334)|VARIABLE_ASSIGNMENT|[2]|request|"System.HttpRequest[Endpoint=null, Method=null]"|0x73bc8688
+12:53:08.1 (2739799)|STATEMENT_EXECUTE|[3]
+12:53:08.1 (2748655)|HEAP_ALLOCATE|[3]|Bytes:50
+12:53:08.1 (2837358)|STATEMENT_EXECUTE|[4]
+12:53:08.1 (2843831)|HEAP_ALLOCATE|[4]|Bytes:4
+12:53:08.1 (2875504)|STATEMENT_EXECUTE|[5]
+12:53:08.1 (2880686)|HEAP_ALLOCATE|[5]|Bytes:12
+12:53:08.1 (2888609)|HEAP_ALLOCATE|[5]|Bytes:30
+12:53:08.1 (2929565)|STATEMENT_EXECUTE|[7]
+12:53:08.1 (2935094)|HEAP_ALLOCATE|[7]|Bytes:23
+12:53:08.1 (2977312)|STATEMENT_EXECUTE|[8]
+12:53:08.1 (3052885)|CALLOUT_REQUEST|[8]|System.HttpRequest[Endpoint=https://th-apex-http-callout.herokuapp.com/animals, Method=POST]
+12:53:08.1 (365451203)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:303
+12:53:08.1 (365571694)|CALLOUT_RESPONSE|[8]|System.HttpResponse[Status=Created, StatusCode=201]
+12:53:08.1 (365598747)|HEAP_ALLOCATE|[8]|Bytes:95
+12:53:08.1 (365806323)|VARIABLE_ASSIGNMENT|[8]|response|"System.HttpResponse[Status=Created, StatusCode=201]"|0x4ee89b1d
+12:53:08.1 (365886827)|STATEMENT_EXECUTE|[13]
+12:53:08.1 (365889973)|STATEMENT_EXECUTE|[14]
+12:53:08.1 (365922925)|HEAP_ALLOCATE|[14]|Bytes:84
+12:53:08.1 (365990452)|HEAP_ALLOCATE|[50]|Bytes:5
+12:53:08.1 (366034727)|HEAP_ALLOCATE|[56]|Bytes:5
+12:53:08.1 (366046209)|HEAP_ALLOCATE|[64]|Bytes:7
+12:53:08.1 (366096521)|USER_DEBUG|[14]|DEBUG|{"animals":["majestic badger","fluffy bunny","scary bear","chicken","mighty moose"]}
+12:53:08.368 (368249088)|CUMULATIVE_LIMIT_USAGE
+12:53:08.368 (368249088)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:53:08.368 (368249088)|CUMULATIVE_LIMIT_USAGE_END
+
+12:53:08.1 (368300656)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:53:08.1 (369409272)|EXECUTION_FINISHED

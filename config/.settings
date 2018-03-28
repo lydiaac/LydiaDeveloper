@@ -1,0 +1,17 @@
+{
+    "projectName": "LydiaDeveloper",
+    "username": "lydia.abril@gmail.com",
+    "id": "97495ad0-2d0a-11e8-81a3-d95ad56ff493",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://eu12.salesforce.com",
+    "workspace": "C:\\Users\\lydia.abril.cedillo\\Documents\\Workspace",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

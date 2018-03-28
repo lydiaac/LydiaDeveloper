@@ -1,0 +1,94 @@
+30.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Account a = new Account(Name='TestMyCodeCo',BillingPostalCode='60613',Match_Billing_Address__c=false); insert a; a = [SELECT ID, BillingPostalCode, ShippingPostalCode FROM Account WHERE Name = 'TestMyCodeCo' LIMIT 1]; System.assertNotEquals(a.BillingPostalCode,a.ShippingPostalCode); delete a;
+12:24:47.1 (1042471)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:24:47.1 (1063414)|EXECUTION_STARTED
+12:24:47.1 (1066901)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:24:47.1 (1184228)|VARIABLE_SCOPE_BEGIN|[1]|a|Account|true|false
+12:24:47.1 (1446763)|HEAP_ALLOCATE|[72]|Bytes:3
+12:24:47.1 (1490838)|HEAP_ALLOCATE|[77]|Bytes:152
+12:24:47.1 (1505158)|HEAP_ALLOCATE|[342]|Bytes:408
+12:24:47.1 (1518288)|HEAP_ALLOCATE|[355]|Bytes:408
+12:24:47.1 (1528254)|HEAP_ALLOCATE|[467]|Bytes:48
+12:24:47.1 (1553631)|HEAP_ALLOCATE|[139]|Bytes:6
+12:24:47.1 (1568729)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+12:24:47.1 (1719565)|STATEMENT_EXECUTE|[1]
+12:24:47.1 (1722384)|STATEMENT_EXECUTE|[1]
+12:24:47.1 (1745876)|HEAP_ALLOCATE|[1]|Bytes:4
+12:24:47.1 (1823680)|HEAP_ALLOCATE|[1]|Bytes:12
+12:24:47.1 (1876114)|VARIABLE_ASSIGNMENT|[1]|this.Name|"TestMyCodeCo"|0xfe0a4b2
+12:24:47.1 (1884401)|HEAP_ALLOCATE|[1]|Bytes:5
+12:24:47.1 (1900771)|VARIABLE_ASSIGNMENT|[1]|this.BillingPostalCode|"60613"|0xfe0a4b2
+12:24:47.1 (1937128)|HEAP_ALLOCATE|[50]|Bytes:5
+12:24:47.1 (1957066)|HEAP_ALLOCATE|[56]|Bytes:5
+12:24:47.1 (1964243)|HEAP_ALLOCATE|[64]|Bytes:7
+12:24:47.1 (2081686)|VARIABLE_ASSIGNMENT|[1]|this.Match_Billing_Address__c|false|0xfe0a4b2
+12:24:47.1 (2129092)|VARIABLE_ASSIGNMENT|[1]|a|{"Name":"TestMyCodeCo","BillingPostalCode":"60613","Match_Billing_Addres (4 more) ...":false}|0xfe0a4b2
+12:24:47.1 (2137261)|STATEMENT_EXECUTE|[1]
+12:24:47.1 (2165250)|HEAP_ALLOCATE|[1]|Bytes:8
+12:24:47.1 (2181509)|DML_BEGIN|[1]|Op:Insert|Type:Account|Rows:1
+12:24:47.1 (2227397)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:24:47.1 (20557022)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000BccO|AccountAddressTrigger on Account trigger event BeforeInsert
+12:24:47.1 (20600156)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:24:47.1 (20691447)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:24:47.1 (20704078)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+12:24:47.1 (20769071)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x4660d12d
+12:24:47.1 (20816479)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:24:47.1 (20824557)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+12:24:47.1 (20836865)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x4660d12d
+12:24:47.1 (20846405)|STATEMENT_EXECUTE|[1]
+12:24:47.1 (21191766)|HEAP_ALLOCATE|[4]|Bytes:5
+12:24:47.1 (21224095)|HEAP_ALLOCATE|[4]|Bytes:4
+12:24:47.1 (21235122)|VARIABLE_SCOPE_BEGIN|[4]|acc|Account|true|false
+12:24:47.1 (21794794)|VARIABLE_ASSIGNMENT|[4]|acc|{"IsDeleted":false,"CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"BillingPostalCode":"60613","Name":"TestMyCodeCo"}|0x43f03230
+12:24:47.1 (21806677)|STATEMENT_EXECUTE|[4]
+12:24:47.1 (21828417)|STATEMENT_EXECUTE|[6]
+12:24:47.1 (21842197)|HEAP_ALLOCATE|[4]|Bytes:5
+12:24:47.1 (21857124)|VARIABLE_ASSIGNMENT|[4]|acc|null|
+12:24:47.21 (21865929)|CUMULATIVE_LIMIT_USAGE
+12:24:47.21 (21865929)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:24:47.21 (21865929)|CUMULATIVE_LIMIT_USAGE_END
+
+12:24:47.1 (22634090)|CODE_UNIT_FINISHED|AccountAddressTrigger on Account trigger event BeforeInsert
+12:24:47.1 (24996932)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+12:24:47.1 (25007182)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+12:24:47.1 (25126262)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=null
+12:24:47.1 (25139661)|VALIDATION_FAIL
+12:24:47.1 (25176874)|CODE_UNIT_FINISHED|Validation:Account:new
+12:24:47.1 (25986638)|DML_END|[1]
+12:24:47.1 (26116661)|EXCEPTION_THROWN|[1]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+12:24:47.1 (27981025)|HEAP_ALLOCATE|[1]|Bytes:138
+12:24:47.1 (28070795)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+
+AnonymousBlock: line 1, column 1
+12:24:47.28 (28090284)|CUMULATIVE_LIMIT_USAGE
+12:24:47.28 (28090284)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:24:47.28 (28090284)|CUMULATIVE_LIMIT_USAGE_END
+
+12:24:47.1 (28112599)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:24:47.1 (28898267)|EXECUTION_FINISHED

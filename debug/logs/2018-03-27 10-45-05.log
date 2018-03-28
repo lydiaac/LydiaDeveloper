@@ -1,0 +1,34 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+10:45:04.0 (681849)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:45:04.0 (717119)|EXECUTION_STARTED
+10:45:04.0 (721634)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+10:45:04.0 (30148608)|CODE_UNIT_FINISHED|VisualForce View State
+10:45:04.0 (31463592)|EXECUTION_FINISHED
+10:45:04.33 (33352017)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:45:04.33 (33369126)|EXECUTION_STARTED
+10:45:04.33 (33372742)|CODE_UNIT_STARTED|[EXTERNAL]|VF: /apex/editStaticResource.apexp
+10:45:04.33 (35025607)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+10:45:04.35 (35171512)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+10:45:04.36 (36483916)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+10:45:04.36 (36569693)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+10:45:04.36 (36886855)|SYSTEM_MODE_ENTER|false
+10:45:04.36 (85460505)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+10:45:04.88 (88449094)|CUMULATIVE_LIMIT_USAGE
+10:45:04.88 (88449094)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:45:04.88 (88449094)|CUMULATIVE_LIMIT_USAGE_END
+
+10:45:04.33 (88496359)|CODE_UNIT_FINISHED|VF: /apex/editStaticResource.apexp
+10:45:04.33 (89437335)|EXECUTION_FINISHED

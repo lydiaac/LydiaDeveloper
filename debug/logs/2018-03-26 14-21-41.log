@@ -1,0 +1,137 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: // Add first contact and related details
+Execute Anonymous: Contact contact1 = new Contact(
+Execute Anonymous:    Firstname='Quentin',
+Execute Anonymous:    Lastname='Foam',
+Execute Anonymous:    Phone='(415)555-1212',
+Execute Anonymous:    Department= 'Specialty Crisis Management',
+Execute Anonymous:    Title='Control Engineer - Specialty - Solar Arrays',
+Execute Anonymous:    Email='qfoam@trailhead.com');
+Execute Anonymous: insert contact1;
+Execute Anonymous: // Add second contact and related details
+Execute Anonymous: Contact contact2 = new Contact(
+Execute Anonymous:    Firstname='Vega',
+Execute Anonymous:    Lastname='North',
+Execute Anonymous:    Phone='(416)556-1312',
+Execute Anonymous:    Department= 'Specialty Crisis Management',
+Execute Anonymous:    Title='Control Engineer - Specialty - Propulsion',
+Execute Anonymous:    Email='vnorth@trailhead.com');
+Execute Anonymous: insert contact2;
+Execute Anonymous: // Add third contact and related details
+Execute Anonymous: Contact contact3 = new Contact(
+Execute Anonymous:    Firstname='Palma',
+Execute Anonymous:    Lastname='Sunrise',
+Execute Anonymous:    Phone='(554)623-1212',
+Execute Anonymous:    Department= 'Specialty Crisis Management',
+Execute Anonymous:    Title='Control Engineer - Specialty - Radiators',
+Execute Anonymous:    Email='psunrise@trailhead.com');
+Execute Anonymous: insert contact3;
+14:21:41.1 (1106236)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+14:21:41.1 (1128960)|EXECUTION_STARTED
+14:21:41.1 (1132615)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+14:21:41.1 (1261742)|VARIABLE_SCOPE_BEGIN|[2]|contact1|Contact|true|false
+14:21:41.1 (1533052)|VARIABLE_SCOPE_BEGIN|[11]|contact2|Contact|true|false
+14:21:41.1 (1540405)|VARIABLE_SCOPE_BEGIN|[20]|contact3|Contact|true|false
+14:21:41.1 (1657072)|HEAP_ALLOCATE|[72]|Bytes:3
+14:21:41.1 (1708949)|HEAP_ALLOCATE|[77]|Bytes:152
+14:21:41.1 (1723991)|HEAP_ALLOCATE|[342]|Bytes:408
+14:21:41.1 (1735434)|HEAP_ALLOCATE|[355]|Bytes:408
+14:21:41.1 (1750519)|HEAP_ALLOCATE|[467]|Bytes:48
+14:21:41.1 (1776574)|HEAP_ALLOCATE|[139]|Bytes:6
+14:21:41.1 (1792879)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:63
+14:21:41.1 (1938510)|STATEMENT_EXECUTE|[1]
+14:21:41.1 (1941793)|STATEMENT_EXECUTE|[2]
+14:21:41.1 (1968660)|HEAP_ALLOCATE|[2]|Bytes:4
+14:21:41.1 (2053225)|HEAP_ALLOCATE|[3]|Bytes:7
+14:21:41.1 (2108615)|VARIABLE_ASSIGNMENT|[2]|this.FirstName|"Quentin"|0x2f3f3dde
+14:21:41.1 (2116515)|HEAP_ALLOCATE|[4]|Bytes:4
+14:21:41.1 (2131032)|VARIABLE_ASSIGNMENT|[2]|this.LastName|"Foam"|0x2f3f3dde
+14:21:41.1 (2137497)|HEAP_ALLOCATE|[5]|Bytes:13
+14:21:41.1 (2150427)|VARIABLE_ASSIGNMENT|[2]|this.Phone|"(415)555-1212"|0x2f3f3dde
+14:21:41.1 (2156140)|HEAP_ALLOCATE|[6]|Bytes:27
+14:21:41.1 (2169866)|VARIABLE_ASSIGNMENT|[2]|this.Department|"Specialty Crisis Man (7 more) ..."|0x2f3f3dde
+14:21:41.1 (2175400)|HEAP_ALLOCATE|[7]|Bytes:43
+14:21:41.1 (2187256)|VARIABLE_ASSIGNMENT|[2]|this.Title|"Control Engineer - S (23 more) ..."|0x2f3f3dde
+14:21:41.1 (2192825)|HEAP_ALLOCATE|[8]|Bytes:19
+14:21:41.1 (2203748)|VARIABLE_ASSIGNMENT|[2]|this.Email|"qfoam@trailhead.com"|0x2f3f3dde
+14:21:41.1 (2249127)|VARIABLE_ASSIGNMENT|[2]|contact1|{"FirstName":"Quentin","LastName":"Foam","Phone":"(415)555-1212","Department":"Specialty Crisis Man (7 more) ...","Title":"Control Engineer - S (23 more) ...","Email":"qfoam@trailhead.com"}|0x2f3f3dde
+14:21:41.1 (2258051)|STATEMENT_EXECUTE|[9]
+14:21:41.1 (2291421)|HEAP_ALLOCATE|[50]|Bytes:5
+14:21:41.1 (2309817)|HEAP_ALLOCATE|[56]|Bytes:5
+14:21:41.1 (2316765)|HEAP_ALLOCATE|[64]|Bytes:7
+14:21:41.1 (2347154)|HEAP_ALLOCATE|[9]|Bytes:8
+14:21:41.1 (2358988)|DML_BEGIN|[9]|Op:Insert|Type:Contact|Rows:1
+14:21:41.1 (2414124)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:21:41.1 (53094798)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000iqtb|NifContactos on Contact trigger event BeforeInsert
+14:21:41.1 (53142063)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:21:41.1 (53240176)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:21:41.1 (53254295)|VARIABLE_SCOPE_BEGIN|[1]|this|NifContactos|true|false
+14:21:41.1 (53330590)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7cb0361a
+14:21:41.1 (53377137)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:21:41.1 (53386150)|VARIABLE_SCOPE_BEGIN|[1]|this|NifContactos|true|false
+14:21:41.1 (53398298)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7cb0361a
+14:21:41.1 (53407525)|STATEMENT_EXECUTE|[1]
+14:21:41.53 (53411455)|CUMULATIVE_LIMIT_USAGE
+14:21:41.53 (53411455)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:21:41.53 (53411455)|CUMULATIVE_LIMIT_USAGE_END
+
+14:21:41.1 (54157685)|CODE_UNIT_FINISHED|NifContactos on Contact trigger event BeforeInsert
+14:21:41.1 (57914517)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Contact:new
+14:21:41.1 (57925574)|VALIDATION_RULE|03d1r00000068h3|Contact_must_be_in_Account_ZIP_Code
+14:21:41.1 (58136530)|VALIDATION_FORMULA|AND(
+
+NOT(ISBLANK(AccountId)),
+
+MailingPostalCode != Account.ShippingPostalCode
+
+)|AccountId=null , Account.ShippingPostalCode=null , MailingPostalCode=null
+14:21:41.1 (58145713)|VALIDATION_PASS
+14:21:41.1 (58185653)|CODE_UNIT_FINISHED|Validation:Contact:new
+14:21:41.1 (58905106)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+14:21:41.1 (58918562)|DUPLICATE_DETECTION_BEGIN
+14:21:41.1 (59471580)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+14:21:41.1 (130670073)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+14:21:41.1 (130692336)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+14:21:41.1 (130704604)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+14:21:41.1 (130710693)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+14:21:41.1 (130873625)|DUPLICATE_DETECTION_END
+14:21:41.1 (130881820)|CODE_UNIT_FINISHED|DuplicateDetector
+14:21:41.1 (132040128)|DML_END|[9]
+14:21:41.1 (132118335)|VF_PAGE_MESSAGE|Required fields are missing: [Nif__c]
+14:21:41.1 (132181587)|EXCEPTION_THROWN|[9]|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Nif__c]: [Nif__c]
+14:21:41.1 (132462138)|HEAP_ALLOCATE|[9]|Bytes:129
+14:21:41.1 (132553882)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Nif__c]: [Nif__c]
+
+AnonymousBlock: line 9, column 1
+14:21:41.132 (132566693)|CUMULATIVE_LIMIT_USAGE
+14:21:41.132 (132566693)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:21:41.132 (132566693)|CUMULATIVE_LIMIT_USAGE_END
+
+14:21:41.1 (132605745)|CODE_UNIT_FINISHED|execute_anonymous_apex
+14:21:41.1 (133379138)|EXECUTION_FINISHED

@@ -1,0 +1,62 @@
+30.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: List<Contact> contacts = [SELECT ID from Contact WHERE LastName = 'Smith']; List<Lead> leads = [SELECT ID from Lead where LastName='Smith']; System.assertNotEquals(contacts.size(),0); System.assertNotEquals(leads.size(),0);
+09:16:21.1 (1152980)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:16:21.1 (1178001)|EXECUTION_STARTED
+09:16:21.1 (1182076)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+09:16:21.1 (1384692)|VARIABLE_SCOPE_BEGIN|[1]|contacts|List<Contact>|true|false
+09:16:21.1 (1600037)|VARIABLE_SCOPE_BEGIN|[1]|leads|List<Lead>|true|false
+09:16:21.1 (1733474)|HEAP_ALLOCATE|[72]|Bytes:3
+09:16:21.1 (1788983)|HEAP_ALLOCATE|[77]|Bytes:152
+09:16:21.1 (1807007)|HEAP_ALLOCATE|[342]|Bytes:408
+09:16:21.1 (1819560)|HEAP_ALLOCATE|[355]|Bytes:408
+09:16:21.1 (1831087)|HEAP_ALLOCATE|[467]|Bytes:48
+09:16:21.1 (1882478)|HEAP_ALLOCATE|[139]|Bytes:6
+09:16:21.1 (1900182)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+09:16:21.1 (2026497)|STATEMENT_EXECUTE|[1]
+09:16:21.1 (2030009)|STATEMENT_EXECUTE|[1]
+09:16:21.1 (2033486)|HEAP_ALLOCATE|[1]|Bytes:47
+09:16:21.1 (2053581)|HEAP_ALLOCATE|[1]|Bytes:4
+09:16:21.1 (2103460)|HEAP_ALLOCATE|[50]|Bytes:5
+09:16:21.1 (2126791)|HEAP_ALLOCATE|[56]|Bytes:5
+09:16:21.1 (2135573)|HEAP_ALLOCATE|[64]|Bytes:7
+09:16:21.1 (2338551)|SOQL_EXECUTE_BEGIN|[1]|Aggregations:0|SELECT ID FROM Contact WHERE LastName = 'Smith'
+09:16:21.1 (13457825)|SOQL_EXECUTE_END|[1]|Rows:1
+09:16:21.1 (13504879)|HEAP_ALLOCATE|[1]|Bytes:8
+09:16:21.1 (13525373)|HEAP_ALLOCATE|[1]|Bytes:29
+09:16:21.1 (13607648)|HEAP_ALLOCATE|[1]|Bytes:8
+09:16:21.1 (13667797)|VARIABLE_ASSIGNMENT|[1]|contacts|[{"Id":"0031r000024VCHqAAO"}]|0x517cafa
+09:16:21.1 (13676372)|STATEMENT_EXECUTE|[1]
+09:16:21.1 (13683938)|HEAP_ALLOCATE|[1]|Bytes:44
+09:16:21.1 (13701989)|HEAP_ALLOCATE|[1]|Bytes:4
+09:16:21.1 (13905708)|SOQL_EXECUTE_BEGIN|[1]|Aggregations:0|SELECT ID FROM Lead WHERE LastName = 'Smith'
+09:16:21.1 (27726367)|SOQL_EXECUTE_END|[1]|Rows:0
+09:16:21.1 (27763801)|HEAP_ALLOCATE|[1]|Bytes:4
+09:16:21.1 (27777205)|HEAP_ALLOCATE|[1]|Bytes:0
+09:16:21.1 (27837128)|HEAP_ALLOCATE|[1]|Bytes:4
+09:16:21.1 (27879471)|VARIABLE_ASSIGNMENT|[1]|leads|[]|0x29dcb33d
+09:16:21.1 (27887398)|STATEMENT_EXECUTE|[1]
+09:16:21.1 (28045520)|STATEMENT_EXECUTE|[1]
+09:16:21.1 (28226368)|EXCEPTION_THROWN|[1]|System.AssertException: Assertion Failed: Same value: 0
+09:16:21.1 (28492424)|HEAP_ALLOCATE|[1]|Bytes:35
+09:16:21.1 (28588584)|FATAL_ERROR|System.AssertException: Assertion Failed: Same value: 0
+
+AnonymousBlock: line 1, column 1
+09:16:21.28 (28628047)|CUMULATIVE_LIMIT_USAGE
+09:16:21.28 (28628047)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:16:21.28 (28628047)|CUMULATIVE_LIMIT_USAGE_END
+
+09:16:21.1 (28670535)|CODE_UNIT_FINISHED|execute_anonymous_apex
+09:16:21.1 (29877866)|EXECUTION_FINISHED

@@ -1,0 +1,99 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Account acct0 = new Account(
+Execute Anonymous:     Name='SFDC Computing',
+Execute Anonymous:     Phone='(415)555-1212',
+Execute Anonymous:     NumberOfEmployees=50,
+Execute Anonymous:     BillingCity='San Francisco',
+Execute Anonymous: 	AccountNumber='04543450');
+Execute Anonymous: insert acct0;
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: ID acctID = acct0.ID;
+Execute Anonymous: // Add a contact to this account.
+Execute Anonymous: Contact con = new Contact(
+Execute Anonymous:     FirstName='Carol',
+Execute Anonymous:     LastName='Ruiz',
+Execute Anonymous:     Phone='(415)555-1212',
+Execute Anonymous:     Department='Wingo',
+Execute Anonymous:     AccountId=acctID);
+Execute Anonymous: insert con;
+Execute Anonymous: // Add account with no contact
+Execute Anonymous: Account acct2 = new Account(
+Execute Anonymous:     Name='The SFDC Query Man',
+Execute Anonymous:     Phone='(310)555-1213',
+Execute Anonymous:     NumberOfEmployees=50,
+Execute Anonymous:     BillingCity='Los Angeles',
+Execute Anonymous:     Description='Expert in wing technologies.',
+Execute Anonymous: 	AccountNumber='34543450');
+Execute Anonymous: insert acct2;
+13:34:26.1 (1101598)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+01:00
+13:34:26.1 (1123357)|EXECUTION_STARTED
+13:34:26.1 (1126711)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+13:34:26.1 (1256043)|VARIABLE_SCOPE_BEGIN|[1]|acct0|Account|true|false
+13:34:26.1 (1266305)|VARIABLE_SCOPE_BEGIN|[20]|acct2|Account|true|false
+13:34:26.1 (1285892)|VARIABLE_SCOPE_BEGIN|[10]|acctID|Id|false|false
+13:34:26.1 (1303638)|VARIABLE_SCOPE_BEGIN|[12]|con|Contact|true|false
+13:34:26.1 (1421516)|HEAP_ALLOCATE|[72]|Bytes:3
+13:34:26.1 (1459638)|HEAP_ALLOCATE|[77]|Bytes:152
+13:34:26.1 (1474587)|HEAP_ALLOCATE|[342]|Bytes:408
+13:34:26.1 (1486645)|HEAP_ALLOCATE|[355]|Bytes:408
+13:34:26.1 (1496913)|HEAP_ALLOCATE|[467]|Bytes:48
+13:34:26.1 (1522164)|HEAP_ALLOCATE|[139]|Bytes:6
+13:34:26.1 (1536096)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:61
+13:34:26.1 (1684846)|STATEMENT_EXECUTE|[1]
+13:34:26.1 (1687453)|STATEMENT_EXECUTE|[1]
+13:34:26.1 (1718001)|HEAP_ALLOCATE|[1]|Bytes:4
+13:34:26.1 (1804106)|HEAP_ALLOCATE|[2]|Bytes:14
+13:34:26.1 (1858763)|VARIABLE_ASSIGNMENT|[1]|this.Name|"SFDC Computing"|0x6565c8d9
+13:34:26.1 (1866822)|HEAP_ALLOCATE|[3]|Bytes:13
+13:34:26.1 (1883595)|VARIABLE_ASSIGNMENT|[1]|this.Phone|"(415)555-1212"|0x6565c8d9
+13:34:26.1 (1903328)|VARIABLE_ASSIGNMENT|[1]|this.NumberOfEmployees|50|0x6565c8d9
+13:34:26.1 (1909448)|HEAP_ALLOCATE|[5]|Bytes:13
+13:34:26.1 (1921886)|VARIABLE_ASSIGNMENT|[1]|this.BillingCity|"San Francisco"|0x6565c8d9
+13:34:26.1 (1927885)|HEAP_ALLOCATE|[6]|Bytes:8
+13:34:26.1 (1939788)|VARIABLE_ASSIGNMENT|[1]|this.AccountNumber|"04543450"|0x6565c8d9
+13:34:26.1 (2000403)|VARIABLE_ASSIGNMENT|[1]|acct0|{"Name":"SFDC Computing","Phone":"(415)555-1212","NumberOfEmployees":50,"BillingCity":"San Francisco","AccountNumber":"04543450"}|0x6565c8d9
+13:34:26.1 (2008566)|STATEMENT_EXECUTE|[7]
+13:34:26.1 (2044778)|HEAP_ALLOCATE|[50]|Bytes:5
+13:34:26.1 (2065608)|HEAP_ALLOCATE|[56]|Bytes:5
+13:34:26.1 (2073129)|HEAP_ALLOCATE|[64]|Bytes:7
+13:34:26.1 (2106364)|HEAP_ALLOCATE|[7]|Bytes:8
+13:34:26.1 (2117781)|DML_BEGIN|[7]|Op:Insert|Type:Account|Rows:1
+13:34:26.1 (2156002)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:34:26.1 (10831342)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+13:34:26.1 (10849828)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+13:34:26.1 (10994450)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=04543450
+13:34:26.1 (11002013)|VALIDATION_PASS
+13:34:26.1 (11078310)|CODE_UNIT_FINISHED|Validation:Account:new
+13:34:26.1 (11886722)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:34:26.1 (11902591)|DUPLICATE_DETECTION_BEGIN
+13:34:26.1 (12572810)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+13:34:26.1 (120972903)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:0011r00001mRHpN
+13:34:26.1 (120992008)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:1|NumDuplicateRecordsFound:1
+13:34:26.1 (121113258)|DUPLICATE_DETECTION_END
+13:34:26.1 (121119351)|CODE_UNIT_FINISHED|DuplicateDetector
+13:34:26.1 (122037845)|DML_END|[7]
+13:34:26.1 (122130284)|EXCEPTION_THROWN|[7]|System.DmlException: Insert failed. First exception on row 0; first error: DUPLICATES_DETECTED, Use one of these records?: []
+13:34:26.1 (122448273)|HEAP_ALLOCATE|[7]|Bytes:108
+13:34:26.1 (122543502)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: DUPLICATES_DETECTED, Use one of these records?: []
+
+AnonymousBlock: line 7, column 1
+13:34:26.122 (122555206)|CUMULATIVE_LIMIT_USAGE
+13:34:26.122 (122555206)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:34:26.122 (122555206)|CUMULATIVE_LIMIT_USAGE_END
+
+13:34:26.1 (122603248)|CODE_UNIT_FINISHED|execute_anonymous_apex
+13:34:26.1 (123722382)|EXECUTION_FINISHED

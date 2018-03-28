@@ -1,0 +1,12 @@
+<apex:page >
+    
+    <!-- Display images directly referenced in a static resource / Primero añadir en salesforce en 
+		Static Resources!!!!!-->
+    
+        <h3>Gatito!</h3>
+        <p>
+            <apex:image alt="cat" title="cat"
+                 url="{!URLFOR($Resource.vfimagetest, 'cats/kitten1.jpg')}"/>
+        </p>
+    
+</apex:page>

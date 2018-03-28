@@ -1,0 +1,89 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+08:23:19.0 (309765)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+08:23:19.0 (387718)|EXECUTION_STARTED
+08:23:19.0 (392366)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000007Xij6|TestAccountDeletion.TestDeleteAccountWithOneOpportunity
+08:23:19.0 (580571)|HEAP_ALLOCATE|[72]|Bytes:3
+08:23:19.0 (624811)|HEAP_ALLOCATE|[77]|Bytes:152
+08:23:19.0 (640295)|HEAP_ALLOCATE|[342]|Bytes:408
+08:23:19.0 (654870)|HEAP_ALLOCATE|[355]|Bytes:408
+08:23:19.0 (668215)|HEAP_ALLOCATE|[467]|Bytes:48
+08:23:19.0 (695110)|HEAP_ALLOCATE|[139]|Bytes:6
+08:23:19.0 (708889)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:37
+08:23:19.0 (724637)|METHOD_ENTRY|[2]|01p1r000007Xij6|TestAccountDeletion.TestAccountDeletion()
+08:23:19.0 (731096)|STATEMENT_EXECUTE|[2]
+08:23:19.0 (735045)|STATEMENT_EXECUTE|[2]
+08:23:19.0 (739131)|METHOD_EXIT|[2]|TestAccountDeletion
+08:23:19.0 (877968)|HEAP_ALLOCATE|[50]|Bytes:5
+08:23:19.0 (910418)|HEAP_ALLOCATE|[56]|Bytes:5
+08:23:19.0 (918068)|HEAP_ALLOCATE|[64]|Bytes:7
+08:23:19.0 (954582)|STATEMENT_EXECUTE|[3]
+08:23:19.0 (956356)|STATEMENT_EXECUTE|[6]
+08:23:19.0 (999284)|HEAP_ALLOCATE|[6]|Bytes:4
+08:23:19.0 (1069450)|HEAP_ALLOCATE|[6]|Bytes:12
+08:23:19.0 (1121176)|VARIABLE_ASSIGNMENT|[6]|this.Name|"Test Account"|0x321e587f
+08:23:19.0 (1147475)|VARIABLE_SCOPE_BEGIN|[6]|acct|Account|true|false
+08:23:19.0 (1170762)|VARIABLE_ASSIGNMENT|[6]|acct|{"Name":"Test Account"}|0x321e587f
+08:23:19.0 (1176415)|STATEMENT_EXECUTE|[7]
+08:23:19.0 (1200532)|HEAP_ALLOCATE|[7]|Bytes:8
+08:23:19.0 (1212582)|DML_BEGIN|[7]|Op:Insert|Type:Account|Rows:1
+08:23:19.0 (1241514)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+08:23:19.0 (8837777)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000BccO|AccountAddressTrigger on Account trigger event BeforeInsert
+08:23:19.0 (8873943)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+08:23:19.0 (8956116)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+08:23:19.0 (8968124)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+08:23:19.0 (9009972)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x232c59df
+08:23:19.0 (9052120)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+08:23:19.0 (9062692)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+08:23:19.0 (9075348)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x232c59df
+08:23:19.0 (9082102)|STATEMENT_EXECUTE|[1]
+08:23:19.9 (9086832)|CUMULATIVE_LIMIT_USAGE
+08:23:19.9 (9086832)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+08:23:19.9 (9086832)|CUMULATIVE_LIMIT_USAGE_END
+
+08:23:19.0 (9836872)|CODE_UNIT_FINISHED|AccountAddressTrigger on Account trigger event BeforeInsert
+08:23:19.0 (12345432)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+08:23:19.0 (12355985)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+08:23:19.0 (12500491)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=null
+08:23:19.0 (12511490)|VALIDATION_FAIL
+08:23:19.0 (12556390)|CODE_UNIT_FINISHED|Validation:Account:new
+08:23:19.0 (13259067)|DML_END|[7]
+08:23:19.0 (13326608)|EXCEPTION_THROWN|[7]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+08:23:19.0 (13580078)|HEAP_ALLOCATE|[7]|Bytes:138
+08:23:19.0 (13653227)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+
+Class.TestAccountDeletion.TestDeleteAccountWithOneOpportunity: line 7, column 1
+08:23:19.0 (13685468)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+
+Class.TestAccountDeletion.TestDeleteAccountWithOneOpportunity: line 7, column 1
+08:23:19.13 (13691961)|CUMULATIVE_LIMIT_USAGE
+08:23:19.13 (13691961)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+08:23:19.13 (13691961)|CUMULATIVE_LIMIT_USAGE_END
+
+08:23:19.0 (13718708)|CODE_UNIT_FINISHED|TestAccountDeletion.TestDeleteAccountWithOneOpportunity
+08:23:19.0 (14467239)|EXECUTION_FINISHED

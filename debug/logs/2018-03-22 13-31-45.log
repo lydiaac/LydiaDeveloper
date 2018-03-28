@@ -1,0 +1,160 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: // Add account and related contact
+Execute Anonymous: Account acct = new Account(
+Execute Anonymous:     Name='SFDC Computing',
+Execute Anonymous:     Phone='(415)555-1212',
+Execute Anonymous:     NumberOfEmployees=50,
+Execute Anonymous:     BillingCity='San Francisco',
+Execute Anonymous: 	AccountNumber='34543456');
+Execute Anonymous: insert acct;
+Execute Anonymous: // Once the account is inserted, the sObject will be 
+Execute Anonymous: // populated with an ID.
+Execute Anonymous: // Get this ID.
+Execute Anonymous: ID acctID = acct.ID;
+Execute Anonymous: // Add a contact to this account.
+Execute Anonymous: Contact con = new Contact(
+Execute Anonymous:     FirstName='Carol',
+Execute Anonymous:     LastName='Ruiz',
+Execute Anonymous:     Phone='(415)555-1212',
+Execute Anonymous:     Department='Wingo',
+Execute Anonymous:     AccountId=acctID);
+Execute Anonymous: insert con;
+Execute Anonymous: // Add account with no contact
+Execute Anonymous: Account acct2 = new Account(
+Execute Anonymous:     Name='The SFDC Query Man',
+Execute Anonymous:     Phone='(310)555-1213',
+Execute Anonymous:     NumberOfEmployees=50,
+Execute Anonymous:     BillingCity='Los Angeles',
+Execute Anonymous:     Description='Expert in wing technologies.');
+Execute Anonymous: insert acct2;
+13:31:44.1 (1104345)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+01:00
+13:31:44.1 (1123749)|EXECUTION_STARTED
+13:31:44.1 (1127934)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+13:31:44.1 (1233517)|VARIABLE_SCOPE_BEGIN|[2]|acct|Account|true|false
+13:31:44.1 (1245208)|VARIABLE_SCOPE_BEGIN|[22]|acct2|Account|true|false
+13:31:44.1 (1260584)|VARIABLE_SCOPE_BEGIN|[12]|acctID|Id|false|false
+13:31:44.1 (1278492)|VARIABLE_SCOPE_BEGIN|[14]|con|Contact|true|false
+13:31:44.1 (1376240)|HEAP_ALLOCATE|[72]|Bytes:3
+13:31:44.1 (1415996)|HEAP_ALLOCATE|[77]|Bytes:152
+13:31:44.1 (1431352)|HEAP_ALLOCATE|[342]|Bytes:408
+13:31:44.1 (1444294)|HEAP_ALLOCATE|[355]|Bytes:408
+13:31:44.1 (1455290)|HEAP_ALLOCATE|[467]|Bytes:48
+13:31:44.1 (1488505)|HEAP_ALLOCATE|[139]|Bytes:6
+13:31:44.1 (1502153)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:58
+13:31:44.1 (1624635)|STATEMENT_EXECUTE|[1]
+13:31:44.1 (1627304)|STATEMENT_EXECUTE|[2]
+13:31:44.1 (1654189)|HEAP_ALLOCATE|[2]|Bytes:4
+13:31:44.1 (1739043)|HEAP_ALLOCATE|[3]|Bytes:14
+13:31:44.1 (1796350)|VARIABLE_ASSIGNMENT|[2]|this.Name|"SFDC Computing"|0xfabefba
+13:31:44.1 (1804814)|HEAP_ALLOCATE|[4]|Bytes:13
+13:31:44.1 (1822072)|VARIABLE_ASSIGNMENT|[2]|this.Phone|"(415)555-1212"|0xfabefba
+13:31:44.1 (1842197)|VARIABLE_ASSIGNMENT|[2]|this.NumberOfEmployees|50|0xfabefba
+13:31:44.1 (1848717)|HEAP_ALLOCATE|[6]|Bytes:13
+13:31:44.1 (1861984)|VARIABLE_ASSIGNMENT|[2]|this.BillingCity|"San Francisco"|0xfabefba
+13:31:44.1 (1868479)|HEAP_ALLOCATE|[7]|Bytes:8
+13:31:44.1 (1881320)|VARIABLE_ASSIGNMENT|[2]|this.AccountNumber|"34543456"|0xfabefba
+13:31:44.1 (1930384)|VARIABLE_ASSIGNMENT|[2]|acct|{"Name":"SFDC Computing","Phone":"(415)555-1212","NumberOfEmployees":50,"BillingCity":"San Francisco","AccountNumber":"34543456"}|0xfabefba
+13:31:44.1 (1938729)|STATEMENT_EXECUTE|[8]
+13:31:44.1 (1976081)|HEAP_ALLOCATE|[50]|Bytes:5
+13:31:44.1 (1996355)|HEAP_ALLOCATE|[56]|Bytes:5
+13:31:44.1 (2003968)|HEAP_ALLOCATE|[64]|Bytes:7
+13:31:44.1 (2038101)|HEAP_ALLOCATE|[8]|Bytes:8
+13:31:44.1 (2050180)|DML_BEGIN|[8]|Op:Insert|Type:Account|Rows:1
+13:31:44.1 (2086608)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:31:44.1 (10540269)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+13:31:44.1 (10557161)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+13:31:44.1 (10696500)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=34543456
+13:31:44.1 (10705457)|VALIDATION_PASS
+13:31:44.1 (10753467)|CODE_UNIT_FINISHED|Validation:Account:new
+13:31:44.1 (13868655)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:31:44.1 (13882351)|DUPLICATE_DETECTION_BEGIN
+13:31:44.1 (15689565)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+13:31:44.1 (69859058)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+13:31:44.1 (69895244)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+13:31:44.1 (70087876)|DUPLICATE_DETECTION_END
+13:31:44.1 (70096228)|CODE_UNIT_FINISHED|DuplicateDetector
+13:31:44.1 (111235926)|DML_END|[8]
+13:31:44.1 (111282050)|STATEMENT_EXECUTE|[12]
+13:31:44.1 (111526159)|VARIABLE_ASSIGNMENT|[12]|acctID|"0011r00001mRHpDAAW"
+13:31:44.1 (111540274)|STATEMENT_EXECUTE|[14]
+13:31:44.1 (111588950)|HEAP_ALLOCATE|[14]|Bytes:4
+13:31:44.1 (111735294)|HEAP_ALLOCATE|[15]|Bytes:5
+13:31:44.1 (111788253)|VARIABLE_ASSIGNMENT|[14]|this.FirstName|"Carol"|0x4cd0d4df
+13:31:44.1 (111799504)|HEAP_ALLOCATE|[16]|Bytes:4
+13:31:44.1 (111820235)|VARIABLE_ASSIGNMENT|[14]|this.LastName|"Ruiz"|0x4cd0d4df
+13:31:44.1 (111844794)|VARIABLE_ASSIGNMENT|[14]|this.Phone|"(415)555-1212"|0x4cd0d4df
+13:31:44.1 (111853732)|HEAP_ALLOCATE|[18]|Bytes:5
+13:31:44.1 (111873620)|VARIABLE_ASSIGNMENT|[14]|this.Department|"Wingo"|0x4cd0d4df
+13:31:44.1 (111901990)|VARIABLE_ASSIGNMENT|[14]|this.AccountId|"0011r00001mRHpDAAW"|0x4cd0d4df
+13:31:44.1 (111965696)|VARIABLE_ASSIGNMENT|[14]|con|{"FirstName":"Carol","LastName":"Ruiz","Phone":"(415)555-1212","Department":"Wingo","AccountId":"0011r00001mRHpDAAW"}|0x4cd0d4df
+13:31:44.1 (111977003)|STATEMENT_EXECUTE|[20]
+13:31:44.1 (112013068)|HEAP_ALLOCATE|[20]|Bytes:8
+13:31:44.1 (112029475)|DML_BEGIN|[20]|Op:Insert|Type:Contact|Rows:1
+13:31:44.1 (112079536)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:31:44.1 (126331725)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Contact:new
+13:31:44.1 (126351843)|VALIDATION_RULE|03d1r00000068h3|Contact_must_be_in_Account_ZIP_Code
+13:31:44.1 (126628096)|VALIDATION_FORMULA|AND(
+
+NOT(ISBLANK(AccountId)),
+
+MailingPostalCode != Account.ShippingPostalCode
+
+)|AccountId=0011r00001mRHpD , Account.ShippingPostalCode=null , MailingPostalCode=null
+13:31:44.1 (126637919)|VALIDATION_PASS
+13:31:44.1 (126682210)|CODE_UNIT_FINISHED|Validation:Contact:new
+13:31:44.1 (129184742)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:31:44.1 (129199372)|DUPLICATE_DETECTION_BEGIN
+13:31:44.1 (129261833)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+13:31:44.1 (158813528)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+13:31:44.1 (158838746)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+13:31:44.1 (158849940)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+13:31:44.1 (158857982)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+13:31:44.1 (159094272)|DUPLICATE_DETECTION_END
+13:31:44.1 (159104742)|CODE_UNIT_FINISHED|DuplicateDetector
+13:31:44.1 (187925768)|DML_END|[20]
+13:31:44.1 (187959604)|STATEMENT_EXECUTE|[22]
+13:31:44.1 (187996011)|HEAP_ALLOCATE|[22]|Bytes:4
+13:31:44.1 (188025065)|HEAP_ALLOCATE|[23]|Bytes:18
+13:31:44.1 (188098990)|VARIABLE_ASSIGNMENT|[22]|this.Name|"The SFDC Query Man"|0x13abd023
+13:31:44.1 (188111850)|HEAP_ALLOCATE|[24]|Bytes:13
+13:31:44.1 (188137541)|VARIABLE_ASSIGNMENT|[22]|this.Phone|"(310)555-1213"|0x13abd023
+13:31:44.1 (188165883)|VARIABLE_ASSIGNMENT|[22]|this.NumberOfEmployees|50|0x13abd023
+13:31:44.1 (188175713)|HEAP_ALLOCATE|[26]|Bytes:11
+13:31:44.1 (188196477)|VARIABLE_ASSIGNMENT|[22]|this.BillingCity|"Los Angeles"|0x13abd023
+13:31:44.1 (188205293)|HEAP_ALLOCATE|[27]|Bytes:28
+13:31:44.1 (188227854)|VARIABLE_ASSIGNMENT|[22]|this.Description|"Expert in wing techn (8 more) ..."|0x13abd023
+13:31:44.1 (188306995)|VARIABLE_ASSIGNMENT|[22]|acct2|{"Name":"The SFDC Query Man","Phone":"(310)555-1213","NumberOfEmployees":50,"BillingCity":"Los Angeles","Description":"Expert in wing techn (8 more) ..."}|0x13abd023
+13:31:44.1 (188319842)|STATEMENT_EXECUTE|[28]
+13:31:44.1 (188353380)|HEAP_ALLOCATE|[28]|Bytes:8
+13:31:44.1 (188368798)|DML_BEGIN|[28]|Op:Insert|Type:Account|Rows:1
+13:31:44.1 (188412499)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:31:44.1 (190800528)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+13:31:44.1 (190816376)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+13:31:44.1 (190957721)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=null
+13:31:44.1 (191116752)|VALIDATION_FAIL
+13:31:44.1 (191183709)|CODE_UNIT_FINISHED|Validation:Account:new
+13:31:44.1 (191997099)|DML_END|[28]
+13:31:44.1 (192093605)|EXCEPTION_THROWN|[28]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+13:31:44.1 (192459630)|HEAP_ALLOCATE|[28]|Bytes:138
+13:31:44.1 (192603742)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+
+AnonymousBlock: line 28, column 1
+13:31:44.192 (192621458)|CUMULATIVE_LIMIT_USAGE
+13:31:44.192 (192621458)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:31:44.192 (192621458)|CUMULATIVE_LIMIT_USAGE_END
+
+13:31:44.1 (192674293)|CODE_UNIT_FINISHED|execute_anonymous_apex
+13:31:44.1 (193603075)|EXECUTION_FINISHED

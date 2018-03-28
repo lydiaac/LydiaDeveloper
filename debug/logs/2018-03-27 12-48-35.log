@@ -1,0 +1,119 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Http http = new Http();
+Execute Anonymous: HttpRequest request = new HttpRequest();
+Execute Anonymous: request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals');
+Execute Anonymous: request.setMethod('GET');
+Execute Anonymous: HttpResponse response = http.send(request);
+Execute Anonymous: // If the request is successful, parse the JSON response.
+Execute Anonymous: if (response.getStatusCode() == 200) {
+Execute Anonymous:     // Deserialize the JSON string into collections of primitive data types.
+Execute Anonymous:     Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+Execute Anonymous:     // Cast the values in the 'animals' key as a list
+Execute Anonymous:     List<Object> animals = (List<Object>) results.get('animals');
+Execute Anonymous:     System.debug('Received the following animals:');
+Execute Anonymous:     for (Object animal: animals) {
+Execute Anonymous:         System.debug(animal);
+Execute Anonymous:     }
+Execute Anonymous: }
+12:48:34.1 (1053371)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:48:34.1 (1076391)|EXECUTION_STARTED
+12:48:34.1 (1079974)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:48:34.1 (1176354)|VARIABLE_SCOPE_BEGIN|[1]|http|System.Http|true|false
+12:48:34.1 (1188801)|VARIABLE_SCOPE_BEGIN|[2]|request|System.HttpRequest|true|false
+12:48:34.1 (1197561)|VARIABLE_SCOPE_BEGIN|[5]|response|System.HttpResponse|true|false
+12:48:34.1 (1306965)|HEAP_ALLOCATE|[72]|Bytes:3
+12:48:34.1 (1333259)|HEAP_ALLOCATE|[77]|Bytes:152
+12:48:34.1 (1348131)|HEAP_ALLOCATE|[342]|Bytes:408
+12:48:34.1 (1360813)|HEAP_ALLOCATE|[355]|Bytes:408
+12:48:34.1 (1371315)|HEAP_ALLOCATE|[467]|Bytes:48
+12:48:34.1 (1395208)|HEAP_ALLOCATE|[139]|Bytes:6
+12:48:34.1 (1411330)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:25
+12:48:34.1 (1555568)|STATEMENT_EXECUTE|[1]
+12:48:34.1 (1558245)|STATEMENT_EXECUTE|[1]
+12:48:34.1 (1718837)|VARIABLE_ASSIGNMENT|[1]|http|"System.Http[]"|0x5d9fd0da
+12:48:34.1 (1728903)|STATEMENT_EXECUTE|[2]
+12:48:34.1 (1786529)|VARIABLE_ASSIGNMENT|[2]|request|"System.HttpRequest[Endpoint=null, Method=null]"|0x28cb6cb4
+12:48:34.1 (1794095)|STATEMENT_EXECUTE|[3]
+12:48:34.1 (1800401)|HEAP_ALLOCATE|[3]|Bytes:50
+12:48:34.1 (1861304)|STATEMENT_EXECUTE|[4]
+12:48:34.1 (1865616)|HEAP_ALLOCATE|[4]|Bytes:3
+12:48:34.1 (1884130)|STATEMENT_EXECUTE|[5]
+12:48:34.1 (1927552)|CALLOUT_REQUEST|[5]|System.HttpRequest[Endpoint=https://th-apex-http-callout.herokuapp.com/animals, Method=GET]
+12:48:34.1 (370250454)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:278
+12:48:34.1 (370363886)|CALLOUT_RESPONSE|[5]|System.HttpResponse[Status=OK, StatusCode=200]
+12:48:34.1 (370389413)|HEAP_ALLOCATE|[5]|Bytes:75
+12:48:34.1 (370566661)|VARIABLE_ASSIGNMENT|[5]|response|"System.HttpResponse[Status=OK, StatusCode=200]"|0x37efe302
+12:48:34.1 (370655287)|STATEMENT_EXECUTE|[7]
+12:48:34.1 (370659877)|STATEMENT_EXECUTE|[9]
+12:48:34.1 (370702348)|HEAP_ALLOCATE|[9]|Bytes:69
+12:48:34.1 (370839653)|HEAP_ALLOCATE|[50]|Bytes:5
+12:48:34.1 (370877427)|HEAP_ALLOCATE|[56]|Bytes:5
+12:48:34.1 (370891403)|HEAP_ALLOCATE|[64]|Bytes:7
+12:48:34.1 (370936228)|SYSTEM_MODE_ENTER|false
+12:48:34.1 (370963407)|HEAP_ALLOCATE|[9]|Bytes:5
+12:48:34.1 (371079804)|HEAP_ALLOCATE|[9]|Bytes:24
+12:48:34.1 (371096982)|SYSTEM_METHOD_ENTRY|[1]|JSON.JSON()
+12:48:34.1 (371103863)|STATEMENT_EXECUTE|[1]
+12:48:34.1 (371113875)|SYSTEM_METHOD_EXIT|[1]|JSON
+12:48:34.1 (371137583)|METHOD_ENTRY|[9]||System.JSON.deserializeUntyped(String)
+12:48:34.1 (371763207)|METHOD_EXIT|[9]||System.JSON.deserializeUntyped(String)
+12:48:34.1 (371779565)|SYSTEM_MODE_EXIT|false
+12:48:34.1 (371797354)|VARIABLE_SCOPE_BEGIN|[9]|results|Map<String,ANY>|true|false
+12:48:34.1 (371832362)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:20
+12:48:34.1 (371860166)|VARIABLE_ASSIGNMENT|[9]|results|{"animals":["majestic badger","fluffy bunny","scary bear","chicken"]}|0x45e30584
+12:48:34.1 (371871826)|STATEMENT_EXECUTE|[11]
+12:48:34.1 (371877421)|HEAP_ALLOCATE|[11]|Bytes:7
+12:48:34.1 (371947727)|VARIABLE_SCOPE_BEGIN|[11]|animals|List<ANY>|true|false
+12:48:34.1 (371971600)|VARIABLE_ASSIGNMENT|[11]|animals|["majestic badger","fluffy bunny","scary bear","chicken"]|0xb49e97f
+12:48:34.1 (371982581)|STATEMENT_EXECUTE|[12]
+12:48:34.1 (371992246)|HEAP_ALLOCATE|[12]|Bytes:31
+12:48:34.1 (372042262)|USER_DEBUG|[12]|DEBUG|Received the following animals:
+12:48:34.1 (372134499)|HEAP_ALLOCATE|[13]|Bytes:5
+12:48:34.1 (372156095)|HEAP_ALLOCATE|[13]|Bytes:15
+12:48:34.1 (372171323)|VARIABLE_SCOPE_BEGIN|[13]|animal|Object|false|false
+12:48:34.1 (372192339)|VARIABLE_ASSIGNMENT|[13]|animal|"majestic badger"
+12:48:34.1 (372201782)|STATEMENT_EXECUTE|[13]
+12:48:34.1 (372204519)|STATEMENT_EXECUTE|[14]
+12:48:34.1 (372222693)|USER_DEBUG|[14]|DEBUG|majestic badger
+12:48:34.1 (372244099)|HEAP_ALLOCATE|[13]|Bytes:5
+12:48:34.1 (372255984)|HEAP_ALLOCATE|[13]|Bytes:12
+12:48:34.1 (372268554)|VARIABLE_SCOPE_BEGIN|[13]|animal|Object|false|false
+12:48:34.1 (372286884)|VARIABLE_ASSIGNMENT|[13]|animal|"fluffy bunny"
+12:48:34.1 (372294941)|STATEMENT_EXECUTE|[13]
+12:48:34.1 (372297433)|STATEMENT_EXECUTE|[14]
+12:48:34.1 (372305582)|USER_DEBUG|[14]|DEBUG|fluffy bunny
+12:48:34.1 (372323168)|HEAP_ALLOCATE|[13]|Bytes:5
+12:48:34.1 (372333934)|HEAP_ALLOCATE|[13]|Bytes:10
+12:48:34.1 (372345011)|VARIABLE_SCOPE_BEGIN|[13]|animal|Object|false|false
+12:48:34.1 (372362106)|VARIABLE_ASSIGNMENT|[13]|animal|"scary bear"
+12:48:34.1 (372369631)|STATEMENT_EXECUTE|[13]
+12:48:34.1 (372371908)|STATEMENT_EXECUTE|[14]
+12:48:34.1 (372378818)|USER_DEBUG|[14]|DEBUG|scary bear
+12:48:34.1 (372396788)|HEAP_ALLOCATE|[13]|Bytes:5
+12:48:34.1 (372407702)|HEAP_ALLOCATE|[13]|Bytes:7
+12:48:34.1 (372418605)|VARIABLE_SCOPE_BEGIN|[13]|animal|Object|false|false
+12:48:34.1 (372435218)|VARIABLE_ASSIGNMENT|[13]|animal|"chicken"
+12:48:34.1 (372443387)|STATEMENT_EXECUTE|[13]
+12:48:34.1 (372445697)|STATEMENT_EXECUTE|[14]
+12:48:34.1 (372452380)|USER_DEBUG|[14]|DEBUG|chicken
+12:48:34.1 (372468048)|HEAP_ALLOCATE|[13]|Bytes:5
+12:48:34.1 (372485814)|VARIABLE_ASSIGNMENT|[13]|animal|null
+12:48:34.374 (374213220)|CUMULATIVE_LIMIT_USAGE
+12:48:34.374 (374213220)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:48:34.374 (374213220)|CUMULATIVE_LIMIT_USAGE_END
+
+12:48:34.1 (374262949)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:48:34.1 (375153203)|EXECUTION_FINISHED

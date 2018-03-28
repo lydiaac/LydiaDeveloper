@@ -1,0 +1,146 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+11:08:12.0 (418868)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+11:08:12.0 (479569)|EXECUTION_STARTED
+11:08:12.0 (485077)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000007YiiW|ReservaVueloTest.testRellenarCuenta
+11:08:12.0 (731433)|HEAP_ALLOCATE|[72]|Bytes:3
+11:08:12.0 (790523)|HEAP_ALLOCATE|[77]|Bytes:152
+11:08:12.0 (803499)|HEAP_ALLOCATE|[342]|Bytes:408
+11:08:12.0 (817810)|HEAP_ALLOCATE|[355]|Bytes:408
+11:08:12.0 (830848)|HEAP_ALLOCATE|[467]|Bytes:48
+11:08:12.0 (857678)|HEAP_ALLOCATE|[139]|Bytes:6
+11:08:12.0 (872007)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:35
+11:08:12.0 (918028)|METHOD_ENTRY|[2]|01p1r000007YiiW|ReservaVueloTest.ReservaVueloTest()
+11:08:12.0 (925931)|STATEMENT_EXECUTE|[2]
+11:08:12.0 (931933)|STATEMENT_EXECUTE|[2]
+11:08:12.0 (944229)|METHOD_EXIT|[2]|ReservaVueloTest
+11:08:12.0 (1059600)|HEAP_ALLOCATE|[50]|Bytes:5
+11:08:12.0 (1080384)|HEAP_ALLOCATE|[56]|Bytes:5
+11:08:12.0 (1088805)|HEAP_ALLOCATE|[64]|Bytes:7
+11:08:12.0 (1125855)|STATEMENT_EXECUTE|[4]
+11:08:12.0 (1128066)|STATEMENT_EXECUTE|[10]
+11:08:12.0 (1171876)|HEAP_ALLOCATE|[10]|Bytes:4
+11:08:12.0 (1278824)|HEAP_ALLOCATE|[10]|Bytes:13
+11:08:12.0 (1337404)|VARIABLE_ASSIGNMENT|[10]|this.Name|"AccountPrueba"|0x71e54c01
+11:08:12.0 (1368558)|VARIABLE_SCOPE_BEGIN|[10]|acount1|Account|true|false
+11:08:12.0 (1387471)|VARIABLE_ASSIGNMENT|[10]|acount1|{"Name":"AccountPrueba"}|0x71e54c01
+11:08:12.0 (1393193)|STATEMENT_EXECUTE|[12]
+11:08:12.0 (1416336)|HEAP_ALLOCATE|[12]|Bytes:4
+11:08:12.0 (1487301)|VARIABLE_ASSIGNMENT|[12]|this.AccountId|null|0x64e60d65
+11:08:12.0 (1503006)|VARIABLE_SCOPE_BEGIN|[12]|contact1|Contact|true|false
+11:08:12.0 (1514064)|VARIABLE_ASSIGNMENT|[12]|contact1|{}|0x64e60d65
+11:08:12.0 (1519596)|STATEMENT_EXECUTE|[14]
+11:08:12.0 (1541701)|HEAP_ALLOCATE|[14]|Bytes:4
+11:08:12.0 (1578245)|HEAP_ALLOCATE|[14]|Bytes:18
+11:08:12.0 (1601986)|VARIABLE_ASSIGNMENT|[14]|this.Name|"ReservaVueloPrueba"|0x66ee487
+11:08:12.0 (1629953)|VARIABLE_ASSIGNMENT|[14]|this.Contacto__c|null|0x66ee487
+11:08:12.0 (1642539)|VARIABLE_SCOPE_BEGIN|[14]|rv1|Reserva_Vuelo__c|true|false
+11:08:12.0 (1653445)|VARIABLE_ASSIGNMENT|[14]|rv1|{"Name":"ReservaVueloPrueba"}|0x66ee487
+11:08:12.0 (1658531)|STATEMENT_EXECUTE|[16]
+11:08:12.0 (1691305)|HEAP_ALLOCATE|[16]|Bytes:63
+11:08:12.0 (1700113)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+11:08:12.0 (1704123)|STATEMENT_EXECUTE|[1]
+11:08:12.0 (1709445)|SYSTEM_METHOD_EXIT|[1]|Test
+11:08:12.0 (1721358)|METHOD_ENTRY|[16]||System.Test.startTest()
+11:08:12.0 (3085207)|METHOD_EXIT|[16]||System.Test.startTest()
+11:08:12.0 (3096476)|STATEMENT_EXECUTE|[18]
+11:08:12.0 (3124185)|HEAP_ALLOCATE|[18]|Bytes:8
+11:08:12.0 (3136258)|DML_BEGIN|[18]|Op:Insert|Type:Account|Rows:1
+11:08:12.0 (3177278)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:08:12.0 (11903818)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000BccO|AccountAddressTrigger on Account trigger event BeforeInsert
+11:08:12.0 (11958668)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:08:12.0 (12066973)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:08:12.0 (12086322)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+11:08:12.0 (12163797)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x60151db1
+11:08:12.0 (12217080)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:08:12.0 (12311628)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+11:08:12.0 (12330819)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x60151db1
+11:08:12.0 (12345641)|STATEMENT_EXECUTE|[1]
+11:08:12.0 (12653403)|HEAP_ALLOCATE|[4]|Bytes:5
+11:08:12.0 (12693839)|HEAP_ALLOCATE|[4]|Bytes:4
+11:08:12.0 (12704450)|VARIABLE_SCOPE_BEGIN|[4]|acc|Account|true|false
+11:08:12.0 (13267693)|VARIABLE_ASSIGNMENT|[4]|acc|{"IsDeleted":false,"CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"Name":"AccountPrueba"}|0x135b172e
+11:08:12.0 (13280261)|STATEMENT_EXECUTE|[4]
+11:08:12.0 (13302097)|STATEMENT_EXECUTE|[6]
+11:08:12.0 (13314078)|HEAP_ALLOCATE|[4]|Bytes:5
+11:08:12.0 (13328513)|VARIABLE_ASSIGNMENT|[4]|acc|null|
+11:08:12.13 (13337419)|CUMULATIVE_LIMIT_USAGE
+11:08:12.13 (13337419)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:08:12.13 (13337419)|TESTING_LIMITS
+11:08:12.13 (13337419)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:08:12.13 (13337419)|CUMULATIVE_LIMIT_USAGE_END
+
+11:08:12.0 (14169899)|CODE_UNIT_FINISHED|AccountAddressTrigger on Account trigger event BeforeInsert
+11:08:12.0 (16679736)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+11:08:12.0 (16691865)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+11:08:12.0 (17082569)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=null
+11:08:12.0 (17096198)|VALIDATION_FAIL
+11:08:12.0 (17148437)|CODE_UNIT_FINISHED|Validation:Account:new
+11:08:12.0 (17873810)|DML_END|[18]
+11:08:12.0 (17983247)|EXCEPTION_THROWN|[18]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+11:08:12.0 (18295555)|HEAP_ALLOCATE|[18]|Bytes:138
+11:08:12.0 (18381787)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+
+Class.ReservaVueloTest.testRellenarCuenta: line 18, column 1
+11:08:12.0 (18405745)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+
+Class.ReservaVueloTest.testRellenarCuenta: line 18, column 1
+11:08:12.18 (18413399)|CUMULATIVE_LIMIT_USAGE
+11:08:12.18 (18413399)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:08:12.18 (18413399)|TESTING_LIMITS
+11:08:12.18 (18413399)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:08:12.18 (18413399)|CUMULATIVE_LIMIT_USAGE_END
+
+11:08:12.0 (18458369)|CODE_UNIT_FINISHED|ReservaVueloTest.testRellenarCuenta
+11:08:12.0 (19426478)|EXECUTION_FINISHED

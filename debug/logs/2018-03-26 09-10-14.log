@@ -1,0 +1,81 @@
+30.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Account a = AccountHandler.insertNewAccount('My Test Account'); System.assertEquals(a.Name,'My Test Account'); System.assertNotEquals(a,null); if(a != null) {delete a;}
+09:10:14.1 (1088978)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:10:14.1 (1108759)|EXECUTION_STARTED
+09:10:14.1 (1112451)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+09:10:14.1 (1288585)|VARIABLE_SCOPE_BEGIN|[1]|a|Account|true|false
+09:10:14.1 (1443586)|HEAP_ALLOCATE|[72]|Bytes:3
+09:10:14.1 (1503874)|HEAP_ALLOCATE|[77]|Bytes:152
+09:10:14.1 (1519598)|HEAP_ALLOCATE|[342]|Bytes:408
+09:10:14.1 (1531973)|HEAP_ALLOCATE|[355]|Bytes:408
+09:10:14.1 (1542794)|HEAP_ALLOCATE|[467]|Bytes:48
+09:10:14.1 (1569732)|HEAP_ALLOCATE|[139]|Bytes:6
+09:10:14.1 (1586794)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+09:10:14.1 (1714456)|STATEMENT_EXECUTE|[1]
+09:10:14.1 (1717058)|STATEMENT_EXECUTE|[1]
+09:10:14.1 (1730362)|HEAP_ALLOCATE|[1]|Bytes:15
+09:10:14.1 (1788949)|HEAP_ALLOCATE|[50]|Bytes:5
+09:10:14.1 (1811263)|HEAP_ALLOCATE|[56]|Bytes:5
+09:10:14.1 (1818464)|HEAP_ALLOCATE|[64]|Bytes:7
+09:10:14.1 (1842273)|SYSTEM_MODE_ENTER|false
+09:10:14.1 (1864331)|HEAP_ALLOCATE|[1]|Bytes:5
+09:10:14.1 (19675774)|HEAP_ALLOCATE|[1]|Bytes:1
+09:10:14.1 (19746374)|METHOD_ENTRY|[1]|01p1r000007MZVR|AccountHandler.AccountHandler()
+09:10:14.1 (19756039)|STATEMENT_EXECUTE|[1]
+09:10:14.1 (19762459)|STATEMENT_EXECUTE|[1]
+09:10:14.1 (19779356)|METHOD_EXIT|[1]|AccountHandler
+09:10:14.1 (19825692)|METHOD_ENTRY|[1]|01p1r000007MZVR|AccountHandler.insertNewAccount(String)
+09:10:14.1 (19864767)|VARIABLE_SCOPE_BEGIN|[2]|accName|String|false|false
+09:10:14.1 (19893137)|VARIABLE_ASSIGNMENT|[2]|accName|"My Test Account"
+09:10:14.1 (19902772)|STATEMENT_EXECUTE|[2]
+09:10:14.1 (19904225)|STATEMENT_EXECUTE|[3]
+09:10:14.1 (19905460)|STATEMENT_EXECUTE|[3]
+09:10:14.1 (19906629)|STATEMENT_EXECUTE|[4]
+09:10:14.1 (19959310)|HEAP_ALLOCATE|[4]|Bytes:4
+09:10:14.1 (20083714)|VARIABLE_ASSIGNMENT|[4]|this.Name|"My Test Account"|0x1ac8d1cb
+09:10:14.1 (20116317)|VARIABLE_SCOPE_BEGIN|[4]|a|Account|true|false
+09:10:14.1 (20133665)|VARIABLE_ASSIGNMENT|[4]|a|{"Name":"My Test Account"}|0x1ac8d1cb
+09:10:14.1 (20138854)|STATEMENT_EXECUTE|[5]
+09:10:14.1 (20188614)|HEAP_ALLOCATE|[5]|Bytes:8
+09:10:14.1 (20213205)|DML_BEGIN|[5]|Op:Insert|Type:Account|Rows:1
+09:10:14.1 (20251851)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:10:14.1 (37489869)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Account:new
+09:10:14.1 (37515225)|VALIDATION_RULE|03d1r00000068gy|Account_Number_8_Characters
+09:10:14.1 (37696101)|VALIDATION_FORMULA|LEN( AccountNumber) != 8|AccountNumber=null
+09:10:14.1 (37710103)|VALIDATION_FAIL
+09:10:14.1 (37764540)|CODE_UNIT_FINISHED|Validation:Account:new
+09:10:14.1 (38575519)|DML_END|[5]
+09:10:14.1 (38651747)|EXCEPTION_THROWN|[5]|System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []
+09:10:14.1 (38928120)|HEAP_ALLOCATE|[5]|Bytes:138
+09:10:14.1 (38981043)|VARIABLE_SCOPE_BEGIN|[7]|e|Exception|true|false
+09:10:14.1 (39100494)|VARIABLE_ASSIGNMENT|[7]|e|"common.apex.runtime.impl.DmlExecutionException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Account number must be 8 characters long.: []"|0x440a7352
+09:10:14.1 (39112379)|STATEMENT_EXECUTE|[7]
+09:10:14.1 (39114605)|STATEMENT_EXECUTE|[8]
+09:10:14.1 (39153186)|METHOD_EXIT|[1]|01p1r000007MZVR|AccountHandler.insertNewAccount(String)
+09:10:14.1 (39170230)|SYSTEM_MODE_EXIT|false
+09:10:14.1 (39202748)|VARIABLE_ASSIGNMENT|[1]|a|null|
+09:10:14.1 (39207612)|STATEMENT_EXECUTE|[1]
+09:10:14.1 (39227013)|EXCEPTION_THROWN|[1]|System.NullPointerException: Attempt to de-reference a null object
+09:10:14.1 (39292377)|HEAP_ALLOCATE|[1]|Bytes:41
+09:10:14.1 (39357129)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+AnonymousBlock: line 1, column 1
+09:10:14.39 (39397120)|CUMULATIVE_LIMIT_USAGE
+09:10:14.39 (39397120)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:10:14.39 (39397120)|CUMULATIVE_LIMIT_USAGE_END
+
+09:10:14.1 (39433931)|CODE_UNIT_FINISHED|execute_anonymous_apex
+09:10:14.1 (40550016)|EXECUTION_FINISHED

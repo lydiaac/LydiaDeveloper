@@ -1,0 +1,116 @@
+30.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Account a = new Account(Name='TestMyCodeCo',BillingPostalCode='60613',Match_Billing_Address__c=true); insert a; a = [SELECT ID, BillingPostalCode, ShippingPostalCode FROM Account WHERE Name = 'TestMyCodeCo' LIMIT 1]; System.assertEquals(a.BillingPostalCode,a.ShippingPostalCode); delete a;
+12:27:53.1 (1621094)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:27:53.1 (1639805)|EXECUTION_STARTED
+12:27:53.1 (1643828)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:27:53.1 (1773771)|VARIABLE_SCOPE_BEGIN|[1]|a|Account|true|false
+12:27:53.1 (1895014)|HEAP_ALLOCATE|[72]|Bytes:3
+12:27:53.1 (1936660)|HEAP_ALLOCATE|[77]|Bytes:152
+12:27:53.1 (1951753)|HEAP_ALLOCATE|[342]|Bytes:408
+12:27:53.1 (1963647)|HEAP_ALLOCATE|[355]|Bytes:408
+12:27:53.1 (1973874)|HEAP_ALLOCATE|[467]|Bytes:48
+12:27:53.1 (1999813)|HEAP_ALLOCATE|[139]|Bytes:6
+12:27:53.1 (2016477)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+12:27:53.1 (2153908)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (2157039)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (2189411)|HEAP_ALLOCATE|[1]|Bytes:4
+12:27:53.1 (2297452)|HEAP_ALLOCATE|[1]|Bytes:12
+12:27:53.1 (2351348)|VARIABLE_ASSIGNMENT|[1]|this.Name|"TestMyCodeCo"|0x44c8ad4c
+12:27:53.1 (2358078)|HEAP_ALLOCATE|[1]|Bytes:5
+12:27:53.1 (2374208)|VARIABLE_ASSIGNMENT|[1]|this.BillingPostalCode|"60613"|0x44c8ad4c
+12:27:53.1 (2410247)|HEAP_ALLOCATE|[50]|Bytes:5
+12:27:53.1 (2433797)|HEAP_ALLOCATE|[56]|Bytes:5
+12:27:53.1 (2440625)|HEAP_ALLOCATE|[64]|Bytes:7
+12:27:53.1 (2572716)|VARIABLE_ASSIGNMENT|[1]|this.Match_Billing_Address__c|true|0x44c8ad4c
+12:27:53.1 (2644522)|VARIABLE_ASSIGNMENT|[1]|a|{"Name":"TestMyCodeCo","BillingPostalCode":"60613","Match_Billing_Addres (4 more) ...":true}|0x44c8ad4c
+12:27:53.1 (2652442)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (2680824)|HEAP_ALLOCATE|[1]|Bytes:8
+12:27:53.1 (2689181)|DML_BEGIN|[1]|Op:Insert|Type:Account|Rows:1
+12:27:53.1 (2726009)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:27:53.1 (13608920)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000BccO|AccountAddressTrigger on Account trigger event BeforeInsert
+12:27:53.1 (13661388)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:27:53.1 (13801166)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:27:53.1 (13816238)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+12:27:53.1 (13861742)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x433622bd
+12:27:53.1 (13907043)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:27:53.1 (13914569)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+12:27:53.1 (13925865)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x433622bd
+12:27:53.1 (13935460)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (14244018)|HEAP_ALLOCATE|[4]|Bytes:5
+12:27:53.1 (14269691)|HEAP_ALLOCATE|[4]|Bytes:4
+12:27:53.1 (14279384)|VARIABLE_SCOPE_BEGIN|[4]|acc|Account|true|false
+12:27:53.1 (14891666)|VARIABLE_ASSIGNMENT|[4]|acc|{"IsDeleted":false,"CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":true,"BillingPostalCode":"60613","Name":"TestMyCodeCo"}|0x37b671b4
+12:27:53.1 (14903155)|STATEMENT_EXECUTE|[4]
+12:27:53.1 (14936933)|STATEMENT_EXECUTE|[6]
+12:27:53.1 (14938660)|STATEMENT_EXECUTE|[7]
+12:27:53.1 (15278338)|VARIABLE_ASSIGNMENT|[7]|this.ShippingPostalCode|"60613"|0x37b671b4
+12:27:53.1 (15298541)|HEAP_ALLOCATE|[4]|Bytes:5
+12:27:53.1 (15313532)|VARIABLE_ASSIGNMENT|[4]|acc|null|
+12:27:53.15 (15322381)|CUMULATIVE_LIMIT_USAGE
+12:27:53.15 (15322381)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:27:53.15 (15322381)|CUMULATIVE_LIMIT_USAGE_END
+
+12:27:53.1 (16217643)|CODE_UNIT_FINISHED|AccountAddressTrigger on Account trigger event BeforeInsert
+12:27:53.1 (19172962)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:27:53.1 (19190041)|DUPLICATE_DETECTION_BEGIN
+12:27:53.1 (19783777)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+12:27:53.1 (84361099)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+12:27:53.1 (84376796)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+12:27:53.1 (84483089)|DUPLICATE_DETECTION_END
+12:27:53.1 (84490727)|CODE_UNIT_FINISHED|DuplicateDetector
+12:27:53.1 (118621884)|DML_END|[1]
+12:27:53.1 (118649311)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (118656931)|HEAP_ALLOCATE|[1]|Bytes:97
+12:27:53.1 (118692935)|HEAP_ALLOCATE|[1]|Bytes:4
+12:27:53.1 (118885354)|SOQL_EXECUTE_BEGIN|[1]|Aggregations:0|SELECT ID, BillingPostalCode, ShippingPostalCode FROM Account WHERE Name = 'TestMyCodeCo' LIMIT 1
+12:27:53.1 (125884304)|SOQL_EXECUTE_END|[1]|Rows:1
+12:27:53.1 (125908551)|HEAP_ALLOCATE|[1]|Bytes:8
+12:27:53.1 (125923495)|HEAP_ALLOCATE|[1]|Bytes:82
+12:27:53.1 (125962045)|HEAP_ALLOCATE|[1]|Bytes:8
+12:27:53.1 (125973901)|HEAP_ALLOCATE|[1]|Bytes:33
+12:27:53.1 (125994646)|HEAP_ALLOCATE|[1]|Bytes:16
+12:27:53.1 (126024560)|VARIABLE_ASSIGNMENT|[1]|a|{"Id":"0011r00001mvsZsAAI","BillingPostalCode":"60613","ShippingPostalCode":"60613"}|0x74f8318b
+12:27:53.1 (126033252)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (126101060)|STATEMENT_EXECUTE|[1]
+12:27:53.1 (126119057)|HEAP_ALLOCATE|[1]|Bytes:8
+12:27:53.1 (126127097)|HEAP_ALLOCATE|[1]|Bytes:8
+12:27:53.1 (126132460)|DML_BEGIN|[1]|Op:Delete|Type:Account|Rows:1
+12:27:53.1 (126163656)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:27:53.1 (212612034)|DML_END|[1]
+12:27:53.1 (227472586)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:27:53.1 (227500271)|DUPLICATE_DETECTION_BEGIN
+12:27:53.1 (227545618)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+12:27:53.1 (234425073)|DUPLICATE_DETECTION_END
+12:27:53.1 (234436133)|CODE_UNIT_FINISHED|DuplicateDetector
+12:27:53.234 (234536149)|CUMULATIVE_LIMIT_USAGE
+12:27:53.234 (234536149)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:27:53.234 (234536149)|CUMULATIVE_LIMIT_USAGE_END
+
+12:27:53.1 (234574756)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:27:53.1 (235792853)|EXECUTION_FINISHED
