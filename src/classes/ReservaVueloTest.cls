@@ -2,49 +2,69 @@
 private class ReservaVueloTest {
 
 	@isTest static void testRellenarCuenta() {
-		//Creas Contact, Account y ReservaVuelo
-		//Añadirlo a una lista (el metodo recibe lista)
-		//Ejecutar metodo
-		//Comprobar el campo Cuenta de ReservaVuelo
 
-		Account acount1 = new Account (Name = 'AccountPrueba');
+		Account oAccount = new Account(Name='CuentaPrueba0');
+		insert oAccount;
 
-		Contact contact1 = new Contact (AccountId = acount1.Id);
+		Contact oContact = new Contact(LastName='ContactoPrueba0', Nif__c='47898592B', AccountId=oAccount.Id);
+		insert oContact;
 
-		Reserva_Vuelo__c rv1 = new Reserva_Vuelo__c (Name = 'ReservaVueloPrueba', Contacto__c = contact1.Id);
+		Reserva_Vuelo__c oReserva = new Reserva_Vuelo__c (Name='ReservaPrueba0', 
+															Origen__c='Madrid', 
+															Destino__c='Roma',
+															Case__c='Turista',
+															Contacto__c=oContact.Id,
+															Fecha_Salida__c=Datetime.newInstance((Integer)System.Today().Year()+1, 1, 11),
+															Observaciones__c='Nada');
 
-		Test.startTest();
+		//insert oReserva;
 
-		//insert acount1;
-		//insert contact1;
-		//insert rv1;
-		//Test.stopTest();
+		Reserva_Vuelo__c oReserva2 = new Reserva_Vuelo__c (Name='ReservaPrueba2', 
+															Origen__c='Madrid', 
+															Destino__c='Roma',
+															Case__c='Turista',
+															Contacto__c=oContact.Id,
+															Fecha_Salida__c=Datetime.newInstance((Integer)System.Today().Year()+1, 1, 11),
+															Observaciones__c='Nada');
 
+		//insert oReserva2;
 
+		List<Reserva_Vuelo__c> listReservas = new List<Reserva_Vuelo__c>();
 
-		//Account acount2 = new Account (Name = 'AccountPrueba2');
+		listReservas.add(oReserva);
+		listReservas.add(oReserva2);
 
-		//Contact contact2 = new Contact (AccountId = acount2.Id);
+		insert listReservas;
 
-		//Reserva_Vuelo__c rv2 = new Reserva_Vuelo__c (Name = 'ReservaVueloPrueba2', Contacto__c = contact2.Id);
+		//ReservaVueloMethods.RellenarCuenta(listReservas);
 
+		Reserva_Vuelo__c oReservaCheck = [SELECT Cuenta__c FROM Reserva_Vuelo__c WHERE Id = :listReservas.get(0).Id];
 
+		System.assertEquals(oReservaCheck.Cuenta__c,oAccount.Id);
 
-		List<Reserva_Vuelo__c> rvList = new List<Reserva_Vuelo__c>();
-
-		rvList.add(rv1);
-		//rvList.add(rv2);
-
-
-
-		//ReservaVueloMethods rvm = new ReservaVueloMethods();
-
-		List<Reserva_Vuelo__c> nuevaLista = ReservaVueloMethods.RellenarCuenta(rvList);
-		
-		System.assertEquals(nuevaLista.get(0).Cuenta__c, acount1.Id);
 	}
 
-	@isTest static void testModificar() {
+	@isTest static void testModificado() {
+
+		Contact oContact = new Contact(LastName='ContactoPrueba', Nif__c='47898592B');
+		insert oContact;
+
+		Reserva_Vuelo__c oReserva = new Reserva_Vuelo__c (Name='ReservaPrueba', 
+															Origen__c='Madrid', 
+															Destino__c='Roma',
+															Case__c='Turista',
+															Contacto__c=oContact.Id,
+															Fecha_Salida__c=Datetime.newInstance((Integer)System.Today().Year()+1, 1, 11),
+															Observaciones__c='Nada');
+		insert oReserva;
+
+		oReserva.Destino__c = 'Berlín';
+
+		update oReserva;
+
+        Reserva_Vuelo__c oReservaCheck = [SELECT Id, Name, Origen__c, Destino__c, Modificado__c FROM Reserva_Vuelo__c WHERE Id = :oReserva.Id];
+
+        System.assert(oReservaCheck.Modificado__c==True);
 
 	}
 }

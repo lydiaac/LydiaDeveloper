@@ -1,0 +1,233 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+08:34:58.0 (538013)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+08:34:58.0 (594848)|EXECUTION_STARTED
+08:34:58.0 (602937)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000007XnGq|TestRestrictContactByName.metodoTest
+08:34:58.0 (1086753)|HEAP_ALLOCATE|[72]|Bytes:3
+08:34:58.0 (1129174)|HEAP_ALLOCATE|[77]|Bytes:152
+08:34:58.0 (1146788)|HEAP_ALLOCATE|[342]|Bytes:408
+08:34:58.0 (1160790)|HEAP_ALLOCATE|[355]|Bytes:408
+08:34:58.0 (1172877)|HEAP_ALLOCATE|[467]|Bytes:48
+08:34:58.0 (1209402)|HEAP_ALLOCATE|[139]|Bytes:6
+08:34:58.0 (1228330)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:25
+08:34:58.0 (1252569)|METHOD_ENTRY|[2]|01p1r000007XnGq|TestRestrictContactByName.TestRestrictContactByName()
+08:34:58.0 (1262527)|STATEMENT_EXECUTE|[2]
+08:34:58.0 (1268652)|STATEMENT_EXECUTE|[2]
+08:34:58.0 (1274648)|METHOD_EXIT|[2]|TestRestrictContactByName
+08:34:58.0 (1409810)|HEAP_ALLOCATE|[50]|Bytes:5
+08:34:58.0 (1435389)|HEAP_ALLOCATE|[56]|Bytes:5
+08:34:58.0 (1443555)|HEAP_ALLOCATE|[64]|Bytes:7
+08:34:58.0 (1486957)|STATEMENT_EXECUTE|[4]
+08:34:58.0 (1489357)|STATEMENT_EXECUTE|[6]
+08:34:58.0 (1577707)|HEAP_ALLOCATE|[6]|Bytes:4
+08:34:58.0 (1921252)|VARIABLE_SCOPE_BEGIN|[6]|listContact|List<Contact>|true|false
+08:34:58.0 (1937675)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+08:34:58.0 (1960744)|VARIABLE_ASSIGNMENT|[6]|listContact|[]|0x443502f6
+08:34:58.0 (1968329)|STATEMENT_EXECUTE|[7]
+08:34:58.0 (1987853)|HEAP_ALLOCATE|[7]|Bytes:4
+08:34:58.0 (2063270)|HEAP_ALLOCATE|[7]|Bytes:9
+08:34:58.0 (2112828)|VARIABLE_ASSIGNMENT|[7]|this.FirstName|"Francesco"|0x75cccd98
+08:34:58.0 (2120251)|HEAP_ALLOCATE|[7]|Bytes:6
+08:34:58.0 (2134128)|VARIABLE_ASSIGNMENT|[7]|this.LastName|"Riggio"|0x75cccd98
+08:34:58.0 (2140566)|HEAP_ALLOCATE|[7]|Bytes:13
+08:34:58.0 (2159244)|VARIABLE_ASSIGNMENT|[7]|this.Email|"Test@test.com"|0x75cccd98
+08:34:58.0 (2188316)|VARIABLE_SCOPE_BEGIN|[7]|c1|Contact|true|false
+08:34:58.0 (2207483)|VARIABLE_ASSIGNMENT|[7]|c1|{"FirstName":"Francesco","LastName":"Riggio","Email":"Test@test.com"}|0x75cccd98
+08:34:58.0 (2214888)|STATEMENT_EXECUTE|[8]
+08:34:58.0 (2226017)|HEAP_ALLOCATE|[8]|Bytes:4
+08:34:58.0 (2234088)|HEAP_ALLOCATE|[8]|Bytes:10
+08:34:58.0 (2249987)|VARIABLE_ASSIGNMENT|[8]|this.FirstName|"Francesco1"|0x45ed968a
+08:34:58.0 (2256219)|HEAP_ALLOCATE|[8]|Bytes:11
+08:34:58.0 (2267351)|VARIABLE_ASSIGNMENT|[8]|this.LastName|"INVALIDNAME"|0x45ed968a
+08:34:58.0 (2283375)|VARIABLE_ASSIGNMENT|[8]|this.Email|"Test@test.com"|0x45ed968a
+08:34:58.0 (2296491)|VARIABLE_SCOPE_BEGIN|[8]|c2|Contact|true|false
+08:34:58.0 (2310008)|VARIABLE_ASSIGNMENT|[8]|c2|{"FirstName":"Francesco1","LastName":"INVALIDNAME","Email":"Test@test.com"}|0x45ed968a
+08:34:58.0 (2315775)|STATEMENT_EXECUTE|[9]
+08:34:58.0 (2355500)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+08:34:58.0 (2366064)|STATEMENT_EXECUTE|[10]
+08:34:58.0 (2380236)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+08:34:58.0 (2386817)|STATEMENT_EXECUTE|[12]
+08:34:58.0 (2418604)|HEAP_ALLOCATE|[12]|Bytes:63
+08:34:58.0 (2430477)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+08:34:58.0 (2435470)|STATEMENT_EXECUTE|[1]
+08:34:58.0 (2442647)|SYSTEM_METHOD_EXIT|[1]|Test
+08:34:58.0 (2454524)|METHOD_ENTRY|[12]||System.Test.startTest()
+08:34:58.0 (3553739)|METHOD_EXIT|[12]||System.Test.startTest()
+08:34:58.0 (3570986)|STATEMENT_EXECUTE|[13]
+08:34:58.0 (3573920)|STATEMENT_EXECUTE|[14]
+08:34:58.0 (3575639)|STATEMENT_EXECUTE|[15]
+08:34:58.0 (3645905)|DML_BEGIN|[15]|Op:Insert|Type:Contact|Rows:2
+08:34:58.0 (3682723)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+08:34:58.0 (21565438)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+08:34:58.0 (21591409)|DUPLICATE_DETECTION_BEGIN
+08:34:58.0 (21991686)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+08:34:58.0 (100277892)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+08:34:58.0 (100294220)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+08:34:58.0 (100311467)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:2|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+08:34:58.0 (100324546)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+08:34:58.0 (100330409)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+08:34:58.0 (100336055)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:2|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+08:34:58.0 (100489729)|DUPLICATE_DETECTION_END
+08:34:58.0 (100497693)|CODE_UNIT_FINISHED|DuplicateDetector
+08:34:58.0 (101461726)|DML_END|[15]
+08:34:58.0 (101541092)|VF_PAGE_MESSAGE|Required fields are missing: [Nif__c]
+08:34:58.0 (101660755)|EXCEPTION_THROWN|[15]|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Nif__c]: [Nif__c]
+08:34:58.0 (101954703)|HEAP_ALLOCATE|[15]|Bytes:129
+08:34:58.0 (102013829)|VARIABLE_SCOPE_BEGIN|[18]|ee|Exception|true|false
+08:34:58.0 (102108814)|VARIABLE_ASSIGNMENT|[18]|ee|"common.apex.runtime.impl.DmlExecutionException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Nif__c]: [Nif__c]"|0x1757e2e6
+08:34:58.0 (102123029)|STATEMENT_EXECUTE|[18]
+08:34:58.0 (102127490)|STATEMENT_EXECUTE|[21]
+08:34:58.0 (102150494)|METHOD_ENTRY|[21]||System.Test.stopTest()
+08:34:58.0 (102983084)|METHOD_EXIT|[21]||System.Test.stopTest()
+08:34:58.103 (103000827)|CUMULATIVE_LIMIT_USAGE
+08:34:58.103 (103000827)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+08:34:58.103 (103000827)|TESTING_LIMITS
+08:34:58.103 (103000827)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+08:34:58.103 (103000827)|CUMULATIVE_LIMIT_USAGE_END
+
+08:34:58.0 (103054842)|CODE_UNIT_FINISHED|TestRestrictContactByName.metodoTest
+08:34:58.0 (103787314)|EXECUTION_FINISHED
+IGNMENT|[12]|this.arg0_type_info|"List of size 6 too large to display"|0x11797b64
+08:34:59.0 (5459182)|STATEMENT_EXECUTE|[13]
+08:34:59.0 (5465691)|HEAP_ALLOCATE|[13]|Bytes:4
+08:34:59.0 (5491395)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+08:34:59.0 (5501960)|VARIABLE_ASSIGNMENT|[13]|this.apex_schema_type_info|["http://parks.service (2 more) ...","false","false"]|0x11797b64
+08:34:59.0 (5507437)|STATEMENT_EXECUTE|[14]
+08:34:59.0 (5512693)|HEAP_ALLOCATE|[14]|Bytes:4
+08:34:59.0 (5533023)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+08:34:59.0 (5540591)|VARIABLE_ASSIGNMENT|[14]|this.field_order_type_info|["arg0"]|0x11797b64
+08:34:59.0 (5547991)|CONSTRUCTOR_EXIT|[26]|01p1r000007YpCS|<init>()
+08:34:59.0 (5553333)|VARIABLE_SCOPE_BEGIN|[26]|request_x|ParkService.byCountry|true|false
+08:34:59.0 (5574127)|VARIABLE_ASSIGNMENT|[26]|request_x|{"apex_schema_type_inf (1 more) ...":"0x128b64a5","arg0_type_info":"0x38c09c0f","field_order_type_inf (1 more) ...":"0x62386228"}|0x11797b64
+08:34:59.0 (5581862)|STATEMENT_EXECUTE|[27]
+08:34:59.0 (5587726)|VARIABLE_ASSIGNMENT|[27]|this.arg0|"India"|0x11797b64
+08:34:59.0 (5592870)|STATEMENT_EXECUTE|[28]
+08:34:59.0 (5702587)|VARIABLE_SCOPE_BEGIN|[28]|response_x|ParkService.byCountryResponse|true|false
+08:34:59.0 (5715201)|VARIABLE_ASSIGNMENT|[28]|response_x|null|
+08:34:59.0 (5719977)|STATEMENT_EXECUTE|[29]
+08:34:59.0 (5748424)|HEAP_ALLOCATE|[29]|Bytes:4
+08:34:59.0 (5771165)|VARIABLE_SCOPE_BEGIN|[29]|response_map_x|Map<String,ParkService.byCountryResponse>|true|false
+08:34:59.0 (5789531)|VARIABLE_ASSIGNMENT|[29]|response_map_x|{}|0x17f7045c
+08:34:59.0 (5796308)|STATEMENT_EXECUTE|[30]
+08:34:59.0 (5799909)|HEAP_ALLOCATE|[30]|Bytes:10
+08:34:59.0 (5842088)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+08:34:59.0 (5852407)|STATEMENT_EXECUTE|[31]
+08:34:59.0 (5860689)|HEAP_ALLOCATE|[35]|Bytes:4
+08:34:59.0 (5881025)|HEAP_ALLOCATE|[38]|Bytes:9
+08:34:59.0 (5887203)|HEAP_ALLOCATE|[40]|Bytes:17
+08:34:59.0 (5891596)|HEAP_ALLOCATE|[41]|Bytes:31
+08:34:59.0 (5912539)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+08:34:59.0 (6521619)|HEAP_ALLOCATE|[31]|Bytes:4
+08:34:59.0 (6533014)|HEAP_ALLOCATE|[31]|Bytes:36
+08:34:59.0 (6539205)|HEAP_ALLOCATE|[31]|Bytes:20
+08:34:59.0 (6555113)|HEAP_ALLOCATE|[31]|Bytes:8
+08:34:59.0 (6559736)|HEAP_ALLOCATE|[31]|Bytes:56
+08:34:59.0 (6563079)|HEAP_ALLOCATE|[31]|Bytes:9
+08:34:59.0 (6565826)|HEAP_ALLOCATE|[31]|Bytes:22
+08:34:59.0 (6568611)|HEAP_ALLOCATE|[31]|Bytes:17
+08:34:59.0 (6571287)|HEAP_ALLOCATE|[31]|Bytes:31
+08:34:59.0 (6577885)|VARIABLE_SCOPE_BEGIN|[3]|this|ParkServiceMock|true|false
+08:34:59.0 (6594094)|VARIABLE_ASSIGNMENT|[3]|this|{}|0x5ff043ef
+08:34:59.0 (6604834)|VARIABLE_SCOPE_BEGIN|[3]|stub|Object|false|false
+08:34:59.0 (6624386)|VARIABLE_ASSIGNMENT|[3]|stub|{"endpoint_x":"https://th-apex-soap (36 more) ...","ns_map_type_info":"0x1dc0cb19"}
+08:34:59.0 (6632137)|VARIABLE_SCOPE_BEGIN|[3]|request|Object|false|false
+08:34:59.0 (6648906)|VARIABLE_ASSIGNMENT|[3]|request|{"apex_schema_type_inf (1 more) ...":"0x128b64a5","arg0":"India","arg0_type_info":"0x38c09c0f","field_order_type_inf (1 more) ...":"0x62386228"}
+08:34:59.0 (6655205)|VARIABLE_SCOPE_BEGIN|[3]|response|Map<String,ANY>|true|false
+08:34:59.0 (6666664)|VARIABLE_ASSIGNMENT|[3]|response|{}|0x17f7045c
+08:34:59.0 (6672258)|VARIABLE_SCOPE_BEGIN|[3]|endpoint|String|false|false
+08:34:59.0 (6680535)|VARIABLE_ASSIGNMENT|[3]|endpoint|"https://th-apex-soap (36 more) ..."
+08:34:59.0 (6684808)|VARIABLE_SCOPE_BEGIN|[3]|soapAction|String|false|false
+08:34:59.0 (6691937)|VARIABLE_ASSIGNMENT|[3]|soapAction|""
+08:34:59.0 (6695853)|VARIABLE_SCOPE_BEGIN|[3]|requestName|String|false|false
+08:34:59.0 (6702138)|VARIABLE_ASSIGNMENT|[3]|requestName|"byCountry"
+08:34:59.0 (6706663)|VARIABLE_SCOPE_BEGIN|[3]|responseNS|String|false|false
+08:34:59.0 (6714032)|VARIABLE_ASSIGNMENT|[3]|responseNS|"http://parks.service (2 more) ..."
+08:34:59.0 (6717800)|VARIABLE_SCOPE_BEGIN|[3]|responseName|String|false|false
+08:34:59.0 (6724811)|VARIABLE_ASSIGNMENT|[3]|responseName|"byCountryResponse"
+08:34:59.0 (6728157)|VARIABLE_SCOPE_BEGIN|[3]|responseType|String|false|false
+08:34:59.0 (6734523)|VARIABLE_ASSIGNMENT|[3]|responseType|"parksServices.byCoun (11 more) ..."
+08:34:59.0 (6756352)|STATEMENT_EXECUTE|[12]
+08:34:59.0 (6758694)|STATEMENT_EXECUTE|[14]
+08:34:59.0 (6767724)|HEAP_ALLOCATE|[15]|Bytes:20
+08:34:59.0 (6781217)|CONSTRUCTOR_ENTRY|[15]|01p1r000007YpCS|<init>()
+08:34:59.0 (6801183)|VARIABLE_SCOPE_BEGIN|[4]|this|ParkService.byCountryResponse|true|false
+08:34:59.0 (6834582)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x55374b55
+08:34:59.0 (6852598)|STATEMENT_EXECUTE|[4]
+08:34:59.0 (6854619)|STATEMENT_EXECUTE|[5]
+08:34:59.0 (6856257)|STATEMENT_EXECUTE|[6]
+08:34:59.0 (6864256)|HEAP_ALLOCATE|[6]|Bytes:4
+08:34:59.0 (6890477)|HEAP_ALLOCATE|[6]|Bytes:6
+08:34:59.0 (6900879)|HEAP_ALLOCATE|[6]|Bytes:2
+08:34:59.0 (6920343)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+08:34:59.0 (6931517)|VARIABLE_ASSIGNMENT|[6]|this.return_x_type_info|"List of size 6 too large to display"|0x55374b55
+08:34:59.0 (6937485)|STATEMENT_EXECUTE|[7]
+08:34:59.0 (6944306)|HEAP_ALLOCATE|[7]|Bytes:4
+08:34:59.0 (6970218)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+08:34:59.0 (6980270)|VARIABLE_ASSIGNMENT|[7]|this.apex_schema_type_info|["http://parks.service (2 more) ...","false","false"]|0x55374b55
+08:34:59.0 (6987178)|STATEMENT_EXECUTE|[8]
+08:34:59.0 (6992324)|HEAP_ALLOCATE|[8]|Bytes:4
+08:34:59.0 (7004642)|HEAP_ALLOCATE|[8]|Bytes:8
+08:34:59.0 (7018236)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+08:34:59.0 (7025403)|VARIABLE_ASSIGNMENT|[8]|this.field_order_type_info|["return_x"]|0x55374b55
+08:34:59.0 (7033304)|CONSTRUCTOR_EXIT|[15]|01p1r000007YpCS|<init>()
+08:34:59.0 (7039109)|VARIABLE_SCOPE_BEGIN|[14]|response_x|ParkService.byCountryResponse|true|false
+08:34:59.0 (7059117)|VARIABLE_ASSIGNMENT|[14]|response_x|{"apex_schema_type_inf (1 more) ...":"0xf56c8cc","field_order_type_inf (1 more) ...":"0x1e201b10","return_x_type_info":"0x71228662"}|0x55374b55
+08:34:59.0 (7066596)|STATEMENT_EXECUTE|[17]
+08:34:59.0 (7072969)|HEAP_ALLOCATE|[17]|Bytes:4
+08:34:59.0 (7090324)|VARIABLE_SCOPE_BEGIN|[17]|myStrings|List<String>|true|false
+08:34:59.0 (7105632)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+08:34:59.0 (7113163)|VARIABLE_ASSIGNMENT|[17]|myStrings|["Park1","Park2","Park3"]|0x5dd938cc
+08:34:59.0 (7119207)|STATEMENT_EXECUTE|[19]
+08:34:59.0 (7126742)|VARIABLE_ASSIGNMENT|[19]|this.return_x|["Park1","Park2","Park3"]|0x55374b55
+08:34:59.0 (7131637)|STATEMENT_EXECUTE|[21]
+08:34:59.0 (7172359)|STATEMENT_EXECUTE|[43]
+08:34:59.0 (7205523)|VARIABLE_ASSIGNMENT|[43]|response_x|{"apex_schema_type_inf (1 more) ...":"0xf56c8cc","field_order_type_inf (1 more) ...":"0x1e201b10","return_x":"0x5dd938cc","return_x_type_info":"0x71228662"}|0x55374b55
+08:34:59.0 (7213262)|STATEMENT_EXECUTE|[44]
+08:34:59.0 (7219951)|METHOD_EXIT|[6]|01p1r000007YpCS|ParkService.ParksImplPort.byCountry(String)
+08:34:59.0 (7227352)|METHOD_EXIT|[10]|01p1r000007YpF6|ParkLocator.country(String)
+08:34:59.0 (7236934)|VARIABLE_ASSIGNMENT|[10]|result|["Park1","Park2","Park3"]|0x5dd938cc
+08:34:59.0 (7242007)|STATEMENT_EXECUTE|[12]
+08:34:59.7 (7294368)|CUMULATIVE_LIMIT_USAGE
+08:34:59.7 (7294368)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+08:34:59.7 (7294368)|CUMULATIVE_LIMIT_USAGE_END
+
+08:34:59.0 (7355592)|CODE_UNIT_FINISHED|ParkLocatorTest.testCallout
+08:34:59.0 (8216607)|EXECUTION_FINISHED

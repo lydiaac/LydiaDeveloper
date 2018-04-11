@@ -1,0 +1,330 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:21:06.0 (303778)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:21:06.0 (389735)|EXECUTION_STARTED
+12:21:06.0 (395081)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000007YiiW|ReservaVueloTest.testModificar
+12:21:06.0 (596890)|HEAP_ALLOCATE|[72]|Bytes:3
+12:21:06.0 (624651)|HEAP_ALLOCATE|[77]|Bytes:152
+12:21:06.0 (637921)|HEAP_ALLOCATE|[342]|Bytes:408
+12:21:06.0 (652028)|HEAP_ALLOCATE|[355]|Bytes:408
+12:21:06.0 (664697)|HEAP_ALLOCATE|[467]|Bytes:48
+12:21:06.0 (689688)|HEAP_ALLOCATE|[139]|Bytes:6
+12:21:06.0 (704190)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:50
+12:21:06.0 (722200)|METHOD_ENTRY|[2]|01p1r000007YiiW|ReservaVueloTest.ReservaVueloTest()
+12:21:06.0 (729510)|STATEMENT_EXECUTE|[2]
+12:21:06.0 (735178)|STATEMENT_EXECUTE|[2]
+12:21:06.0 (739042)|METHOD_EXIT|[2]|ReservaVueloTest
+12:21:06.0 (907325)|HEAP_ALLOCATE|[50]|Bytes:5
+12:21:06.0 (926249)|HEAP_ALLOCATE|[56]|Bytes:5
+12:21:06.0 (934749)|HEAP_ALLOCATE|[64]|Bytes:7
+12:21:06.0 (971484)|STATEMENT_EXECUTE|[47]
+12:21:06.0 (973970)|STATEMENT_EXECUTE|[49]
+12:21:06.0 (1010758)|HEAP_ALLOCATE|[49]|Bytes:4
+12:21:06.0 (1087029)|HEAP_ALLOCATE|[49]|Bytes:14
+12:21:06.0 (1138435)|VARIABLE_ASSIGNMENT|[49]|this.LastName|"ContactoPrueba"|0x65ebe822
+12:21:06.0 (1163814)|HEAP_ALLOCATE|[49]|Bytes:28
+12:21:06.0 (1189542)|VARIABLE_ASSIGNMENT|[49]|this.Nif__c|123456789|0x65ebe822
+12:21:06.0 (1216026)|VARIABLE_SCOPE_BEGIN|[49]|oContact|Contact|true|false
+12:21:06.0 (1238987)|VARIABLE_ASSIGNMENT|[49]|oContact|{"LastName":"ContactoPrueba","Nif__c":123456789}|0x65ebe822
+12:21:06.0 (1245340)|STATEMENT_EXECUTE|[51]
+12:21:06.0 (1266801)|HEAP_ALLOCATE|[51]|Bytes:8
+12:21:06.0 (1279105)|DML_BEGIN|[51]|Op:Insert|Type:Contact|Rows:1
+12:21:06.0 (1308436)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:21:06.0 (8894164)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:21:06.0 (8915156)|DUPLICATE_DETECTION_BEGIN
+12:21:06.0 (9459911)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+12:21:06.0 (95699238)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+12:21:06.0 (95721551)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+12:21:06.0 (95733427)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+12:21:06.0 (95739405)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+12:21:06.0 (95879182)|DUPLICATE_DETECTION_END
+12:21:06.0 (95887246)|CODE_UNIT_FINISHED|DuplicateDetector
+12:21:06.0 (138133879)|DML_END|[51]
+12:21:06.0 (138164205)|STATEMENT_EXECUTE|[53]
+12:21:06.0 (138213732)|HEAP_ALLOCATE|[53]|Bytes:4
+12:21:06.0 (138304016)|HEAP_ALLOCATE|[53]|Bytes:13
+12:21:06.0 (138357634)|VARIABLE_ASSIGNMENT|[53]|this.Name|"ReservaPrueba"|0x2fa2a71c
+12:21:06.0 (138365844)|HEAP_ALLOCATE|[54]|Bytes:6
+12:21:06.0 (138386281)|VARIABLE_ASSIGNMENT|[53]|this.Origen__c|"Madrid"|0x2fa2a71c
+12:21:06.0 (138392135)|HEAP_ALLOCATE|[55]|Bytes:4
+12:21:06.0 (138404654)|VARIABLE_ASSIGNMENT|[53]|this.Destino__c|"Roma"|0x2fa2a71c
+12:21:06.0 (138410554)|HEAP_ALLOCATE|[56]|Bytes:7
+12:21:06.0 (138424850)|VARIABLE_ASSIGNMENT|[53]|this.Case__c|"Turista"|0x2fa2a71c
+12:21:06.0 (138463741)|VARIABLE_ASSIGNMENT|[53]|this.Contacto__c|"0031r000024iLqiAAE"|0x2fa2a71c
+12:21:06.0 (138520314)|HEAP_ALLOCATE|[58]|Bytes:4
+12:21:06.0 (138570659)|HEAP_ALLOCATE|[58]|Bytes:56
+12:21:06.0 (138613748)|VARIABLE_ASSIGNMENT|[53]|this.Fecha_Salida__c|"2019-01-10T23:00:00.000Z"|0x2fa2a71c
+12:21:06.0 (138620955)|HEAP_ALLOCATE|[59]|Bytes:4
+12:21:06.0 (138637603)|VARIABLE_ASSIGNMENT|[53]|this.Observaciones__c|"Nada"|0x2fa2a71c
+12:21:06.0 (138660881)|VARIABLE_SCOPE_BEGIN|[53]|oReserva|Reserva_Vuelo__c|true|false
+12:21:06.0 (138688611)|VARIABLE_ASSIGNMENT|[53]|oReserva|{"Name":"ReservaPrueba","Origen__c":"Madrid","Destino__c":"Roma","Case__c":"Turista","Contacto__c":"0031r000024iLqiAAE","Fecha_Salida__c":"2019-01-10T23:00:00.000Z","Observaciones__c":"Nada"}|0x2fa2a71c
+12:21:06.0 (138696494)|STATEMENT_EXECUTE|[61]
+12:21:06.0 (138713518)|HEAP_ALLOCATE|[61]|Bytes:8
+12:21:06.0 (138724901)|DML_BEGIN|[61]|Op:Insert|Type:Reserva_Vuelo__c|Rows:1
+12:21:06.0 (138763346)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:21:06.0 (143511210)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000isRT|ReservaVueloTrigger on Reserva_Vuelo trigger event BeforeInsert
+12:21:06.0 (143547276)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:21:06.0 (143714442)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:21:06.0 (143730743)|VARIABLE_SCOPE_BEGIN|[1]|this|ReservaVueloTrigger|true|false
+12:21:06.0 (143791853)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x745195f0
+12:21:06.0 (143852472)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:21:06.0 (143918119)|VARIABLE_SCOPE_BEGIN|[1]|this|ReservaVueloTrigger|true|false
+12:21:06.0 (143934399)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x745195f0
+12:21:06.0 (143943250)|STATEMENT_EXECUTE|[1]
+12:21:06.0 (143945541)|STATEMENT_EXECUTE|[4]
+12:21:06.0 (144207045)|VARIABLE_ASSIGNMENT|[4]|this.listNew|[{"Contacto__c":"0031r000024iLqiAAE","Origen__c":"Madrid","Destino__c":"Roma","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","OwnerId":"0051r000007Oz5QAAS","Observaciones__c":"Nada","Case__c":"Turista","Modificado__c":false,"Name":"ReservaPrueba"}]|0x745195f0
+12:21:06.0 (144219266)|STATEMENT_EXECUTE|[7]
+12:21:06.0 (144235965)|VARIABLE_ASSIGNMENT|[7]|this.mapOld|null|0x745195f0
+12:21:06.0 (144246451)|STATEMENT_EXECUTE|[10]
+12:21:06.0 (144251123)|STATEMENT_EXECUTE|[11]
+12:21:06.0 (144252906)|STATEMENT_EXECUTE|[12]
+12:21:06.0 (145426214)|HEAP_ALLOCATE|[12]|Bytes:4
+12:21:06.0 (145463962)|METHOD_ENTRY|[1]|01p1r000007Yidp|ReservaVueloMethods.ReservaVueloMethods()
+12:21:06.0 (145471542)|STATEMENT_EXECUTE|[1]
+12:21:06.0 (145477659)|STATEMENT_EXECUTE|[1]
+12:21:06.0 (145828302)|SYSTEM_MODE_ENTER|false
+12:21:06.0 (145843458)|HEAP_ALLOCATE|[12]|Bytes:5
+12:21:06.0 (145851592)|SYSTEM_MODE_EXIT|false
+12:21:06.0 (145861398)|METHOD_EXIT|[1]|ReservaVueloMethods
+12:21:06.0 (145884919)|METHOD_ENTRY|[12]|01p1r000007Yidp|ReservaVueloMethods.RellenarCuenta(List<Reserva_Vuelo__c>)
+12:21:06.0 (145912451)|VARIABLE_SCOPE_BEGIN|[4]|listReservas|List<Reserva_Vuelo__c>|true|false
+12:21:06.0 (146030265)|VARIABLE_ASSIGNMENT|[4]|listReservas|[{"Contacto__c":"0031r000024iLqiAAE","Origen__c":"Madrid","Destino__c":"Roma","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","OwnerId":"0051r000007Oz5QAAS","Observaciones__c":"Nada","Case__c":"Turista","Modificado__c":false,"Name":"ReservaPrueba"}]|0x6f565fe9
+12:21:06.0 (146063943)|SYSTEM_MODE_ENTER|false
+12:21:06.0 (146071553)|HEAP_ALLOCATE|[6]|Bytes:5
+12:21:06.0 (146077954)|STATEMENT_EXECUTE|[4]
+12:21:06.0 (146154447)|STATEMENT_EXECUTE|[6]
+12:21:06.0 (146157106)|STATEMENT_EXECUTE|[9]
+12:21:06.0 (146171730)|HEAP_ALLOCATE|[9]|Bytes:4
+12:21:06.0 (146203020)|VARIABLE_SCOPE_BEGIN|[9]|listContactosIds|Set<String>|true|false
+12:21:06.0 (146226870)|VARIABLE_ASSIGNMENT|[9]|listContactosIds|[]|0x371c11c7
+12:21:06.0 (146363434)|HEAP_ALLOCATE|[10]|Bytes:5
+12:21:06.0 (146385520)|HEAP_ALLOCATE|[10]|Bytes:4
+12:21:06.0 (146393647)|VARIABLE_SCOPE_BEGIN|[10]|inReserva|Reserva_Vuelo__c|true|false
+12:21:06.0 (146523704)|VARIABLE_ASSIGNMENT|[10]|inReserva|{"Contacto__c":"0031r000024iLqiAAE","Origen__c":"Madrid","Destino__c":"Roma","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","OwnerId":"0051r000007Oz5QAAS","Observaciones__c":"Nada","Case__c":"Turista","Modificado__c":false,"Name":"ReservaPrueba"}|0x534766ce
+12:21:06.0 (146534283)|STATEMENT_EXECUTE|[10]
+12:21:06.0 (146536397)|STATEMENT_EXECUTE|[11]
+12:21:06.0 (146600179)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:21:06.0 (146618485)|HEAP_ALLOCATE|[10]|Bytes:5
+12:21:06.0 (146631225)|VARIABLE_ASSIGNMENT|[10]|inReserva|null|
+12:21:06.0 (146636455)|STATEMENT_EXECUTE|[23]
+12:21:06.0 (146676045)|HEAP_ALLOCATE|[23]|Bytes:4
+12:21:06.0 (146682609)|HEAP_ALLOCATE|[23]|Bytes:49
+12:21:06.0 (146695411)|HEAP_ALLOCATE|[23]|Bytes:4
+12:21:06.0 (146706493)|HEAP_ALLOCATE|[23]|Bytes:7
+12:21:06.0 (146739489)|HEAP_ALLOCATE|[23]|Bytes:8
+12:21:06.0 (146747114)|HEAP_ALLOCATE|[23]|Bytes:8
+12:21:06.0 (146961271)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT AccountId FROM Contact WHERE id = :tmpVar1
+12:21:06.0 (150737794)|SOQL_EXECUTE_END|[23]|Rows:1
+12:21:06.0 (150761786)|HEAP_ALLOCATE|[23]|Bytes:8
+12:21:06.0 (150776770)|HEAP_ALLOCATE|[23]|Bytes:29
+12:21:06.0 (150820013)|HEAP_ALLOCATE|[23]|Bytes:8
+12:21:06.0 (150855878)|HEAP_ALLOCATE|[23]|Bytes:8
+12:21:06.0 (150866535)|HEAP_ALLOCATE|[23]|Bytes:18
+12:21:06.0 (150876437)|VARIABLE_SCOPE_BEGIN|[23]|contactos|Map<String,Contact>|true|false
+12:21:06.0 (150903103)|VARIABLE_ASSIGNMENT|[23]|contactos|{"0031r000024iLqiAAE":{"Id":"0031r000024iLqiAAE"}}|0x6e6cf1ca
+12:21:06.0 (150944480)|HEAP_ALLOCATE|[26]|Bytes:5
+12:21:06.0 (150958320)|HEAP_ALLOCATE|[26]|Bytes:4
+12:21:06.0 (150965882)|VARIABLE_SCOPE_BEGIN|[26]|inReserva|Reserva_Vuelo__c|true|false
+12:21:06.0 (151080686)|VARIABLE_ASSIGNMENT|[26]|inReserva|{"Contacto__c":"0031r000024iLqiAAE","Origen__c":"Madrid","Destino__c":"Roma","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","OwnerId":"0051r000007Oz5QAAS","Observaciones__c":"Nada","Case__c":"Turista","Modificado__c":false,"Name":"ReservaPrueba"}|0x534766ce
+12:21:06.0 (151093264)|STATEMENT_EXECUTE|[26]
+12:21:06.0 (151095431)|STATEMENT_EXECUTE|[27]
+12:21:06.0 (151317336)|VARIABLE_ASSIGNMENT|[27]|this.Cuenta__c|null|0x534766ce
+12:21:06.0 (151343686)|HEAP_ALLOCATE|[26]|Bytes:5
+12:21:06.0 (151369868)|VARIABLE_ASSIGNMENT|[26]|inReserva|null|
+12:21:06.0 (151380558)|SYSTEM_MODE_EXIT|false
+12:21:06.0 (151393204)|METHOD_EXIT|[12]|01p1r000007Yidp|ReservaVueloMethods.RellenarCuenta(List<Reserva_Vuelo__c>)
+12:21:06.0 (151412915)|STATEMENT_EXECUTE|[14]
+12:21:06.151 (151422182)|CUMULATIVE_LIMIT_USAGE
+12:21:06.151 (151422182)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:21:06.151 (151422182)|CUMULATIVE_LIMIT_USAGE_END
+
+12:21:06.0 (152551861)|CODE_UNIT_FINISHED|ReservaVueloTrigger on Reserva_Vuelo trigger event BeforeInsert
+12:21:06.0 (155683006)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Reserva_Vuelo:new
+12:21:06.0 (155713535)|VALIDATION_RULE|03d1r0000006A1e|DiferentesCampos
+12:21:06.0 (155948133)|VALIDATION_FORMULA|TEXT(Origen__c)  =  TEXT(Destino__c)|Destino__c=Roma , Origen__c=Madrid
+12:21:06.0 (155963368)|VALIDATION_PASS
+12:21:06.0 (155966145)|VALIDATION_RULE|03d1r0000006A1Z|Fecha_de_salida
+12:21:06.0 (156051071)|VALIDATION_FORMULA|Fecha_Salida__c  <   NOW()|Fecha_Salida__c=2019-01-10 23:00:00
+12:21:06.0 (156058853)|VALIDATION_PASS
+12:21:06.0 (156110446)|CODE_UNIT_FINISHED|Validation:Reserva_Vuelo:new
+12:21:06.0 (184405332)|DML_END|[61]
+12:21:06.0 (184445327)|STATEMENT_EXECUTE|[64]
+12:21:06.0 (184550977)|HEAP_ALLOCATE|[64]|Bytes:63
+12:21:06.0 (184581551)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+12:21:06.0 (184588364)|STATEMENT_EXECUTE|[1]
+12:21:06.0 (184603115)|SYSTEM_METHOD_EXIT|[1]|Test
+12:21:06.0 (184629681)|METHOD_ENTRY|[64]||System.Test.startTest()
+12:21:06.0 (186471492)|METHOD_EXIT|[64]||System.Test.startTest()
+12:21:06.0 (186488030)|STATEMENT_EXECUTE|[66]
+12:21:06.0 (186495789)|HEAP_ALLOCATE|[66]|Bytes:95
+12:21:06.0 (186521752)|HEAP_ALLOCATE|[66]|Bytes:4
+12:21:06.0 (186786022)|SOQL_EXECUTE_BEGIN|[66]|Aggregations:0|SELECT Id, Name, Origen__c, Destino__c, Modificado__c FROM Reserva_Vuelo__c WHERE Id = :tmpVar1
+12:21:06.0 (199796660)|SOQL_EXECUTE_END|[66]|Rows:1
+12:21:06.0 (199846040)|HEAP_ALLOCATE|[66]|Bytes:8
+12:21:06.0 (199872658)|HEAP_ALLOCATE|[66]|Bytes:108
+12:21:06.0 (199918599)|HEAP_ALLOCATE|[66]|Bytes:8
+12:21:06.0 (199942424)|HEAP_ALLOCATE|[66]|Bytes:42
+12:21:06.0 (199965535)|HEAP_ALLOCATE|[66]|Bytes:24
+12:21:06.0 (199977214)|VARIABLE_SCOPE_BEGIN|[66]|oReservaUpdate|Reserva_Vuelo__c|true|false
+12:21:06.0 (200010260)|VARIABLE_ASSIGNMENT|[66]|oReservaUpdate|{"Id":"a001r00000oUFyRAAW","Name":"ReservaPrueba","Origen__c":"Madrid","Destino__c":"Roma","Modificado__c":false}|0x1a4ad13f
+12:21:06.0 (200023456)|STATEMENT_EXECUTE|[68]
+12:21:06.0 (200027440)|HEAP_ALLOCATE|[68]|Bytes:6
+12:21:06.0 (200086916)|VARIABLE_ASSIGNMENT|[68]|this.Destino__c|"Berlín"|0x1a4ad13f
+12:21:06.0 (200097165)|STATEMENT_EXECUTE|[70]
+12:21:06.0 (200154800)|HEAP_ALLOCATE|[70]|Bytes:8
+12:21:06.0 (200171323)|DML_BEGIN|[70]|Op:Update|Type:Reserva_Vuelo__c|Rows:1
+12:21:06.0 (200206855)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:21:06.0 (206422062)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000isRT|ReservaVueloTrigger on Reserva_Vuelo trigger event BeforeUpdate
+12:21:06.0 (206515774)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:21:06.0 (206581009)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:21:06.0 (206680931)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:21:06.0 (206695180)|VARIABLE_SCOPE_BEGIN|[1]|this|ReservaVueloTrigger|true|false
+12:21:06.0 (206740579)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x49d1b3e5
+12:21:06.0 (206783355)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:21:06.0 (206790950)|VARIABLE_SCOPE_BEGIN|[1]|this|ReservaVueloTrigger|true|false
+12:21:06.0 (206803839)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x49d1b3e5
+12:21:06.0 (206813117)|STATEMENT_EXECUTE|[1]
+12:21:06.0 (206815699)|STATEMENT_EXECUTE|[4]
+12:21:06.0 (207117984)|VARIABLE_ASSIGNMENT|[4]|this.listNew|[{"LastModifiedDate":"2018-04-09T10:21:07.000Z","Origen__c":"Madrid","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","N_Reserva__c":"RV-100008","Name":"ReservaPrueba","SystemModstamp":"2018-04-09T10:21:07.000Z","Contacto__c":"0031r000024iLqiAAE","Destino__c":"Berlín","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Observaciones__c":"Nada","CreatedDate":"2018-04-09T10:21:07.000Z","Case__c":"Turista","Modificado__c":false,"Id":"a001r00000oUFyRAAW","LastModifiedById":"0051r000007Oz5QAAS"}]|0x49d1b3e5
+12:21:06.0 (207143402)|STATEMENT_EXECUTE|[7]
+12:21:06.0 (207375628)|VARIABLE_ASSIGNMENT|[7]|this.mapOld|{"a001r00000oUFyRAAW":{"LastModifiedDate":"2018-04-09T10:21:07.000Z","Origen__c":"Madrid","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","N_Reserva__c":"RV-100008","Name":"ReservaPrueba","SystemModstamp":"2018-04-09T10:21:07.000Z","Contacto__c":"0031r000024iLqiAAE","Destino__c":"Roma","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Observaciones__c":"Nada","CreatedDate":"2018-04-09T10:21:07.000Z","Case__c":"Turista","Modificado__c":false,"Id":"a001r00000oUFyRAAW","LastModifiedById":"0051r000007Oz5QAAS"}}|0x49d1b3e5
+12:21:06.0 (207401046)|STATEMENT_EXECUTE|[10]
+12:21:06.0 (207407253)|STATEMENT_EXECUTE|[11]
+12:21:06.0 (207412613)|STATEMENT_EXECUTE|[14]
+12:21:06.0 (207415029)|STATEMENT_EXECUTE|[15]
+12:21:06.0 (207462424)|METHOD_ENTRY|[15]|01p1r000007Yidp|ReservaVueloMethods.Modificado(List<Reserva_Vuelo__c>, Map<Id,Reserva_Vuelo__c>)
+12:21:06.0 (207516567)|VARIABLE_SCOPE_BEGIN|[33]|listNew|List<Reserva_Vuelo__c>|true|false
+12:21:06.0 (207644322)|VARIABLE_ASSIGNMENT|[33]|listNew|[{"LastModifiedDate":"2018-04-09T10:21:07.000Z","Origen__c":"Madrid","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","N_Reserva__c":"RV-100008","Name":"ReservaPrueba","SystemModstamp":"2018-04-09T10:21:07.000Z","Contacto__c":"0031r000024iLqiAAE","Destino__c":"Berlín","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Observaciones__c":"Nada","CreatedDate":"2018-04-09T10:21:07.000Z","Case__c":"Turista","Modificado__c":false,"Id":"a001r00000oUFyRAAW","LastModifiedById":"0051r000007Oz5QAAS"}]|0x72212e0f
+12:21:06.0 (207664880)|VARIABLE_SCOPE_BEGIN|[33]|mapOld|Map<Id,Reserva_Vuelo__c>|true|false
+12:21:06.0 (207781353)|VARIABLE_ASSIGNMENT|[33]|mapOld|{"a001r00000oUFyRAAW":{"LastModifiedDate":"2018-04-09T10:21:07.000Z","Origen__c":"Madrid","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","N_Reserva__c":"RV-100008","Name":"ReservaPrueba","SystemModstamp":"2018-04-09T10:21:07.000Z","Contacto__c":"0031r000024iLqiAAE","Destino__c":"Roma","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Observaciones__c":"Nada","CreatedDate":"2018-04-09T10:21:07.000Z","Case__c":"Turista","Modificado__c":false,"Id":"a001r00000oUFyRAAW","LastModifiedById":"0051r000007Oz5QAAS"}}|0x563a9396
+12:21:06.0 (208210309)|SYSTEM_MODE_ENTER|false
+12:21:06.0 (208227519)|HEAP_ALLOCATE|[35]|Bytes:5
+12:21:06.0 (208239426)|STATEMENT_EXECUTE|[33]
+12:21:06.0 (208297898)|HEAP_ALLOCATE|[35]|Bytes:5
+12:21:06.0 (208323555)|HEAP_ALLOCATE|[35]|Bytes:4
+12:21:06.0 (208337655)|VARIABLE_SCOPE_BEGIN|[35]|inReservaVueloNew|Reserva_Vuelo__c|true|false
+12:21:06.0 (208488324)|VARIABLE_ASSIGNMENT|[35]|inReservaVueloNew|{"LastModifiedDate":"2018-04-09T10:21:07.000Z","Origen__c":"Madrid","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","N_Reserva__c":"RV-100008","Name":"ReservaPrueba","SystemModstamp":"2018-04-09T10:21:07.000Z","Contacto__c":"0031r000024iLqiAAE","Destino__c":"Berlín","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Observaciones__c":"Nada","CreatedDate":"2018-04-09T10:21:07.000Z","Case__c":"Turista","Modificado__c":false,"Id":"a001r00000oUFyRAAW","LastModifiedById":"0051r000007Oz5QAAS"}|0x12b05c2f
+12:21:06.0 (208506211)|STATEMENT_EXECUTE|[35]
+12:21:06.0 (208508603)|STATEMENT_EXECUTE|[37]
+12:21:06.0 (208576841)|VARIABLE_SCOPE_BEGIN|[37]|inReservaVueloOld|Reserva_Vuelo__c|true|false
+12:21:06.0 (208704947)|VARIABLE_ASSIGNMENT|[37]|inReservaVueloOld|{"LastModifiedDate":"2018-04-09T10:21:07.000Z","Origen__c":"Madrid","IsDeleted":false,"Fecha_Salida__c":"2019-01-10T23:00:00.000Z","N_Reserva__c":"RV-100008","Name":"ReservaPrueba","SystemModstamp":"2018-04-09T10:21:07.000Z","Contacto__c":"0031r000024iLqiAAE","Destino__c":"Roma","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Observaciones__c":"Nada","CreatedDate":"2018-04-09T10:21:07.000Z","Case__c":"Turista","Modificado__c":false,"Id":"a001r00000oUFyRAAW","LastModifiedById":"0051r000007Oz5QAAS"}|0x18bca2d4
+12:21:06.0 (208793430)|STATEMENT_EXECUTE|[39]
+12:21:06.0 (208797359)|STATEMENT_EXECUTE|[40]
+12:21:06.0 (208932035)|VARIABLE_ASSIGNMENT|[40]|this.Modificado__c|true|0x12b05c2f
+12:21:06.0 (208959443)|HEAP_ALLOCATE|[35]|Bytes:5
+12:21:06.0 (208980509)|VARIABLE_ASSIGNMENT|[35]|inReservaVueloNew|null|
+12:21:06.0 (208991678)|SYSTEM_MODE_EXIT|false
+12:21:06.0 (209005814)|METHOD_EXIT|[15]|01p1r000007Yidp|ReservaVueloMethods.Modificado(List<Reserva_Vuelo__c>, Map<Id,Reserva_Vuelo__c>)
+12:21:06.209 (209021129)|CUMULATIVE_LIMIT_USAGE
+12:21:06.209 (209021129)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:21:06.209 (209021129)|TESTING_LIMITS
+12:21:06.209 (209021129)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:21:06.209 (209021129)|CUMULATIVE_LIMIT_USAGE_END
+
+12:21:06.0 (210536848)|CODE_UNIT_FINISHED|ReservaVueloTrigger on Reserva_Vuelo trigger event BeforeUpdate
+12:21:06.0 (212278777)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Reserva_Vuelo:a001r00000oUFyR
+12:21:06.0 (212294182)|VALIDATION_RULE|03d1r0000006A1e|DiferentesCampos
+12:21:06.0 (212509853)|VALIDATION_FORMULA|TEXT(Origen__c)  =  TEXT(Destino__c)|Destino__c=Berlín , Origen__c=Madrid
+12:21:06.0 (212518784)|VALIDATION_PASS
+12:21:06.0 (212521397)|VALIDATION_RULE|03d1r0000006A1Z|Fecha_de_salida
+12:21:06.0 (212600301)|VALIDATION_FORMULA|Fecha_Salida__c  <   NOW()|Fecha_Salida__c=2019-01-10 23:00:00
+12:21:06.0 (212611173)|VALIDATION_PASS
+12:21:06.0 (212654809)|CODE_UNIT_FINISHED|Validation:Reserva_Vuelo:a001r00000oUFyR
+12:21:06.0 (221101100)|DML_END|[70]
+12:21:06.0 (221174533)|HEAP_ALLOCATE|[70]|Bytes:4
+12:21:06.0 (221218119)|VARIABLE_SCOPE_BEGIN|[70]|SB|Database.SaveResult|true|false
+12:21:06.0 (221255541)|VARIABLE_ASSIGNMENT|[70]|SB|{"success":true,"id":"a001r00000oUFyRAAW"}|0x21816807
+12:21:06.0 (221264186)|STATEMENT_EXECUTE|[72]
+12:21:06.0 (221288272)|METHOD_ENTRY|[72]||System.Test.stopTest()
+12:21:06.0 (222153724)|METHOD_EXIT|[72]||System.Test.stopTest()
+12:21:06.0 (222164386)|STATEMENT_EXECUTE|[74]
+12:21:06.0 (222180430)|HEAP_ALLOCATE|[74]|Bytes:4
+12:21:06.0 (222447909)|SOQL_EXECUTE_BEGIN|[74]|Aggregations:0|SELECT Id, Name, Origen__c, Destino__c, Modificado__c FROM Reserva_Vuelo__c WHERE Id = :tmpVar1
+12:21:06.0 (230983063)|SOQL_EXECUTE_END|[74]|Rows:1
+12:21:06.0 (231018745)|HEAP_ALLOCATE|[74]|Bytes:8
+12:21:06.0 (231040091)|HEAP_ALLOCATE|[74]|Bytes:110
+12:21:06.0 (231072526)|HEAP_ALLOCATE|[74]|Bytes:8
+12:21:06.0 (231099624)|HEAP_ALLOCATE|[74]|Bytes:24
+12:21:06.0 (231110150)|VARIABLE_SCOPE_BEGIN|[74]|oReservaCheck|Reserva_Vuelo__c|true|false
+12:21:06.0 (231142762)|VARIABLE_ASSIGNMENT|[74]|oReservaCheck|{"Id":"a001r00000oUFyRAAW","Name":"ReservaPrueba","Origen__c":"Madrid","Destino__c":"Berlín","Modificado__c":true}|0x1f9cdb91
+12:21:06.0 (231152281)|STATEMENT_EXECUTE|[76]
+12:21:06.231 (231232280)|CUMULATIVE_LIMIT_USAGE
+12:21:06.231 (231232280)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:21:06.231 (231232280)|TESTING_LIMITS
+12:21:06.231 (231232280)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:21:06.231 (231232280)|CUMULATIVE_LIMIT_USAGE_END
+
+12:21:06.0 (231278085)|CODE_UNIT_FINISHED|ReservaVueloTest.testModificar
+12:21:06.0 (232165888)|EXECUTION_FINISHED
+12:21:06.307 (307311674)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:21:06.307 (307333897)|EXECUTION_STARTED
+12:21:06.307 (307337859)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:21:06.307 (307348145)|DUPLICATE_DETECTION_BEGIN
+12:21:06.307 (307417296)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+12:21:06.307 (317509989)|DUPLICATE_DETECTION_END
+12:21:06.307 (317519953)|CODE_UNIT_FINISHED|DuplicateDetector
+12:21:06.307 (318342296)|EXECUTION_FINISHED

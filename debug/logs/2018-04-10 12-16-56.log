@@ -1,0 +1,57 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:16:55.0 (85012)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:16:55.0 (126237)|EXECUTION_STARTED
+12:16:55.0 (131502)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+12:16:55.0 (964530)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j4Bx|ContactTrigger on Contact trigger event BeforeUpdate
+12:16:55.0 (1014303)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:16:55.0 (1049802)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:16:55.0 (1479109)|HEAP_ALLOCATE|[72]|Bytes:3
+12:16:55.0 (1519444)|HEAP_ALLOCATE|[77]|Bytes:152
+12:16:55.0 (1535173)|HEAP_ALLOCATE|[342]|Bytes:408
+12:16:55.0 (1547897)|HEAP_ALLOCATE|[355]|Bytes:408
+12:16:55.0 (1559285)|HEAP_ALLOCATE|[467]|Bytes:48
+12:16:55.0 (1585732)|HEAP_ALLOCATE|[139]|Bytes:6
+12:16:55.0 (1704840)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:16:55.0 (1714702)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+12:16:55.0 (1789607)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x26d76d70
+12:16:55.0 (1847166)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:16:55.0 (1854804)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+12:16:55.0 (1868112)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x26d76d70
+12:16:55.0 (1878061)|STATEMENT_EXECUTE|[1]
+12:16:55.0 (1880824)|STATEMENT_EXECUTE|[3]
+12:16:55.0 (1910850)|HEAP_ALLOCATE|[50]|Bytes:5
+12:16:55.0 (1938959)|HEAP_ALLOCATE|[56]|Bytes:5
+12:16:55.0 (1947693)|HEAP_ALLOCATE|[64]|Bytes:7
+12:16:55.0 (2505114)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"LastModifiedDate":"2018-04-09T14:07:26.000Z","Languages__c":"English","AccountId":"0011r00001mvH7mAAE","Email":"barr_tim@grandhotels (4 more) ...","DoNotCall":false,"HasOptedOutOfFax":false,"Salutation":"Mr.","MobilePhone":"(312) 596-1230","Department":"Finance","Level__c":"Secondary","CreatedById":"0051r000007Oz5QAAS","OwnerId":"0051r000007Oz5QAAS","Phone":"(312) 596-1000","IsDeleted":false,"IsEmailBounced":false,"FirstName":"Tim","HasOptedOutOfEmail":false,"Nif__c":"11111111b","Title":"SVP, Administration  (11 more) ...","Birthdate":"1951-10-28T00:00:00.000Z","SystemModstamp":"2018-04-09T14:07:26.000Z","CleanStatus":"Pending","LeadSource":"External Referral","CreatedDate":"2018-03-21T12:29:14.000Z","Id":"0031r000024PVVcAAO","LastName":"Barr","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","MailingStreet":"2335 N. Michigan Ave (39 more) ..."}]|0x26d76d70
+12:16:55.0 (2536633)|STATEMENT_EXECUTE|[5]
+12:16:55.0 (2547915)|STATEMENT_EXECUTE|[6]
+12:16:55.2 (2556201)|CUMULATIVE_LIMIT_USAGE
+12:16:55.2 (2556201)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:16:55.2 (2556201)|CUMULATIVE_LIMIT_USAGE_END
+
+12:16:55.0 (3420518)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeUpdate
+12:16:55.0 (4938211)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:16:55.0 (4954240)|DUPLICATE_DETECTION_BEGIN
+12:16:55.0 (5042800)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:UPDATE
+12:16:55.0 (5079036)|DUPLICATE_DETECTION_END
+12:16:55.0 (5083314)|CODE_UNIT_FINISHED|DuplicateDetector
+12:16:55.0 (26218185)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:16:55.0 (26241501)|DUPLICATE_DETECTION_BEGIN
+12:16:55.0 (26314952)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X89|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:UPDATE
+12:16:55.0 (40711626)|DUPLICATE_DETECTION_END
+12:16:55.0 (40723870)|CODE_UNIT_FINISHED|DuplicateDetector
+12:16:55.0 (90737422)|CODE_UNIT_FINISHED|TRIGGERS
+12:16:55.0 (90756133)|EXECUTION_FINISHED

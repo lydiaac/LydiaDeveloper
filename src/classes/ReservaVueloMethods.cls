@@ -1,47 +1,48 @@
 public with sharing class ReservaVueloMethods {
 
 
-	public static List<Reserva_Vuelo__c> RellenarCuenta (List<Reserva_Vuelo__c> reservas) {
+	public static void RellenarCuenta (List<Reserva_Vuelo__c> listReservas) {
 
-		if(!reservas.isEmpty()){
+		if(!listReservas.isEmpty()){
 
-		//PARA UN CASO!
-		//Reserva_Vuelo__c reserva = Trigger.new;
-		//for (Reserva_Vuelo__c rv : Trigger.new) {
-		//	String contactoId = rv.Contacto__c;
-		//	Contact c = [SELECT Name, AccountId FROM Contact WHERE accountId =: contactoId ];
-		//	rv.Cuenta__c = c.AccountId;
-		//}
+			//Obtenemos los id de los contactos de las reservas
+			Set<String> listContactosIds = new Set<String> ();
+			for (Reserva_Vuelo__c inReserva : listReservas) {
+				listContactosIds.add(inReserva.Contacto__c);
+			}
+			
+			//Hacemos un mapa (ContactoID, Contacto)
 
-		//2.De la tabla reservas, sacamos la columna de ContactoID(String) en una lista tipo Set
-		Set<String> contactosIds = new Set<String> ();
-		for (Reserva_Vuelo__c rv : reservas) {
-			contactosIds.add(rv.Contacto__c);
+			/*
+			Map<String, Contact> contactos = new Map<String, Contact>();
+			for(Contact c : [SELECT AccountId FROM Contact WHERE id IN : contactosIds]){
+				contactos.put(c.id, c);
+			}
+			*/
+
+			Map<String, Contact> contactos = new Map<String, Contact>([SELECT AccountId FROM Contact WHERE id IN : listContactosIds]);
+
+	  		//Recorremos otra vez las reservas y le damos valor a las cuentas obteniendo los valores del Map
+			for (Reserva_Vuelo__c inReserva : listReservas) {
+				inReserva.Cuenta__c = contactos.get(inReserva.Contacto__c).AccountId;
+			}
 		}
-
-		//3.Hacemos un mapa (ContactoID, Contacto)
-		Map<String, Contact> contactos = new Map<String, Contact>();
-		for(String c : contactosIds){
-			contactos.put(c, [SELECT AccountId FROM Contact WHERE id=:c LIMIT 1]);
-		}
-
-  		//4.Recorremos otra vez las reservas y le damos valor a las cuentas obteniendo los valores del Map
-		for (Reserva_Vuelo__c rv : reservas) {
-			//Contact c = contactos.get(rv.Contacto__c);
-			//rv.Cuenta__c = c.AccountId;
-			rv.Cuenta__c = contactos.get(rv.Contacto__c).AccountId;
-		}
-		}
-
-		return reservas;
 		
 	}
 
-	public static Reserva_Vuelo__c Modificado (Reserva_Vuelo__c oldRv, Reserva_Vuelo__c rv) {
-		if((oldRv.Origen__c != rv.Origen__c) || (oldRv.Destino__c != rv.Destino__c)){
-			rv.Modificado__c = True;
+	public static void Modificado (List<Reserva_Vuelo__c> listNew, Map<Id, Reserva_Vuelo__c> mapOld) {
+		
+		for(Reserva_Vuelo__c inReservaVueloNew : listNew) {
+
+			//System.debug('ReservaVueloMethods.Modificado :: inReservaVueloNew ' +inReservaVueloNew);
+
+			Reserva_Vuelo__c inReservaVueloOld = mapOld.get(inReservaVueloNew.Id);
+
+			if((inReservaVueloOld.Origen__c != inReservaVueloNew.Origen__c) || (inReservaVueloOld.Destino__c != inReservaVueloNew.Destino__c)) {
+				inReservaVueloNew.Modificado__c = True;
+			}
 		}
-		return rv;
+
 	}
 
 }
