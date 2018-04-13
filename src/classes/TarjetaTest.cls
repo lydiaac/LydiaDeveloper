@@ -24,11 +24,11 @@ private class TarjetaTest {
 
 		//SE INSERTA LA OPORTUNIDAD, la buscamos y comprobamos
 
-		Opportunity oOpportunity = [SELECT Name, CloseDate, StageName, AccountId FROM Opportunity WHERE Name = :oContact.Name];
+		List<Opportunity> listOpportunity = [SELECT Id, Name, CloseDate, StageName, AccountId FROM Opportunity WHERE Name = :oContact.LastName];
 
-		System.assertEquals(oOpportunity.CloseDate,Date.newInstance((Integer)oTarjeta.A_o_caducidad__c, 01, (Integer)oTarjeta.Mes_de_caducidad__c));
-		System.assertEquals(oOpportunity.StageName,'No iniciado');
-		System.assertEquals(oOpportunity.AccountId,oContact.AccountId);
+		System.assertEquals(listOpportunity.get(0).CloseDate,Date.newInstance((Integer)oTarjeta.A_o_caducidad__c, 01, (Integer)oTarjeta.Mes_de_caducidad__c));
+		System.assertEquals(listOpportunity.get(0).StageName,'No iniciado');
+		System.assertEquals(listOpportunity.get(0).AccountId,oContact.AccountId);
 
 	}
 }

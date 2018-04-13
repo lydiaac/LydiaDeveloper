@@ -1,0 +1,112 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+10:55:06.0 (311268)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:55:06.0 (345605)|EXECUTION_STARTED
+10:55:06.0 (350161)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j6Yv|TaskTrigger on Task trigger event AfterUpdate
+10:55:06.0 (386427)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+10:55:06.0 (505789)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+10:55:06.0 (883524)|HEAP_ALLOCATE|[72]|Bytes:3
+10:55:06.0 (923810)|HEAP_ALLOCATE|[77]|Bytes:152
+10:55:06.0 (942192)|HEAP_ALLOCATE|[342]|Bytes:408
+10:55:06.0 (954536)|HEAP_ALLOCATE|[355]|Bytes:408
+10:55:06.0 (965593)|HEAP_ALLOCATE|[467]|Bytes:48
+10:55:06.0 (991361)|HEAP_ALLOCATE|[139]|Bytes:6
+10:55:06.0 (1117556)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:55:06.0 (1128278)|VARIABLE_SCOPE_BEGIN|[1]|this|TaskTrigger|true|false
+10:55:06.0 (1192406)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x237b6cea
+10:55:06.0 (1248249)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:55:06.0 (1256387)|VARIABLE_SCOPE_BEGIN|[1]|this|TaskTrigger|true|false
+10:55:06.0 (1269994)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x237b6cea
+10:55:06.0 (1279910)|STATEMENT_EXECUTE|[1]
+10:55:06.0 (1282496)|STATEMENT_EXECUTE|[3]
+10:55:06.0 (1312390)|HEAP_ALLOCATE|[50]|Bytes:5
+10:55:06.0 (1333278)|HEAP_ALLOCATE|[56]|Bytes:5
+10:55:06.0 (1341454)|HEAP_ALLOCATE|[64]|Bytes:7
+10:55:06.0 (2395495)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"Status":"Completed","LastModifiedDate":"2018-04-12T08:55:06.000Z","IsDeleted":false,"AccountId":"0011r00001mvH7mAAE","WhatId":"0011r00001mvH7mAAE","ActivityDate":"2040-04-13T00:00:00.000Z","Priority":"Normal","IsHighPriority":false,"IsClosed":true,"IsRecurrence":false,"Subject":"task2","SystemModstamp":"2018-04-12T08:55:06.000Z","IsArchived":false,"CreatedById":"0051r000007Oz5QAAS","TaskSubtype":"Task","OwnerId":"0051r000007Oz5QAAS","CreatedDate":"2018-04-12T08:46:32.000Z","Id":"00T1r00004C3nHzEAJ","DB_Activity_Type__c":"Other","IsReminderSet":false,"LastModifiedById":"0051r000007Oz5QAAS"}]|0x237b6cea
+10:55:06.0 (2415863)|STATEMENT_EXECUTE|[5]
+10:55:06.0 (2698718)|VARIABLE_ASSIGNMENT|[5]|this.mapOld|{"00T1r00004C3nHzEAJ":{"Status":"In Progress","LastModifiedDate":"2018-04-12T08:46:32.000Z","IsDeleted":false,"AccountId":"0011r00001mvH7mAAE","WhatId":"0011r00001mvH7mAAE","ActivityDate":"2040-04-13T00:00:00.000Z","Priority":"Normal","IsHighPriority":false,"IsClosed":false,"IsRecurrence":false,"Subject":"task2","SystemModstamp":"2018-04-12T08:46:32.000Z","IsArchived":false,"CreatedById":"0051r000007Oz5QAAS","TaskSubtype":"Task","OwnerId":"0051r000007Oz5QAAS","CreatedDate":"2018-04-12T08:46:32.000Z","Id":"00T1r00004C3nHzEAJ","DB_Activity_Type__c":"Other","IsReminderSet":false,"LastModifiedById":"0051r000007Oz5QAAS"}}|0x237b6cea
+10:55:06.0 (2723221)|STATEMENT_EXECUTE|[8]
+10:55:06.0 (2730209)|STATEMENT_EXECUTE|[9]
+10:55:06.0 (2731933)|STATEMENT_EXECUTE|[10]
+10:55:06.0 (4563007)|HEAP_ALLOCATE|[10]|Bytes:1
+10:55:06.0 (4586179)|METHOD_ENTRY|[1]|01p1r000009oS6S|TaskMethods.TaskMethods()
+10:55:06.0 (4593024)|STATEMENT_EXECUTE|[1]
+10:55:06.0 (4598269)|STATEMENT_EXECUTE|[1]
+10:55:06.0 (4980794)|SYSTEM_MODE_ENTER|false
+10:55:06.0 (4994219)|HEAP_ALLOCATE|[10]|Bytes:5
+10:55:06.0 (5004395)|SYSTEM_MODE_EXIT|false
+10:55:06.0 (5016153)|METHOD_EXIT|[1]|TaskMethods
+10:55:06.0 (5043176)|METHOD_ENTRY|[10]|01p1r000009oS6S|TaskMethods.CerrarTarea(List<Task>)
+10:55:06.0 (5071952)|VARIABLE_SCOPE_BEGIN|[3]|listTask|List<Task>|true|false
+10:55:06.0 (5332827)|VARIABLE_ASSIGNMENT|[3]|listTask|[{"Status":"Completed","LastModifiedDate":"2018-04-12T08:55:06.000Z","IsDeleted":false,"AccountId":"0011r00001mvH7mAAE","WhatId":"0011r00001mvH7mAAE","ActivityDate":"2040-04-13T00:00:00.000Z","Priority":"Normal","IsHighPriority":false,"IsClosed":true,"IsRecurrence":false,"Subject":"task2","SystemModstamp":"2018-04-12T08:55:06.000Z","IsArchived":false,"CreatedById":"0051r000007Oz5QAAS","TaskSubtype":"Task","OwnerId":"0051r000007Oz5QAAS","CreatedDate":"2018-04-12T08:46:32.000Z","Id":"00T1r00004C3nHzEAJ","DB_Activity_Type__c":"Other","IsReminderSet":false,"LastModifiedById":"0051r000007Oz5QAAS"}]|0x29fe5036
+10:55:06.0 (5357407)|SYSTEM_MODE_ENTER|false
+10:55:06.0 (5364936)|HEAP_ALLOCATE|[5]|Bytes:5
+10:55:06.0 (5371547)|STATEMENT_EXECUTE|[3]
+10:55:06.0 (5445554)|STATEMENT_EXECUTE|[5]
+10:55:06.0 (5447837)|STATEMENT_EXECUTE|[7]
+10:55:06.0 (5491010)|HEAP_ALLOCATE|[7]|Bytes:4
+10:55:06.0 (5530601)|VARIABLE_SCOPE_BEGIN|[7]|listAccountUpdate|List<Account>|true|false
+10:55:06.0 (5541956)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:55:06.0 (5549957)|VARIABLE_ASSIGNMENT|[7]|listAccountUpdate|[]|0x4f8a55a
+10:55:06.0 (5555607)|STATEMENT_EXECUTE|[10]
+10:55:06.0 (5567670)|HEAP_ALLOCATE|[10]|Bytes:4
+10:55:06.0 (5592187)|VARIABLE_SCOPE_BEGIN|[10]|listAccountIds|Set<String>|true|false
+10:55:06.0 (5616499)|VARIABLE_ASSIGNMENT|[10]|listAccountIds|[]|0x33bb487e
+10:55:06.0 (5750725)|HEAP_ALLOCATE|[11]|Bytes:5
+10:55:06.0 (5771706)|VARIABLE_SCOPE_BEGIN|[11]|inTask|Task|true|false
+10:55:06.0 (5964842)|VARIABLE_ASSIGNMENT|[11]|inTask|{"Status":"Completed","LastModifiedDate":"2018-04-12T08:55:06.000Z","IsDeleted":false,"AccountId":"0011r00001mvH7mAAE","WhatId":"0011r00001mvH7mAAE","ActivityDate":"2040-04-13T00:00:00.000Z","Priority":"Normal","IsHighPriority":false,"IsClosed":true,"IsRecurrence":false,"Subject":"task2","SystemModstamp":"2018-04-12T08:55:06.000Z","IsArchived":false,"CreatedById":"0051r000007Oz5QAAS","TaskSubtype":"Task","OwnerId":"0051r000007Oz5QAAS","CreatedDate":"2018-04-12T08:46:32.000Z","Id":"00T1r00004C3nHzEAJ","DB_Activity_Type__c":"Other","IsReminderSet":false,"LastModifiedById":"0051r000007Oz5QAAS"}|0x5ce05028
+10:55:06.0 (5979857)|STATEMENT_EXECUTE|[11]
+10:55:06.0 (5982321)|STATEMENT_EXECUTE|[12]
+10:55:06.0 (6050820)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:55:06.0 (6071220)|HEAP_ALLOCATE|[11]|Bytes:5
+10:55:06.0 (6084839)|VARIABLE_ASSIGNMENT|[11]|inTask|null|
+10:55:06.0 (6092379)|STATEMENT_EXECUTE|[15]
+10:55:06.0 (6131298)|HEAP_ALLOCATE|[15]|Bytes:4
+10:55:06.0 (6138227)|HEAP_ALLOCATE|[15]|Bytes:81
+10:55:06.0 (6147350)|HEAP_ALLOCATE|[15]|Bytes:4
+10:55:06.0 (6157027)|HEAP_ALLOCATE|[15]|Bytes:7
+10:55:06.0 (6191707)|HEAP_ALLOCATE|[15]|Bytes:8
+10:55:06.0 (6200521)|HEAP_ALLOCATE|[15]|Bytes:8
+10:55:06.0 (7199179)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT Id, Fecha_ltima_actividad_m_s_reciente__c FROM Account WHERE id = :tmpVar1
+10:55:06.0 (9415652)|SOQL_EXECUTE_END|[15]|Rows:1
+10:55:06.0 (9434566)|HEAP_ALLOCATE|[15]|Bytes:8
+10:55:06.0 (9450061)|HEAP_ALLOCATE|[15]|Bytes:74
+10:55:06.0 (9476241)|HEAP_ALLOCATE|[15]|Bytes:8
+10:55:06.0 (9510499)|HEAP_ALLOCATE|[15]|Bytes:12
+10:55:06.0 (9520542)|HEAP_ALLOCATE|[15]|Bytes:18
+10:55:06.0 (9531581)|VARIABLE_SCOPE_BEGIN|[15]|mapAccount|Map<String,Account>|true|false
+10:55:06.0 (9566256)|VARIABLE_ASSIGNMENT|[15]|mapAccount|{"0011r00001mvH7mAAE":{"Id":"0011r00001mvH7mAAE","Fecha_ltima_activida (17 more) ...":"2025-04-16T00:00:00.000Z"}}|0x11a70b8f
+10:55:06.0 (9610964)|HEAP_ALLOCATE|[18]|Bytes:5
+10:55:06.0 (9629502)|VARIABLE_SCOPE_BEGIN|[18]|inTask|Task|true|false
+10:55:06.0 (9776667)|VARIABLE_ASSIGNMENT|[18]|inTask|{"Status":"Completed","LastModifiedDate":"2018-04-12T08:55:06.000Z","IsDeleted":false,"AccountId":"0011r00001mvH7mAAE","WhatId":"0011r00001mvH7mAAE","ActivityDate":"2040-04-13T00:00:00.000Z","Priority":"Normal","IsHighPriority":false,"IsClosed":true,"IsRecurrence":false,"Subject":"task2","SystemModstamp":"2018-04-12T08:55:06.000Z","IsArchived":false,"CreatedById":"0051r000007Oz5QAAS","TaskSubtype":"Task","OwnerId":"0051r000007Oz5QAAS","CreatedDate":"2018-04-12T08:46:32.000Z","Id":"00T1r00004C3nHzEAJ","DB_Activity_Type__c":"Other","IsReminderSet":false,"LastModifiedById":"0051r000007Oz5QAAS"}|0x5ce05028
+10:55:06.0 (9792294)|STATEMENT_EXECUTE|[18]
+10:55:06.0 (9863864)|EXCEPTION_THROWN|[21]|System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Account.ParentId
+10:55:06.0 (9902040)|HEAP_ALLOCATE|[21]|Bytes:93
+10:55:06.0 (9916599)|SYSTEM_MODE_EXIT|false
+10:55:06.0 (9927724)|METHOD_EXIT|[10]|01p1r000009oS6S|TaskMethods.CerrarTarea(List<Task>)
+10:55:06.0 (10084460)|FATAL_ERROR|System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Account.ParentId
+
+Class.TaskMethods.CerrarTarea: line 21, column 1
+Trigger.TaskTrigger: line 10, column 1
+10:55:06.0 (10097876)|FATAL_ERROR|System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Account.ParentId
+
+Class.TaskMethods.CerrarTarea: line 21, column 1
+Trigger.TaskTrigger: line 10, column 1
+10:55:06.10 (10137513)|CUMULATIVE_LIMIT_USAGE
+10:55:06.10 (10137513)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:55:06.10 (10137513)|CUMULATIVE_LIMIT_USAGE_END
+
+10:55:06.0 (11272951)|CODE_UNIT_FINISHED|TaskTrigger on Task trigger event AfterUpdate
+10:55:06.0 (12113631)|EXECUTION_FINISHED
