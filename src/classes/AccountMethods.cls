@@ -9,18 +9,18 @@ public with sharing class AccountMethods {
 			Map<String, Account> mapAccountParent = new Map<String, Account>();
 
 			for(Account inAccount : listAccount){
-				if((inAccount.ParentId == null) && (inAccount.Fecha_ltima_actividad_m_s_reciente__c!=mapOld.get(inAccount.Id).Fecha_ltima_actividad_m_s_reciente__c)){
+				if((inAccount.ParentId == null) && (inAccount.Fecha_ultima_actividad_mas_reciente__c!=mapOld.get(inAccount.Id).Fecha_ultima_actividad_mas_reciente__c)){
 					listAccountIds.add(inAccount.Id);
 					mapAccountParent.put(inAccount.Id, inAccount);
 				}
 			}
 
 			//BUSCO LAS ACCOUNT HIJAS
-			List<Account> listAccountChild = [SELECT Id, Fecha_ltima_actividad_m_s_reciente__c, ParentId FROM Account WHERE ParentId IN :listAccountIds];
+			List<Account> listAccountChild = [SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE ParentId IN :listAccountIds];
 
 			//RECORRO LA LISTA DE HIJAS Y LAS MODIFICO
 			for(Account inAccount : listAccountChild){
-				inAccount.Fecha_ltima_actividad_m_s_reciente__c = mapAccountParent.get(inAccount.ParentId).Fecha_ltima_actividad_m_s_reciente__c;
+				inAccount.Fecha_ultima_actividad_mas_reciente__c = mapAccountParent.get(inAccount.ParentId).Fecha_ultima_actividad_mas_reciente__c;
 			}
 
 			update listAccountChild;

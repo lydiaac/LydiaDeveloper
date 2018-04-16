@@ -7,7 +7,7 @@ trigger TaskTrigger on Task (after update) {
 
 	if (trigger.isAfter) {
 		if (trigger.isUpdate) {
-			TaskMethods.CerrarTarea(listNew);
+			TaskMethods.CerrarTarea(listNew, mapOld);
 		}
 	}
 

@@ -1,6 +1,65 @@
 public with sharing class TaskMethods {
 
-	public static void CerrarTarea (List<Task> listTask) {
+	public static void CerrarTarea (List<Task> listTask, Map<Id,Task> mapTaskOld) {
+		
+		if(!listTask.isEmpty()){
+
+			//Lista de los ids de las tareas cambiadas a 'Completed'
+
+			Set<String> setTaskIds = new Set<String> ();
+
+			for (Task inTask : listTask) {
+				if(mapTaskOld.get(inTask.Id).Status != 'Completed' && inTask.Status == 'Completed'){
+					setTaskIds.add(inTask.Id);
+				}
+			}
+
+			//Lista de tareas con las cuentas padre
+
+			List<Task> listTaskType = new List<Task>([
+			SELECT WhatId, ParentId,
+			  TYPEOF What
+			  	WHEN Opportunity THEN Account.ParentId, 
+			    WHEN Account THEN ParentId
+			  END
+			FROM Task WHERE Id IN : setTaskIds]);
+
+			System.debug('TaskMethods.CerrarTarea.listTaskType :: ' + listTaskType);
+
+			for(Task inTask : listTaskType){
+				//if (inTask.WhatId instanceof Opportunity) {
+				//	System.debug('Opportunity');
+	                //User userOwner = merch.Owner;
+	                //processUser(userOwner);
+	            //} else if (inTask.WhatId instanceof Account) {
+	            //	System.debug('Account');
+	                //Group groupOwner = merch.Owner;
+	                //processGroup(groupOwner);
+	            //}
+	        }
+
+
+			//for(Task inTask : listTaskType){
+				//SI Status = Completado, ParentId de Account != null, fecha ultima actividad de account < activitydate de tarea
+				//System.debug('TaskMethods.CerrarTarea.listTaskType :: ' + inTask.ParentId);
+
+
+				//if((mapAccount.get(inTask.WhatId).ParentId!=null) && (mapAccount.get(inTask.WhatId).Fecha_ultima_actividad_mas_reciente__c < inTask.ActivityDate)){
+					//actualizar fecha
+				//	mapAccount.get(inTask.WhatId).Fecha_ultima_actividad_mas_reciente__c = inTask.ActivityDate;
+				//	listAccountUpdate.add(mapAccount.get(inTask.WhatId));
+				//}
+				
+			//}
+			//update listAccountUpdate;
+
+		}
+
+	}
+
+
+
+	public static void CerrarTarea2 (List<Task> listTask) {
 		
 		if(!listTask.isEmpty()){
 
@@ -18,6 +77,9 @@ public with sharing class TaskMethods {
 
 
 			for (Task inTask : listTask) {
+
+				System.debug(inTask);
+
 				if(inTask.Status == 'Completed'){
 					if(mapAllAccounts.get(inTask.WhatId)  != null){
 						//Si el whatid de task coincide con algun id de la lista de cuentas
@@ -28,10 +90,10 @@ public with sharing class TaskMethods {
 				}
 			}
 
-
+			System.debug(listOpportunityIds);
 
 			/////////////////////////
-			Map<String, Account> mapAccountPrueba = new Map<String, Account>([SELECT Id, Fecha_ltima_actividad_m_s_reciente__c, ParentId FROM Account WHERE id IN : listAccountIds AND Id IN (SELECT AccountId FROM Opportunity WHERE id IN : listOpportunityIds)]);
+			Map<String, Account> mapAccountPrueba = new Map<String, Account>([SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE id IN : listAccountIds AND Id IN (SELECT AccountId FROM Opportunity WHERE id IN : listOpportunityIds)]);
 			/////////////////////////
 			//https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_relationships_query_using.htm
 
@@ -49,14 +111,17 @@ public with sharing class TaskMethods {
 
 
 			//ACTUALIZAR CUENTAS
-			Map<String, Account> mapAccount = new Map<String, Account>([SELECT Id, Fecha_ltima_actividad_m_s_reciente__c, ParentId FROM Account WHERE id IN : listAccountIds]);
+			Map<String, Account> mapAccount = new Map<String, Account>([SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE id IN : listAccountIds]);
 
-			//RECORRER TAREAS
+			System.debug('TaskMethods.CerrarTarea.mapAccount :: ' + mapAccount);
+
+			//RECORRER TAREAS ****
 			for(Task inTask : listTask){
+				System.debug('TaskMethods.CerrarTarea.inTask :: ' + inTask);
 				//SI Status = Completado, ParentId de Account != null, fecha ultima actividad de account < activitydate de tarea
-				if((mapAccount.get(inTask.WhatId).ParentId!=null) && (mapAccount.get(inTask.WhatId).Fecha_ltima_actividad_m_s_reciente__c < inTask.ActivityDate)){
+				if((mapAccount.get(inTask.WhatId).ParentId!=null) && (mapAccount.get(inTask.WhatId).Fecha_ultima_actividad_mas_reciente__c < inTask.ActivityDate)){
 					//actualizar fecha
-					mapAccount.get(inTask.WhatId).Fecha_ltima_actividad_m_s_reciente__c = inTask.ActivityDate;
+					mapAccount.get(inTask.WhatId).Fecha_ultima_actividad_mas_reciente__c = inTask.ActivityDate;
 					listAccountUpdate.add(mapAccount.get(inTask.WhatId));
 				}
 				
