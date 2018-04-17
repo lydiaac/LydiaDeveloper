@@ -4,8 +4,10 @@ public with sharing class TaskMethods {
 		
 		if(!listTask.isEmpty()){
 
-			//Lista de los ids de las tareas cambiadas a 'Completed'
+			//Lista de cuentas a actualizar
+			List<Account> listAcUpdate = new List<Account>();
 
+			//Lista de los ids de las tareas cambiadas a 'Completed'
 			Set<String> setTaskIds = new Set<String> ();
 
 			for (Task inTask : listTask) {
@@ -14,45 +16,36 @@ public with sharing class TaskMethods {
 				}
 			}
 
-			//Lista de tareas con las cuentas padre
-
+			//Lista de tareas
 			List<Task> listTaskType = new List<Task>([
-			SELECT WhatId, ParentId,
-			  TYPEOF What
-			  	WHEN Opportunity THEN Account.ParentId, 
-			    WHEN Account THEN ParentId
-			  END
+			SELECT WhatId, ActivityDate,
+			  	TYPEOF What
+			  	WHEN Account THEN Id, Parent.Fecha_ultima_actividad_mas_reciente__c
+			  	WHEN Opportunity THEN Account.Parent.Fecha_ultima_actividad_mas_reciente__c
+			  	END
 			FROM Task WHERE Id IN : setTaskIds]);
 
 			System.debug('TaskMethods.CerrarTarea.listTaskType :: ' + listTaskType);
 
+			//Dependiendo si recibe account u oportunity...
 			for(Task inTask : listTaskType){
-				//if (inTask.WhatId instanceof Opportunity) {
-				//	System.debug('Opportunity');
-	                //User userOwner = merch.Owner;
-	                //processUser(userOwner);
-	            //} else if (inTask.WhatId instanceof Account) {
-	            //	System.debug('Account');
-	                //Group groupOwner = merch.Owner;
-	                //processGroup(groupOwner);
-	            //}
+				if (inTask.What instanceof Opportunity) {
+					System.debug('Opportunity');
+					if(inTask.ActivityDate > ((Opportunity)inTask.What).Account.Parent.Fecha_ultima_actividad_mas_reciente__c){
+						((Opportunity)inTask.What).Account.Parent.Fecha_ultima_actividad_mas_reciente__c = inTask.ActivityDate;
+						listAcUpdate.add(((Opportunity)inTask.What).Account.Parent);
+					}
+	            } else if (inTask.What instanceof Account) {
+	            	System.debug('Account');
+	            	//System.debug('veamos.. ->'+((Account)inTask.What).Parent.Fecha_ultima_actividad_mas_reciente__c);
+					if(inTask.ActivityDate > ((Account)inTask.What).Parent.Fecha_ultima_actividad_mas_reciente__c){
+						((Account)inTask.What).Parent.Fecha_ultima_actividad_mas_reciente__c = inTask.ActivityDate;
+						listAcUpdate.add(((Account)inTask.What).Parent);
+					}
+	            }
 	        }
-
-
-			//for(Task inTask : listTaskType){
-				//SI Status = Completado, ParentId de Account != null, fecha ultima actividad de account < activitydate de tarea
-				//System.debug('TaskMethods.CerrarTarea.listTaskType :: ' + inTask.ParentId);
-
-
-				//if((mapAccount.get(inTask.WhatId).ParentId!=null) && (mapAccount.get(inTask.WhatId).Fecha_ultima_actividad_mas_reciente__c < inTask.ActivityDate)){
-					//actualizar fecha
-				//	mapAccount.get(inTask.WhatId).Fecha_ultima_actividad_mas_reciente__c = inTask.ActivityDate;
-				//	listAccountUpdate.add(mapAccount.get(inTask.WhatId));
-				//}
-				
-			//}
-			//update listAccountUpdate;
-
+	        System.debug('listAcUpdate ' + listAcUpdate);
+	        update listAcUpdate;
 		}
 
 	}

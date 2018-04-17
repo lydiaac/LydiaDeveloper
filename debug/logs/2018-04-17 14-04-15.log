@@ -1,0 +1,205 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+14:04:14.0 (91368)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+14:04:14.0 (248293)|EXECUTION_STARTED
+14:04:14.0 (252208)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+14:04:14.0 (1293243)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j8Jg|AccountTrigger on Account trigger event BeforeUpdate
+14:04:14.0 (1324530)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:04:14.0 (1356943)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:04:14.0 (1723169)|HEAP_ALLOCATE|[72]|Bytes:3
+14:04:14.0 (1765898)|HEAP_ALLOCATE|[77]|Bytes:152
+14:04:14.0 (1779452)|HEAP_ALLOCATE|[342]|Bytes:408
+14:04:14.0 (1791254)|HEAP_ALLOCATE|[355]|Bytes:408
+14:04:14.0 (1801907)|HEAP_ALLOCATE|[467]|Bytes:48
+14:04:14.0 (1849979)|HEAP_ALLOCATE|[139]|Bytes:6
+14:04:14.0 (1963986)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:04:14.0 (1988398)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+14:04:14.0 (2137443)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3854992
+14:04:14.0 (2207151)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:04:14.0 (2223753)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+14:04:14.0 (2237986)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3854992
+14:04:14.0 (2248440)|STATEMENT_EXECUTE|[1]
+14:04:14.0 (2250795)|STATEMENT_EXECUTE|[3]
+14:04:14.0 (2281088)|HEAP_ALLOCATE|[50]|Bytes:5
+14:04:14.0 (2303236)|HEAP_ALLOCATE|[56]|Bytes:5
+14:04:14.0 (2312725)|HEAP_ALLOCATE|[64]|Bytes:7
+14:04:14.0 (2984710)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"LastModifiedDate":"2018-04-12T11:54:05.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-14T02:27:56.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}]|0x3854992
+14:04:14.0 (3015163)|STATEMENT_EXECUTE|[5]
+14:04:14.0 (3417282)|VARIABLE_ASSIGNMENT|[5]|this.mapOld|{"0011r00001mvH7mAAE":{"LastModifiedDate":"2018-04-12T11:54:05.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Sic":"2268","SystemModstamp":"2018-04-14T02:27:56.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}}|0x3854992
+14:04:14.0 (3451168)|STATEMENT_EXECUTE|[7]
+14:04:14.0 (3456635)|STATEMENT_EXECUTE|[8]
+14:04:14.0 (3458506)|STATEMENT_EXECUTE|[9]
+14:04:14.0 (7303415)|HEAP_ALLOCATE|[9]|Bytes:1
+14:04:14.0 (7344289)|METHOD_ENTRY|[1]|01p1r000009p8Bf|AccountMethods.AccountMethods()
+14:04:14.0 (7353037)|STATEMENT_EXECUTE|[1]
+14:04:14.0 (7358860)|STATEMENT_EXECUTE|[1]
+14:04:14.0 (7731027)|SYSTEM_MODE_ENTER|false
+14:04:14.0 (7745654)|HEAP_ALLOCATE|[9]|Bytes:5
+14:04:14.0 (7753289)|SYSTEM_MODE_EXIT|false
+14:04:14.0 (7777083)|METHOD_EXIT|[1]|AccountMethods
+14:04:14.0 (7822220)|METHOD_ENTRY|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+14:04:14.0 (7857831)|VARIABLE_SCOPE_BEGIN|[3]|listAccount|List<Account>|true|false
+14:04:14.0 (8175215)|VARIABLE_ASSIGNMENT|[3]|listAccount|[{"LastModifiedDate":"2018-04-12T11:54:05.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-14T02:27:56.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}]|0x1cb7339d
+14:04:14.0 (8204581)|VARIABLE_SCOPE_BEGIN|[3]|mapOld|Map<Id,Account>|true|false
+14:04:14.0 (8479399)|VARIABLE_ASSIGNMENT|[3]|mapOld|{"0011r00001mvH7mAAE":{"LastModifiedDate":"2018-04-12T11:54:05.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Sic":"2268","SystemModstamp":"2018-04-14T02:27:56.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}}|0x76c7bb47
+14:04:14.0 (8516032)|SYSTEM_MODE_ENTER|false
+14:04:14.0 (8524482)|HEAP_ALLOCATE|[5]|Bytes:5
+14:04:14.0 (8530109)|STATEMENT_EXECUTE|[3]
+14:04:14.0 (8645098)|STATEMENT_EXECUTE|[5]
+14:04:14.0 (8648126)|STATEMENT_EXECUTE|[8]
+14:04:14.0 (8662270)|HEAP_ALLOCATE|[8]|Bytes:4
+14:04:14.0 (8728393)|VARIABLE_SCOPE_BEGIN|[8]|listAccountIds|List<String>|true|false
+14:04:14.0 (8754359)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:04:14.0 (8765546)|VARIABLE_ASSIGNMENT|[8]|listAccountIds|[]|0x4952893e
+14:04:14.0 (8772430)|STATEMENT_EXECUTE|[9]
+14:04:14.0 (8805269)|HEAP_ALLOCATE|[9]|Bytes:4
+14:04:14.0 (8830178)|VARIABLE_SCOPE_BEGIN|[9]|mapAccountParent|Map<String,Account>|true|false
+14:04:14.0 (8845092)|VARIABLE_ASSIGNMENT|[9]|mapAccountParent|{}|0x6cdc6052
+14:04:14.0 (8975025)|HEAP_ALLOCATE|[11]|Bytes:5
+14:04:14.0 (8999979)|HEAP_ALLOCATE|[11]|Bytes:4
+14:04:14.0 (9008118)|VARIABLE_SCOPE_BEGIN|[11]|inAccount|Account|true|false
+14:04:14.0 (9375177)|VARIABLE_ASSIGNMENT|[11]|inAccount|{"LastModifiedDate":"2018-04-12T11:54:05.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-14T02:27:56.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}|0x73cb0f10
+14:04:14.0 (9403362)|STATEMENT_EXECUTE|[11]
+14:04:14.0 (9490825)|STATEMENT_EXECUTE|[12]
+14:04:14.0 (9493566)|STATEMENT_EXECUTE|[13]
+14:04:14.0 (9532392)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:04:14.0 (9542841)|STATEMENT_EXECUTE|[14]
+14:04:14.0 (9572962)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+14:04:14.0 (9589826)|HEAP_ALLOCATE|[11]|Bytes:5
+14:04:14.0 (9603534)|VARIABLE_ASSIGNMENT|[11]|inAccount|null|
+14:04:14.0 (9608615)|STATEMENT_EXECUTE|[19]
+14:04:14.0 (9611894)|HEAP_ALLOCATE|[19]|Bytes:99
+14:04:14.0 (9625277)|HEAP_ALLOCATE|[19]|Bytes:4
+14:04:14.0 (9633864)|HEAP_ALLOCATE|[19]|Bytes:7
+14:04:14.0 (9839128)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE ParentId IN :tmpVar1
+14:04:14.0 (22108328)|SOQL_EXECUTE_END|[19]|Rows:1
+14:04:14.0 (22167129)|HEAP_ALLOCATE|[19]|Bytes:8
+14:04:14.0 (22189457)|HEAP_ALLOCATE|[19]|Bytes:105
+14:04:14.0 (22242177)|HEAP_ALLOCATE|[19]|Bytes:8
+14:04:14.0 (22258839)|VARIABLE_SCOPE_BEGIN|[19]|listAccountChild|List<Account>|true|false
+14:04:14.0 (22300215)|VARIABLE_ASSIGNMENT|[19]|listAccountChild|[{"Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","ParentId":"0011r00001mvH7mAAE"}]|0x5f81ee1d
+14:04:14.0 (22354649)|HEAP_ALLOCATE|[22]|Bytes:5
+14:04:14.0 (22368318)|HEAP_ALLOCATE|[22]|Bytes:16
+14:04:14.0 (22378512)|VARIABLE_SCOPE_BEGIN|[22]|inAccount|Account|true|false
+14:04:14.0 (22397396)|VARIABLE_ASSIGNMENT|[22]|inAccount|{"Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","ParentId":"0011r00001mvH7mAAE"}|0x5cdb9bab
+14:04:14.0 (22407363)|STATEMENT_EXECUTE|[22]
+14:04:14.0 (22409662)|STATEMENT_EXECUTE|[23]
+14:04:14.0 (22545376)|VARIABLE_ASSIGNMENT|[23]|this.Fecha_ultima_actividad_mas_reciente__c|"2018-04-17T00:00:00.000Z"|0x5cdb9bab
+14:04:14.0 (22563948)|HEAP_ALLOCATE|[22]|Bytes:5
+14:04:14.0 (22577090)|VARIABLE_ASSIGNMENT|[22]|inAccount|null|
+14:04:14.0 (22583221)|STATEMENT_EXECUTE|[26]
+14:04:14.0 (22626325)|DML_BEGIN|[26]|Op:Update|Type:Account|Rows:1
+14:04:14.0 (22655283)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:04:14.0 (28683500)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j8Jg|AccountTrigger on Account trigger event BeforeUpdate
+14:04:14.0 (28715447)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:04:14.0 (28737687)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:04:14.0 (28781775)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:04:14.0 (28791929)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+14:04:14.0 (28819262)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x26e61e16
+14:04:14.0 (28852414)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+14:04:14.0 (28858384)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+14:04:14.0 (28869205)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x26e61e16
+14:04:14.0 (28877521)|STATEMENT_EXECUTE|[1]
+14:04:14.0 (28879651)|STATEMENT_EXECUTE|[3]
+14:04:14.0 (29377320)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-17T11:45:55.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","SystemModstamp":"2018-04-17T11:45:55.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-01T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"}]|0x26e61e16
+14:04:14.0 (29395561)|STATEMENT_EXECUTE|[5]
+14:04:14.0 (29756088)|VARIABLE_ASSIGNMENT|[5]|this.mapOld|{"0011r00001nnRDqAAM":{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-17T11:45:55.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","SystemModstamp":"2018-04-17T11:45:55.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-01T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"}}|0x26e61e16
+14:04:14.0 (29777552)|STATEMENT_EXECUTE|[7]
+14:04:14.0 (29781606)|STATEMENT_EXECUTE|[8]
+14:04:14.0 (29783850)|STATEMENT_EXECUTE|[9]
+14:04:14.0 (29798747)|METHOD_ENTRY|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+14:04:14.0 (29808358)|VARIABLE_SCOPE_BEGIN|[3]|listAccount|List<Account>|true|false
+14:04:14.0 (30450864)|VARIABLE_ASSIGNMENT|[3]|listAccount|[{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-17T11:45:55.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","SystemModstamp":"2018-04-17T11:45:55.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-01T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"}]|0x3d28efa8
+14:04:14.0 (30478263)|VARIABLE_SCOPE_BEGIN|[3]|mapOld|Map<Id,Account>|true|false
+14:04:14.0 (31237940)|VARIABLE_ASSIGNMENT|[3]|mapOld|{"0011r00001nnRDqAAM":{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-17T11:45:55.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","SystemModstamp":"2018-04-17T11:45:55.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-01T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"}}|0x53aac025
+14:04:14.0 (31284582)|HEAP_ALLOCATE|[5]|Bytes:5
+14:04:14.0 (31293861)|STATEMENT_EXECUTE|[3]
+14:04:14.0 (31315593)|STATEMENT_EXECUTE|[5]
+14:04:14.0 (31318433)|STATEMENT_EXECUTE|[8]
+14:04:14.0 (31334143)|HEAP_ALLOCATE|[8]|Bytes:4
+14:04:14.0 (31358797)|VARIABLE_SCOPE_BEGIN|[8]|listAccountIds|List<String>|true|false
+14:04:14.0 (31395792)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:04:14.0 (31409542)|VARIABLE_ASSIGNMENT|[8]|listAccountIds|[]|0x5ef96834
+14:04:14.0 (31419383)|STATEMENT_EXECUTE|[9]
+14:04:14.0 (31440410)|HEAP_ALLOCATE|[9]|Bytes:4
+14:04:14.0 (31451987)|VARIABLE_SCOPE_BEGIN|[9]|mapAccountParent|Map<String,Account>|true|false
+14:04:14.0 (31472117)|VARIABLE_ASSIGNMENT|[9]|mapAccountParent|{}|0x4879cb53
+14:04:14.0 (31498927)|HEAP_ALLOCATE|[11]|Bytes:5
+14:04:14.0 (31513572)|HEAP_ALLOCATE|[11]|Bytes:4
+14:04:14.0 (31521771)|VARIABLE_SCOPE_BEGIN|[11]|inAccount|Account|true|false
+14:04:14.0 (31847841)|VARIABLE_ASSIGNMENT|[11]|inAccount|{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-17T11:45:55.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2018-04-17T00:00:00.000Z","SystemModstamp":"2018-04-17T11:45:55.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-01T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"}|0x3256385b
+14:04:14.0 (31864102)|STATEMENT_EXECUTE|[11]
+14:04:14.0 (31873573)|STATEMENT_EXECUTE|[12]
+14:04:14.0 (31885659)|HEAP_ALLOCATE|[11]|Bytes:5
+14:04:14.0 (31899319)|VARIABLE_ASSIGNMENT|[11]|inAccount|null|
+14:04:14.0 (31905976)|STATEMENT_EXECUTE|[19]
+14:04:14.0 (31917443)|HEAP_ALLOCATE|[19]|Bytes:4
+14:04:14.0 (32149337)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE ParentId IN :tmpVar1
+14:04:14.0 (33426697)|SOQL_EXECUTE_END|[19]|Rows:0
+14:04:14.0 (33448270)|HEAP_ALLOCATE|[19]|Bytes:4
+14:04:14.0 (33458889)|HEAP_ALLOCATE|[19]|Bytes:0
+14:04:14.0 (33484857)|HEAP_ALLOCATE|[19]|Bytes:4
+14:04:14.0 (33495258)|VARIABLE_SCOPE_BEGIN|[19]|listAccountChild|List<Account>|true|false
+14:04:14.0 (33509398)|VARIABLE_ASSIGNMENT|[19]|listAccountChild|[]|0x17cb3d41
+14:04:14.0 (33535890)|HEAP_ALLOCATE|[22]|Bytes:5
+14:04:14.0 (33549656)|VARIABLE_ASSIGNMENT|[22]|inAccount|null|
+14:04:14.0 (33568985)|STATEMENT_EXECUTE|[22]
+14:04:14.0 (33572831)|STATEMENT_EXECUTE|[26]
+14:04:14.0 (33638078)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:04:14.0 (33655975)|METHOD_EXIT|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+14:04:14.33 (33668270)|CUMULATIVE_LIMIT_USAGE
+14:04:14.33 (33668270)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:04:14.33 (33668270)|CUMULATIVE_LIMIT_USAGE_END
+
+14:04:14.0 (34505477)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event BeforeUpdate
+14:04:14.0 (35671092)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+14:04:14.0 (35718677)|DUPLICATE_DETECTION_BEGIN
+14:04:14.0 (35791542)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+14:04:14.0 (35876823)|DUPLICATE_DETECTION_END
+14:04:14.0 (35881586)|CODE_UNIT_FINISHED|DuplicateDetector
+14:04:14.0 (51252655)|DML_END|[26]
+14:04:14.0 (51292022)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:04:14.0 (51313581)|SYSTEM_MODE_EXIT|false
+14:04:14.0 (51334595)|METHOD_EXIT|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+14:04:14.51 (51352265)|CUMULATIVE_LIMIT_USAGE
+14:04:14.51 (51352265)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:04:14.51 (51352265)|CUMULATIVE_LIMIT_USAGE_END
+
+14:04:14.0 (52521532)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event BeforeUpdate
+14:04:14.0 (53967461)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+14:04:14.0 (53981977)|DUPLICATE_DETECTION_BEGIN
+14:04:14.0 (54024054)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+14:04:14.0 (54060854)|DUPLICATE_DETECTION_END
+14:04:14.0 (54065248)|CODE_UNIT_FINISHED|DuplicateDetector
+14:04:14.0 (70344837)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+14:04:14.0 (70369326)|DUPLICATE_DETECTION_BEGIN
+14:04:14.0 (70442280)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+14:04:14.0 (81622605)|DUPLICATE_DETECTION_END
+14:04:14.0 (81632694)|CODE_UNIT_FINISHED|DuplicateDetector
+14:04:14.0 (172537869)|CODE_UNIT_FINISHED|TRIGGERS
+14:04:14.0 (172552964)|EXECUTION_FINISHED

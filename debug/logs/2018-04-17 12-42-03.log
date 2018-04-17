@@ -1,0 +1,109 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:42:02.0 (396799)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+12:42:02.0 (433361)|EXECUTION_STARTED
+12:42:02.0 (437471)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+12:42:02.0 (1212099)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j8Jb|EventTrigger on Event trigger event BeforeInsert
+12:42:02.0 (1247551)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:42:02.0 (1587158)|HEAP_ALLOCATE|[72]|Bytes:3
+12:42:02.0 (1632669)|HEAP_ALLOCATE|[77]|Bytes:152
+12:42:02.0 (1643921)|HEAP_ALLOCATE|[342]|Bytes:408
+12:42:02.0 (1655268)|HEAP_ALLOCATE|[355]|Bytes:408
+12:42:02.0 (1666132)|HEAP_ALLOCATE|[467]|Bytes:48
+12:42:02.0 (1687680)|HEAP_ALLOCATE|[139]|Bytes:6
+12:42:02.0 (1766002)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:42:02.0 (1798157)|VARIABLE_SCOPE_BEGIN|[1]|this|EventTrigger|true|false
+12:42:02.0 (1871768)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x56d9f9bc
+12:42:02.0 (1925573)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:42:02.0 (1990407)|VARIABLE_SCOPE_BEGIN|[1]|this|EventTrigger|true|false
+12:42:02.0 (2005600)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x56d9f9bc
+12:42:02.0 (2020804)|STATEMENT_EXECUTE|[1]
+12:42:02.0 (2023754)|STATEMENT_EXECUTE|[3]
+12:42:02.0 (2050250)|HEAP_ALLOCATE|[50]|Bytes:5
+12:42:02.0 (2075589)|HEAP_ALLOCATE|[56]|Bytes:5
+12:42:02.0 (2084720)|HEAP_ALLOCATE|[64]|Bytes:7
+12:42:02.0 (3005873)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"IsDeleted":false,"WhatId":"0061r00000vkPBBAA2","ActivityDate":"2018-04-17T00:00:00.000Z","IsRecurrence":false,"GroupEventType":"0","Subject":"pruebaaaaaa","IsArchived":false,"StartDateTime":"2018-04-17T00:00:00.000Z","DurationInMinutes":1440,"OwnerId":"0051r000007Oz5QAAS","IsAllDayEvent":true,"EndDateTime":"2018-04-17T00:00:00.000Z","IsChild":false,"DB_Activity_Type__c":"Other","IsReminderSet":false,"IsPrivate":false,"ShowAs":"Busy","IsGroupEvent":false}]|0x56d9f9bc
+12:42:02.0 (3037876)|STATEMENT_EXECUTE|[5]
+12:42:02.0 (3045129)|STATEMENT_EXECUTE|[6]
+12:42:02.0 (3047174)|STATEMENT_EXECUTE|[7]
+12:42:02.0 (7731528)|HEAP_ALLOCATE|[7]|Bytes:1
+12:42:02.0 (7762666)|METHOD_ENTRY|[1]|01p1r000009p7V5|EventMethods.EventMethods()
+12:42:02.0 (7777520)|STATEMENT_EXECUTE|[1]
+12:42:02.0 (7786348)|STATEMENT_EXECUTE|[1]
+12:42:02.0 (8168073)|SYSTEM_MODE_ENTER|false
+12:42:02.0 (8182357)|HEAP_ALLOCATE|[7]|Bytes:5
+12:42:02.0 (8190567)|SYSTEM_MODE_EXIT|false
+12:42:02.0 (8202393)|METHOD_EXIT|[1]|EventMethods
+12:42:02.0 (8313306)|METHOD_ENTRY|[7]|01p1r000009p7V5|EventMethods.CrearEvento(List<Event>)
+12:42:02.0 (8369576)|VARIABLE_SCOPE_BEGIN|[3]|listEvent|List<Event>|true|false
+12:42:02.0 (8627532)|VARIABLE_ASSIGNMENT|[3]|listEvent|[{"IsDeleted":false,"WhatId":"0061r00000vkPBBAA2","ActivityDate":"2018-04-17T00:00:00.000Z","IsRecurrence":false,"GroupEventType":"0","Subject":"pruebaaaaaa","IsArchived":false,"StartDateTime":"2018-04-17T00:00:00.000Z","DurationInMinutes":1440,"OwnerId":"0051r000007Oz5QAAS","IsAllDayEvent":true,"EndDateTime":"2018-04-17T00:00:00.000Z","IsChild":false,"DB_Activity_Type__c":"Other","IsReminderSet":false,"IsPrivate":false,"ShowAs":"Busy","IsGroupEvent":false}]|0x7da7309f
+12:42:02.0 (8651982)|SYSTEM_MODE_ENTER|false
+12:42:02.0 (8658782)|HEAP_ALLOCATE|[5]|Bytes:5
+12:42:02.0 (8666703)|STATEMENT_EXECUTE|[3]
+12:42:02.0 (8789056)|STATEMENT_EXECUTE|[5]
+12:42:02.0 (8792408)|STATEMENT_EXECUTE|[7]
+12:42:02.0 (8833213)|HEAP_ALLOCATE|[7]|Bytes:4
+12:42:02.0 (8874093)|VARIABLE_SCOPE_BEGIN|[7]|listAccountInsert|List<Account>|true|false
+12:42:02.0 (8885893)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:42:02.0 (8893786)|VARIABLE_ASSIGNMENT|[7]|listAccountInsert|[]|0x54da6fd0
+12:42:02.0 (8900872)|STATEMENT_EXECUTE|[10]
+12:42:02.0 (8912057)|HEAP_ALLOCATE|[10]|Bytes:4
+12:42:02.0 (8937635)|VARIABLE_SCOPE_BEGIN|[10]|listAccountIds|Set<String>|true|false
+12:42:02.0 (8960294)|VARIABLE_ASSIGNMENT|[10]|listAccountIds|[]|0xeeaf4aa
+12:42:02.0 (9081934)|HEAP_ALLOCATE|[11]|Bytes:5
+12:42:02.0 (9122626)|HEAP_ALLOCATE|[11]|Bytes:4
+12:42:02.0 (9131616)|VARIABLE_SCOPE_BEGIN|[11]|inEvent|Event|true|false
+12:42:02.0 (9352662)|VARIABLE_ASSIGNMENT|[11]|inEvent|{"IsDeleted":false,"WhatId":"0061r00000vkPBBAA2","ActivityDate":"2018-04-17T00:00:00.000Z","IsRecurrence":false,"GroupEventType":"0","Subject":"pruebaaaaaa","IsArchived":false,"StartDateTime":"2018-04-17T00:00:00.000Z","DurationInMinutes":1440,"OwnerId":"0051r000007Oz5QAAS","IsAllDayEvent":true,"EndDateTime":"2018-04-17T00:00:00.000Z","IsChild":false,"DB_Activity_Type__c":"Other","IsReminderSet":false,"IsPrivate":false,"ShowAs":"Busy","IsGroupEvent":false}|0x50e38d56
+12:42:02.0 (9396872)|STATEMENT_EXECUTE|[11]
+12:42:02.0 (9399804)|STATEMENT_EXECUTE|[12]
+12:42:02.0 (9468055)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:42:02.0 (9499200)|HEAP_ALLOCATE|[11]|Bytes:5
+12:42:02.0 (9512954)|VARIABLE_ASSIGNMENT|[11]|inEvent|null|
+12:42:02.0 (9520062)|STATEMENT_EXECUTE|[15]
+12:42:02.0 (9554319)|HEAP_ALLOCATE|[15]|Bytes:4
+12:42:02.0 (9561552)|HEAP_ALLOCATE|[15]|Bytes:92
+12:42:02.0 (9569908)|HEAP_ALLOCATE|[15]|Bytes:4
+12:42:02.0 (9579804)|HEAP_ALLOCATE|[15]|Bytes:7
+12:42:02.0 (9613268)|HEAP_ALLOCATE|[15]|Bytes:8
+12:42:02.0 (9621158)|HEAP_ALLOCATE|[15]|Bytes:8
+12:42:02.0 (9834954)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE id = :tmpVar1
+12:42:02.0 (21805393)|SOQL_EXECUTE_END|[15]|Rows:0
+12:42:02.0 (21850013)|HEAP_ALLOCATE|[15]|Bytes:4
+12:42:02.0 (21866634)|HEAP_ALLOCATE|[15]|Bytes:0
+12:42:02.0 (21900224)|HEAP_ALLOCATE|[15]|Bytes:4
+12:42:02.0 (21941506)|VARIABLE_SCOPE_BEGIN|[15]|mapAccount|Map<String,Account>|true|false
+12:42:02.0 (21981777)|VARIABLE_ASSIGNMENT|[15]|mapAccount|{}|0x9e43735
+12:42:02.0 (22038926)|HEAP_ALLOCATE|[18]|Bytes:5
+12:42:02.0 (22057779)|HEAP_ALLOCATE|[18]|Bytes:4
+12:42:02.0 (22066324)|VARIABLE_SCOPE_BEGIN|[18]|inEvent|Event|true|false
+12:42:02.0 (22364956)|VARIABLE_ASSIGNMENT|[18]|inEvent|{"IsDeleted":false,"WhatId":"0061r00000vkPBBAA2","ActivityDate":"2018-04-17T00:00:00.000Z","IsRecurrence":false,"GroupEventType":"0","Subject":"pruebaaaaaa","IsArchived":false,"StartDateTime":"2018-04-17T00:00:00.000Z","DurationInMinutes":1440,"OwnerId":"0051r000007Oz5QAAS","IsAllDayEvent":true,"EndDateTime":"2018-04-17T00:00:00.000Z","IsChild":false,"DB_Activity_Type__c":"Other","IsReminderSet":false,"IsPrivate":false,"ShowAs":"Busy","IsGroupEvent":false}|0x50e38d56
+12:42:02.0 (22402121)|STATEMENT_EXECUTE|[18]
+12:42:02.0 (22514643)|EXCEPTION_THROWN|[20]|System.NullPointerException: Attempt to de-reference a null object
+12:42:02.0 (22665851)|HEAP_ALLOCATE|[20]|Bytes:41
+12:42:02.0 (22681352)|SYSTEM_MODE_EXIT|false
+12:42:02.0 (22719815)|METHOD_EXIT|[7]|01p1r000009p7V5|EventMethods.CrearEvento(List<Event>)
+12:42:02.0 (22810177)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.EventMethods.CrearEvento: line 20, column 1
+Trigger.EventTrigger: line 7, column 1
+12:42:02.0 (22823964)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.EventMethods.CrearEvento: line 20, column 1
+Trigger.EventTrigger: line 7, column 1
+12:42:02.22 (22863687)|CUMULATIVE_LIMIT_USAGE
+12:42:02.22 (22863687)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:42:02.22 (22863687)|CUMULATIVE_LIMIT_USAGE_END
+
+12:42:02.0 (24538890)|CODE_UNIT_FINISHED|EventTrigger on Event trigger event BeforeInsert
