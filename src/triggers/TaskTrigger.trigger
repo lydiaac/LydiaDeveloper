@@ -4,7 +4,6 @@ trigger TaskTrigger on Task (after update) {
 
 	Map<Id, Task> mapOld = Trigger.oldMap;
 
-
 	if (trigger.isAfter) {
 		if (trigger.isUpdate) {
 			TaskMethods.CerrarTarea(listNew, mapOld);

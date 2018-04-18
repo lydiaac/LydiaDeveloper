@@ -1,0 +1,195 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+09:37:37.0 (371110)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:37:37.0 (414039)|EXECUTION_STARTED
+09:37:37.0 (419780)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000009rRfz|AccountProcessorTest.TestAccountProcessorTest
+09:37:37.0 (1106015)|HEAP_ALLOCATE|[72]|Bytes:3
+09:37:37.0 (1182194)|HEAP_ALLOCATE|[77]|Bytes:152
+09:37:37.0 (1203033)|HEAP_ALLOCATE|[342]|Bytes:408
+09:37:37.0 (1221139)|HEAP_ALLOCATE|[355]|Bytes:408
+09:37:37.0 (1241867)|HEAP_ALLOCATE|[467]|Bytes:48
+09:37:37.0 (1301469)|HEAP_ALLOCATE|[139]|Bytes:6
+09:37:37.0 (1320635)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:45
+09:37:37.0 (1355156)|METHOD_ENTRY|[2]|01p1r000009rRfz|AccountProcessorTest.AccountProcessorTest()
+09:37:37.0 (1366938)|STATEMENT_EXECUTE|[2]
+09:37:37.0 (1374541)|STATEMENT_EXECUTE|[2]
+09:37:37.0 (1390830)|METHOD_EXIT|[2]|AccountProcessorTest
+09:37:37.0 (1432744)|HEAP_ALLOCATE|[50]|Bytes:5
+09:37:37.0 (1472447)|HEAP_ALLOCATE|[56]|Bytes:5
+09:37:37.0 (1482119)|HEAP_ALLOCATE|[64]|Bytes:7
+09:37:37.0 (1525877)|STATEMENT_EXECUTE|[3]
+09:37:37.0 (1529410)|STATEMENT_EXECUTE|[4]
+09:37:37.0 (1587259)|HEAP_ALLOCATE|[4]|Bytes:4
+09:37:37.0 (1695004)|VARIABLE_SCOPE_BEGIN|[4]|a|Account|true|false
+09:37:37.0 (1726658)|VARIABLE_ASSIGNMENT|[4]|a|{}|0x45e5e3f7
+09:37:37.0 (1734132)|STATEMENT_EXECUTE|[5]
+09:37:37.0 (1737755)|HEAP_ALLOCATE|[5]|Bytes:12
+09:37:37.0 (3209193)|VARIABLE_ASSIGNMENT|[5]|this.Name|"Test Account"|0x45e5e3f7
+09:37:37.0 (3220401)|STATEMENT_EXECUTE|[6]
+09:37:37.0 (3255895)|HEAP_ALLOCATE|[6]|Bytes:8
+09:37:37.0 (3265150)|DML_BEGIN|[6]|Op:Insert|Type:Account|Rows:1
+09:37:37.0 (3298494)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:37:37.0 (12523479)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+09:37:37.0 (12557897)|DUPLICATE_DETECTION_BEGIN
+09:37:37.0 (13152458)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+09:37:37.0 (32644193)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+09:37:37.0 (32675678)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+09:37:37.0 (32834279)|DUPLICATE_DETECTION_END
+09:37:37.0 (32843231)|CODE_UNIT_FINISHED|DuplicateDetector
+09:37:37.0 (57637923)|DML_END|[6]
+09:37:37.0 (57667393)|STATEMENT_EXECUTE|[7]
+09:37:37.0 (57679644)|HEAP_ALLOCATE|[7]|Bytes:11
+09:37:37.0 (57842386)|HEAP_ALLOCATE|[7]|Bytes:18
+09:37:37.0 (57882226)|HEAP_ALLOCATE|[7]|Bytes:29
+09:37:37.0 (57909498)|USER_DEBUG|[7]|DEBUG|account a :0011r00001nohXIAAY
+09:37:37.0 (57919337)|STATEMENT_EXECUTE|[9]
+09:37:37.0 (57976028)|HEAP_ALLOCATE|[9]|Bytes:4
+09:37:37.0 (58088094)|VARIABLE_SCOPE_BEGIN|[9]|cont|Contact|true|false
+09:37:37.0 (58115700)|VARIABLE_ASSIGNMENT|[9]|cont|{}|0x4388fd07
+09:37:37.0 (58123204)|STATEMENT_EXECUTE|[10]
+09:37:37.0 (58127060)|HEAP_ALLOCATE|[10]|Bytes:5
+09:37:37.0 (59488394)|VARIABLE_ASSIGNMENT|[10]|this.FirstName|"Ankit"|0x4388fd07
+09:37:37.0 (59499293)|STATEMENT_EXECUTE|[11]
+09:37:37.0 (59504400)|HEAP_ALLOCATE|[11]|Bytes:5
+09:37:37.0 (59527853)|VARIABLE_ASSIGNMENT|[11]|this.LastName|"Avula"|0x4388fd07
+09:37:37.0 (59534700)|STATEMENT_EXECUTE|[12]
+09:37:37.0 (59571570)|VARIABLE_ASSIGNMENT|[12]|this.AccountId|"0011r00001nohXIAAY"|0x4388fd07
+09:37:37.0 (59578833)|STATEMENT_EXECUTE|[13]
+09:37:37.0 (59599402)|HEAP_ALLOCATE|[13]|Bytes:8
+09:37:37.0 (59606218)|DML_BEGIN|[13]|Op:Insert|Type:Contact|Rows:1
+09:37:37.0 (59641850)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:37:37.0 (66703121)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j4Bx|ContactTrigger on Contact trigger event BeforeInsert
+09:37:37.0 (66750837)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:37:37.0 (66812297)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:37:37.0 (66823713)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:37:37.0 (66862545)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2cc461b6
+09:37:37.0 (66931568)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:37:37.0 (66941492)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:37:37.0 (66956068)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2cc461b6
+09:37:37.0 (66965287)|STATEMENT_EXECUTE|[1]
+09:37:37.0 (66967932)|STATEMENT_EXECUTE|[3]
+09:37:37.0 (67517460)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"IsDeleted":false,"AccountId":"0011r00001nohXIAAY","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Ankit","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Avula"}]|0x2cc461b6
+09:37:37.0 (67546437)|STATEMENT_EXECUTE|[5]
+09:37:37.0 (67554493)|STATEMENT_EXECUTE|[6]
+09:37:37.0 (67556325)|STATEMENT_EXECUTE|[7]
+09:37:37.0 (68643175)|HEAP_ALLOCATE|[7]|Bytes:1
+09:37:37.0 (68685640)|METHOD_ENTRY|[1]|01p1r000008aKc5|ContactMethods.ContactMethods()
+09:37:37.0 (68695325)|STATEMENT_EXECUTE|[1]
+09:37:37.0 (68701166)|STATEMENT_EXECUTE|[1]
+09:37:37.0 (69117360)|SYSTEM_MODE_ENTER|false
+09:37:37.0 (69145655)|HEAP_ALLOCATE|[7]|Bytes:5
+09:37:37.0 (69156663)|SYSTEM_MODE_EXIT|false
+09:37:37.0 (69167814)|METHOD_EXIT|[1]|ContactMethods
+09:37:37.0 (69196271)|METHOD_ENTRY|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:37:37.0 (69231939)|VARIABLE_SCOPE_BEGIN|[3]|listNew|List<Contact>|true|false
+09:37:37.0 (69479700)|VARIABLE_ASSIGNMENT|[3]|listNew|[{"IsDeleted":false,"AccountId":"0011r00001nohXIAAY","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Ankit","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Avula"}]|0x2b70d66e
+09:37:37.0 (69515667)|SYSTEM_MODE_ENTER|false
+09:37:37.0 (69525229)|HEAP_ALLOCATE|[5]|Bytes:5
+09:37:37.0 (69531691)|STATEMENT_EXECUTE|[3]
+09:37:37.0 (69638940)|STATEMENT_EXECUTE|[5]
+09:37:37.0 (69793738)|HEAP_ALLOCATE|[7]|Bytes:5
+09:37:37.0 (69827944)|HEAP_ALLOCATE|[7]|Bytes:4
+09:37:37.0 (69838377)|VARIABLE_SCOPE_BEGIN|[7]|inContact|Contact|true|false
+09:37:37.0 (70094303)|VARIABLE_ASSIGNMENT|[7]|inContact|{"IsDeleted":false,"AccountId":"0011r00001nohXIAAY","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Ankit","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Avula"}|0x610776f6
+09:37:37.0 (70107992)|STATEMENT_EXECUTE|[7]
+09:37:37.0 (71053732)|HEAP_ALLOCATE|[8]|Bytes:1
+09:37:37.0 (71063875)|HEAP_ALLOCATE|[8]|Bytes:7
+09:37:37.0 (71077925)|METHOD_ENTRY|[1]|01p1r000009oduV|Utils.Utils()
+09:37:37.0 (71085221)|STATEMENT_EXECUTE|[1]
+09:37:37.0 (71090270)|STATEMENT_EXECUTE|[1]
+09:37:37.0 (71102019)|HEAP_ALLOCATE|[8]|Bytes:5
+09:37:37.0 (71111116)|METHOD_EXIT|[1]|Utils
+09:37:37.0 (71130170)|METHOD_ENTRY|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:37:37.0 (71151939)|VARIABLE_SCOPE_BEGIN|[3]|nif|String|false|false
+09:37:37.0 (71162252)|VARIABLE_ASSIGNMENT|[3]|nif|null
+09:37:37.0 (71183123)|HEAP_ALLOCATE|[5]|Bytes:5
+09:37:37.0 (71190347)|STATEMENT_EXECUTE|[3]
+09:37:37.0 (71192222)|STATEMENT_EXECUTE|[5]
+09:37:37.0 (71195627)|HEAP_ALLOCATE|[5]|Bytes:4
+09:37:37.0 (71207561)|HEAP_ALLOCATE|[5]|Bytes:8
+09:37:37.0 (71265573)|USER_DEBUG|[5]|DEBUG|NIF null
+09:37:37.0 (71342546)|HEAP_ALLOCATE|[7]|Bytes:41
+09:37:37.0 (71366445)|METHOD_EXIT|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:37:37.0 (71373814)|SYSTEM_MODE_EXIT|false
+09:37:37.0 (71380526)|METHOD_EXIT|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:37:37.0 (71525187)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:37:37.0 (71540158)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:37:37.71 (71587422)|CUMULATIVE_LIMIT_USAGE
+09:37:37.71 (71587422)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:37:37.71 (71587422)|CUMULATIVE_LIMIT_USAGE_END
+
+09:37:37.0 (72631571)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeInsert
+09:37:37.0 (73514327)|DML_END|[13]
+09:37:37.0 (73648312)|EXCEPTION_THROWN|[13]|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+09:37:37.0 (73911542)|HEAP_ALLOCATE|[13]|Bytes:351
+09:37:37.0 (73971312)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+
+Class.AccountProcessorTest.TestAccountProcessorTest: line 13, column 1
+09:37:37.0 (74001962)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+
+Class.AccountProcessorTest.TestAccountProcessorTest: line 13, column 1
+09:37:37.74 (74013402)|CUMULATIVE_LIMIT_USAGE
+09:37:37.74 (74013402)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:37:37.74 (74013402)|CUMULATIVE_LIMIT_USAGE_END
+
+09:37:37.0 (74033683)|CODE_UNIT_FINISHED|AccountProcessorTest.TestAccountProcessorTest
+09:37:37.0 (74927300)|EXECUTION_FINISHED
+09:37:37.201 (201797629)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:37:37.201 (201819976)|EXECUTION_STARTED
+09:37:37.201 (201823693)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+09:37:37.201 (201836413)|DUPLICATE_DETECTION_BEGIN
+09:37:37.201 (201902069)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+09:37:37.201 (212303123)|DUPLICATE_DETECTION_END
+09:37:37.201 (212314607)|CODE_UNIT_FINISHED|DuplicateDetector
+09:37:37.201 (213465736)|EXECUTION_FINISHED

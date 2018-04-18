@@ -1,0 +1,248 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+09:39:32.0 (499967)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:39:32.0 (542812)|EXECUTION_STARTED
+09:39:32.0 (546740)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000007XnGq|TestRestrictContactByName.metodoTest
+09:39:32.0 (936934)|HEAP_ALLOCATE|[72]|Bytes:3
+09:39:32.0 (965289)|HEAP_ALLOCATE|[77]|Bytes:152
+09:39:32.0 (977047)|HEAP_ALLOCATE|[342]|Bytes:408
+09:39:32.0 (990265)|HEAP_ALLOCATE|[355]|Bytes:408
+09:39:32.0 (1002538)|HEAP_ALLOCATE|[467]|Bytes:48
+09:39:32.0 (1027517)|HEAP_ALLOCATE|[139]|Bytes:6
+09:39:32.0 (1041550)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:25
+09:39:32.0 (1051892)|METHOD_ENTRY|[2]|01p1r000007XnGq|TestRestrictContactByName.TestRestrictContactByName()
+09:39:32.0 (1059931)|STATEMENT_EXECUTE|[2]
+09:39:32.0 (1064787)|STATEMENT_EXECUTE|[2]
+09:39:32.0 (1068629)|METHOD_EXIT|[2]|TestRestrictContactByName
+09:39:32.0 (1099313)|HEAP_ALLOCATE|[50]|Bytes:5
+09:39:32.0 (1118918)|HEAP_ALLOCATE|[56]|Bytes:5
+09:39:32.0 (1126112)|HEAP_ALLOCATE|[64]|Bytes:7
+09:39:32.0 (1156813)|STATEMENT_EXECUTE|[4]
+09:39:32.0 (1159315)|STATEMENT_EXECUTE|[6]
+09:39:32.0 (1232972)|HEAP_ALLOCATE|[6]|Bytes:4
+09:39:32.0 (1294313)|VARIABLE_SCOPE_BEGIN|[6]|listContact|List<Contact>|true|false
+09:39:32.0 (1307016)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+09:39:32.0 (1325914)|VARIABLE_ASSIGNMENT|[6]|listContact|[]|0x36960b44
+09:39:32.0 (1333016)|STATEMENT_EXECUTE|[7]
+09:39:32.0 (1349822)|HEAP_ALLOCATE|[7]|Bytes:4
+09:39:32.0 (1410184)|HEAP_ALLOCATE|[7]|Bytes:9
+09:39:32.0 (2777337)|VARIABLE_ASSIGNMENT|[7]|this.FirstName|"Francesco"|0x5d5c11cb
+09:39:32.0 (2789849)|HEAP_ALLOCATE|[7]|Bytes:6
+09:39:32.0 (2809702)|VARIABLE_ASSIGNMENT|[7]|this.LastName|"Riggio"|0x5d5c11cb
+09:39:32.0 (2816553)|HEAP_ALLOCATE|[7]|Bytes:13
+09:39:32.0 (2831446)|VARIABLE_ASSIGNMENT|[7]|this.Email|"Test@test.com"|0x5d5c11cb
+09:39:32.0 (2858717)|VARIABLE_SCOPE_BEGIN|[7]|c1|Contact|true|false
+09:39:32.0 (2876732)|VARIABLE_ASSIGNMENT|[7]|c1|{"FirstName":"Francesco","LastName":"Riggio","Email":"Test@test.com"}|0x5d5c11cb
+09:39:32.0 (2883681)|STATEMENT_EXECUTE|[8]
+09:39:32.0 (2897395)|HEAP_ALLOCATE|[8]|Bytes:4
+09:39:32.0 (2906438)|HEAP_ALLOCATE|[8]|Bytes:10
+09:39:32.0 (2921410)|VARIABLE_ASSIGNMENT|[8]|this.FirstName|"Francesco1"|0x51a77391
+09:39:32.0 (2927826)|HEAP_ALLOCATE|[8]|Bytes:11
+09:39:32.0 (2939200)|VARIABLE_ASSIGNMENT|[8]|this.LastName|"INVALIDNAME"|0x51a77391
+09:39:32.0 (2951742)|VARIABLE_ASSIGNMENT|[8]|this.Email|"Test@test.com"|0x51a77391
+09:39:32.0 (2964173)|VARIABLE_SCOPE_BEGIN|[8]|c2|Contact|true|false
+09:39:32.0 (2976406)|VARIABLE_ASSIGNMENT|[8]|c2|{"FirstName":"Francesco1","LastName":"INVALIDNAME","Email":"Test@test.com"}|0x51a77391
+09:39:32.0 (2982059)|STATEMENT_EXECUTE|[9]
+09:39:32.0 (3020119)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+09:39:32.0 (3031839)|STATEMENT_EXECUTE|[10]
+09:39:32.0 (3046280)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+09:39:32.0 (3052911)|STATEMENT_EXECUTE|[12]
+09:39:32.0 (3087153)|HEAP_ALLOCATE|[12]|Bytes:63
+09:39:32.0 (3097505)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+09:39:32.0 (3101829)|STATEMENT_EXECUTE|[1]
+09:39:32.0 (3107936)|SYSTEM_METHOD_EXIT|[1]|Test
+09:39:32.0 (3118314)|METHOD_ENTRY|[12]||System.Test.startTest()
+09:39:32.0 (4224739)|METHOD_EXIT|[12]||System.Test.startTest()
+09:39:32.0 (4233359)|STATEMENT_EXECUTE|[13]
+09:39:32.0 (4235475)|STATEMENT_EXECUTE|[14]
+09:39:32.0 (4237308)|STATEMENT_EXECUTE|[15]
+09:39:32.0 (4281725)|DML_BEGIN|[15]|Op:Insert|Type:Contact|Rows:2
+09:39:32.0 (4308753)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+09:39:32.0 (14277508)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j4Bx|ContactTrigger on Contact trigger event BeforeInsert
+09:39:32.0 (14315029)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+09:39:32.0 (14398858)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:39:32.0 (14410964)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:39:32.0 (14456974)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2d660a3d
+09:39:32.0 (14498944)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:39:32.0 (14505983)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:39:32.0 (14519432)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2d660a3d
+09:39:32.0 (14527850)|STATEMENT_EXECUTE|[1]
+09:39:32.0 (14530153)|STATEMENT_EXECUTE|[3]
+09:39:32.0 (15136103)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"IsDeleted":false,"Email":"test@test.com","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Francesco","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Riggio"},{"IsDeleted":false,"Email":"test@test.com","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Francesco1","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"INVALIDNAME"}]|0x2d660a3d
+09:39:32.0 (15160505)|STATEMENT_EXECUTE|[5]
+09:39:32.0 (15167852)|STATEMENT_EXECUTE|[6]
+09:39:32.0 (15169681)|STATEMENT_EXECUTE|[7]
+09:39:32.0 (16158022)|HEAP_ALLOCATE|[7]|Bytes:1
+09:39:32.0 (16196889)|METHOD_ENTRY|[1]|01p1r000008aKc5|ContactMethods.ContactMethods()
+09:39:32.0 (16204261)|STATEMENT_EXECUTE|[1]
+09:39:32.0 (16209556)|STATEMENT_EXECUTE|[1]
+09:39:32.0 (16587328)|SYSTEM_MODE_ENTER|false
+09:39:32.0 (16600166)|HEAP_ALLOCATE|[7]|Bytes:5
+09:39:32.0 (16609094)|SYSTEM_MODE_EXIT|false
+09:39:32.0 (16618936)|METHOD_EXIT|[1]|ContactMethods
+09:39:32.0 (16639445)|METHOD_ENTRY|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:39:32.0 (16672613)|VARIABLE_SCOPE_BEGIN|[3]|listNew|List<Contact>|true|false
+09:39:32.0 (17083300)|VARIABLE_ASSIGNMENT|[3]|listNew|[{"IsDeleted":false,"Email":"test@test.com","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Francesco","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Riggio"},{"IsDeleted":false,"Email":"test@test.com","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Francesco1","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"INVALIDNAME"}]|0x48b4d412
+09:39:32.0 (17111011)|SYSTEM_MODE_ENTER|false
+09:39:32.0 (17118332)|HEAP_ALLOCATE|[5]|Bytes:5
+09:39:32.0 (17124427)|STATEMENT_EXECUTE|[3]
+09:39:32.0 (17165046)|STATEMENT_EXECUTE|[5]
+09:39:32.0 (17294897)|HEAP_ALLOCATE|[7]|Bytes:5
+09:39:32.0 (17315225)|HEAP_ALLOCATE|[7]|Bytes:4
+09:39:32.0 (17324515)|VARIABLE_SCOPE_BEGIN|[7]|inContact|Contact|true|false
+09:39:32.0 (17564731)|VARIABLE_ASSIGNMENT|[7]|inContact|{"IsDeleted":false,"Email":"test@test.com","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","FirstName":"Francesco","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Riggio"}|0x1d794806
+09:39:32.0 (17575749)|STATEMENT_EXECUTE|[7]
+09:39:32.0 (18598358)|HEAP_ALLOCATE|[8]|Bytes:1
+09:39:32.0 (18608970)|HEAP_ALLOCATE|[8]|Bytes:7
+09:39:32.0 (18620534)|METHOD_ENTRY|[1]|01p1r000009oduV|Utils.Utils()
+09:39:32.0 (18626475)|STATEMENT_EXECUTE|[1]
+09:39:32.0 (18630979)|STATEMENT_EXECUTE|[1]
+09:39:32.0 (18637315)|HEAP_ALLOCATE|[8]|Bytes:5
+09:39:32.0 (18646671)|METHOD_EXIT|[1]|Utils
+09:39:32.0 (18667792)|METHOD_ENTRY|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:39:32.0 (18686352)|VARIABLE_SCOPE_BEGIN|[3]|nif|String|false|false
+09:39:32.0 (18697020)|VARIABLE_ASSIGNMENT|[3]|nif|null
+09:39:32.0 (18712932)|HEAP_ALLOCATE|[5]|Bytes:5
+09:39:32.0 (18717826)|STATEMENT_EXECUTE|[3]
+09:39:32.0 (18719721)|STATEMENT_EXECUTE|[5]
+09:39:32.0 (18722934)|HEAP_ALLOCATE|[5]|Bytes:4
+09:39:32.0 (18737427)|HEAP_ALLOCATE|[5]|Bytes:8
+09:39:32.0 (18774147)|USER_DEBUG|[5]|DEBUG|NIF null
+09:39:32.0 (18840039)|HEAP_ALLOCATE|[7]|Bytes:41
+09:39:32.0 (18860576)|METHOD_EXIT|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:39:32.0 (18867092)|SYSTEM_MODE_EXIT|false
+09:39:32.0 (18873501)|METHOD_EXIT|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:39:32.0 (18964513)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:39:32.0 (18979686)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:39:32.19 (19003035)|CUMULATIVE_LIMIT_USAGE
+09:39:32.19 (19003035)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:39:32.19 (19003035)|TESTING_LIMITS
+09:39:32.19 (19003035)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:39:32.19 (19003035)|CUMULATIVE_LIMIT_USAGE_END
+
+09:39:32.0 (20096898)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeInsert
+09:39:32.0 (20834710)|DML_END|[15]
+09:39:32.0 (20899230)|EXCEPTION_THROWN|[15]|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+09:39:32.0 (21118869)|HEAP_ALLOCATE|[15]|Bytes:351
+09:39:32.0 (21155590)|VARIABLE_SCOPE_BEGIN|[18]|ee|Exception|true|false
+09:39:32.0 (21230309)|VARIABLE_ASSIGNMENT|[18]|ee|"common.apex.runtime.impl.DmlExecutionException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert\n\ncaused by: System.NullPointerException: Attempt to de-reference a null object\n\nClass.Utils.isNifNie: line 7, column 1\nClass.ContactMethods.ValidarNif: line 8, column 1\nTrigger.ContactTrigger: line 7, column 1: []"|0x2262c2ad
+09:39:32.0 (21241799)|STATEMENT_EXECUTE|[18]
+09:39:32.0 (21244576)|STATEMENT_EXECUTE|[21]
+09:39:32.0 (21256351)|METHOD_ENTRY|[21]||System.Test.stopTest()
+09:39:32.0 (22050116)|METHOD_EXIT|[21]||System.Test.stopTest()
+09:39:32.22 (22062265)|CUMULATIVE_LIMIT_USAGE
+09:39:32.22 (22062265)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:39:32.22 (22062265)|TESTING_LIMITS
+09:39:32.22 (22062265)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:39:32.22 (22062265)|CUMULATIVE_LIMIT_USAGE_END
+
+09:39:32.0 (22090138)|CODE_UNIT_FINISHED|TestRestrictContactByName.metodoTest
+09:39:32.0 (23021611)|EXECUTION_FINISHED
+e"]|0x5639d91c
+09:39:32.0 (9592826)|STATEMENT_EXECUTE|[8]
+09:39:32.0 (9597456)|HEAP_ALLOCATE|[8]|Bytes:4
+09:39:32.0 (9609950)|HEAP_ALLOCATE|[8]|Bytes:8
+09:39:32.0 (9622664)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:39:32.0 (9630076)|VARIABLE_ASSIGNMENT|[8]|this.field_order_type_info|["return_x"]|0x5639d91c
+09:39:32.0 (9637905)|CONSTRUCTOR_EXIT|[15]|01p1r000009rRUC|<init>()
+09:39:32.0 (9643638)|VARIABLE_SCOPE_BEGIN|[14]|response_x|ParkService.byCountryResponse|true|false
+09:39:32.0 (9662738)|VARIABLE_ASSIGNMENT|[14]|response_x|{"apex_schema_type_inf (1 more) ...":"0x77f593fc","field_order_type_inf (1 more) ...":"0x10ef56b2","return_x_type_info":"0x8068c8a"}|0x5639d91c
+09:39:32.0 (9669994)|STATEMENT_EXECUTE|[17]
+09:39:32.0 (9675636)|HEAP_ALLOCATE|[17]|Bytes:4
+09:39:32.0 (9692681)|VARIABLE_SCOPE_BEGIN|[17]|myStrings|List<String>|true|false
+09:39:32.0 (9708235)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+09:39:32.0 (9716045)|VARIABLE_ASSIGNMENT|[17]|myStrings|["Park1","Park2","Park3"]|0x63a100f9
+09:39:32.0 (9723096)|STATEMENT_EXECUTE|[19]
+09:39:32.0 (9730264)|VARIABLE_ASSIGNMENT|[19]|this.return_x|["Park1","Park2","Park3"]|0x5639d91c
+09:39:32.0 (9735539)|STATEMENT_EXECUTE|[21]
+09:39:32.0 (9773261)|STATEMENT_EXECUTE|[43]
+09:39:32.0 (9805102)|VARIABLE_ASSIGNMENT|[43]|response_x|{"apex_schema_type_inf (1 more) ...":"0x77f593fc","field_order_type_inf (1 more) ...":"0x10ef56b2","return_x":"0x63a100f9","return_x_type_info":"0x8068c8a"}|0x5639d91c
+09:39:32.0 (9813366)|STATEMENT_EXECUTE|[44]
+09:39:32.0 (9819089)|METHOD_EXIT|[6]|01p1r000009rRUC|ParkService.ParksImplPort.byCountry(String)
+09:39:32.0 (9825660)|METHOD_EXIT|[10]|01p1r000007YpF6|ParkLocator.country(String)
+09:39:32.0 (9835327)|VARIABLE_ASSIGNMENT|[10]|result|["Park1","Park2","Park3"]|0x63a100f9
+09:39:32.0 (9840837)|STATEMENT_EXECUTE|[12]
+09:39:32.9 (9888719)|CUMULATIVE_LIMIT_USAGE
+09:39:32.9 (9888719)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:39:32.9 (9888719)|CUMULATIVE_LIMIT_USAGE_END
+
+09:39:32.0 (9915432)|CODE_UNIT_FINISHED|ParkLocatorTest.testCallout
+09:39:32.0 (10904581)|EXECUTION_FINISHED

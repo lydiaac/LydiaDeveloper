@@ -1,0 +1,139 @@
+30.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: System.assertEquals(ParkLocator.country('Salesforce').size(), 3);
+09:09:15.1 (1089594)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:09:15.1 (1108288)|EXECUTION_STARTED
+09:09:15.1 (1111896)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+09:09:15.1 (1301992)|HEAP_ALLOCATE|[72]|Bytes:3
+09:09:15.1 (1343553)|HEAP_ALLOCATE|[77]|Bytes:152
+09:09:15.1 (1358669)|HEAP_ALLOCATE|[342]|Bytes:408
+09:09:15.1 (1374418)|HEAP_ALLOCATE|[355]|Bytes:408
+09:09:15.1 (1385112)|HEAP_ALLOCATE|[467]|Bytes:48
+09:09:15.1 (1410848)|HEAP_ALLOCATE|[139]|Bytes:6
+09:09:15.1 (1427084)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+09:09:15.1 (1522825)|STATEMENT_EXECUTE|[1]
+09:09:15.1 (1525975)|STATEMENT_EXECUTE|[1]
+09:09:15.1 (1528882)|HEAP_ALLOCATE|[1]|Bytes:10
+09:09:15.1 (1581385)|HEAP_ALLOCATE|[50]|Bytes:5
+09:09:15.1 (1603342)|HEAP_ALLOCATE|[56]|Bytes:5
+09:09:15.1 (1610052)|HEAP_ALLOCATE|[64]|Bytes:7
+09:09:15.1 (1632335)|SYSTEM_MODE_ENTER|false
+09:09:15.1 (1652408)|HEAP_ALLOCATE|[1]|Bytes:5
+09:09:15.1 (8886647)|HEAP_ALLOCATE|[1]|Bytes:1
+09:09:15.1 (8906170)|METHOD_ENTRY|[1]|01p1r000007YpF6|ParkLocator.ParkLocator()
+09:09:15.1 (8913814)|STATEMENT_EXECUTE|[1]
+09:09:15.1 (8919652)|STATEMENT_EXECUTE|[1]
+09:09:15.1 (8924565)|METHOD_EXIT|[1]|ParkLocator
+09:09:15.1 (8949198)|METHOD_ENTRY|[1]|01p1r000007YpF6|ParkLocator.country(String)
+09:09:15.1 (8995838)|VARIABLE_SCOPE_BEGIN|[4]|country|String|false|false
+09:09:15.1 (9021683)|VARIABLE_ASSIGNMENT|[4]|country|"Salesforce"
+09:09:15.1 (9032164)|STATEMENT_EXECUTE|[4]
+09:09:15.1 (9034140)|STATEMENT_EXECUTE|[5]
+09:09:15.1 (12551626)|HEAP_ALLOCATE|[5]|Bytes:2
+09:09:15.1 (12580139)|HEAP_ALLOCATE|[5]|Bytes:36
+09:09:15.1 (12597515)|CONSTRUCTOR_ENTRY|[5]|01p1r000007YpCS|<init>()
+09:09:15.1 (12635922)|VARIABLE_SCOPE_BEGIN|[16]|this|ParkService.ParksImplPort|true|false
+09:09:15.1 (12682789)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x4c59855d
+09:09:15.1 (12693656)|HEAP_ALLOCATE|[17]|Bytes:6
+09:09:15.1 (12725019)|STATEMENT_EXECUTE|[16]
+09:09:15.1 (12727599)|STATEMENT_EXECUTE|[17]
+09:09:15.1 (12731120)|HEAP_ALLOCATE|[17]|Bytes:56
+09:09:15.1 (12747047)|VARIABLE_ASSIGNMENT|[17]|this.endpoint_x|"https://th-apex-soap (36 more) ..."|0x4c59855d
+09:09:15.1 (12752791)|STATEMENT_EXECUTE|[18]
+09:09:15.1 (12754593)|STATEMENT_EXECUTE|[19]
+09:09:15.1 (12756102)|STATEMENT_EXECUTE|[20]
+09:09:15.1 (12757618)|STATEMENT_EXECUTE|[21]
+09:09:15.1 (12759237)|STATEMENT_EXECUTE|[22]
+09:09:15.1 (12760765)|STATEMENT_EXECUTE|[23]
+09:09:15.1 (12762317)|STATEMENT_EXECUTE|[24]
+09:09:15.1 (12776974)|HEAP_ALLOCATE|[24]|Bytes:4
+09:09:15.1 (12817581)|HEAP_ALLOCATE|[24]|Bytes:22
+09:09:15.1 (12829381)|HEAP_ALLOCATE|[24]|Bytes:13
+09:09:15.1 (12858522)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+09:09:15.1 (12872444)|VARIABLE_ASSIGNMENT|[24]|this.ns_map_type_info|["http://parks.service (2 more) ...","parksServices"]|0x4c59855d
+09:09:15.1 (12880481)|CONSTRUCTOR_EXIT|[5]|01p1r000007YpCS|<init>()
+09:09:15.1 (12886695)|VARIABLE_SCOPE_BEGIN|[5]|prk|ParkService.ParksImplPort|true|false
+09:09:15.1 (12908345)|VARIABLE_ASSIGNMENT|[5]|prk|{"endpoint_x":"https://th-apex-soap (36 more) ...","ns_map_type_info":"0x29a74602"}|0x4c59855d
+09:09:15.1 (12915061)|STATEMENT_EXECUTE|[6]
+09:09:15.1 (12933202)|METHOD_ENTRY|[6]|01p1r000007YpCS|ParkService.ParksImplPort.byCountry(String)
+09:09:15.1 (12948157)|VARIABLE_SCOPE_BEGIN|[25]|this|ParkService.ParksImplPort|true|false
+09:09:15.1 (12965652)|VARIABLE_ASSIGNMENT|[25]|this|{"endpoint_x":"https://th-apex-soap (36 more) ...","ns_map_type_info":"0x29a74602"}|0x4c59855d
+09:09:15.1 (12972054)|VARIABLE_SCOPE_BEGIN|[25]|arg0|String|false|false
+09:09:15.1 (12979242)|VARIABLE_ASSIGNMENT|[25]|arg0|"Salesforce"
+09:09:15.1 (12985659)|STATEMENT_EXECUTE|[25]
+09:09:15.1 (12987512)|STATEMENT_EXECUTE|[26]
+09:09:15.1 (13117588)|HEAP_ALLOCATE|[26]|Bytes:20
+09:09:15.1 (13133277)|CONSTRUCTOR_ENTRY|[26]|01p1r000007YpCS|<init>()
+09:09:15.1 (13150397)|VARIABLE_SCOPE_BEGIN|[10]|this|ParkService.byCountry|true|false
+09:09:15.1 (13187926)|VARIABLE_ASSIGNMENT|[10]|this|{}|0x3f61c097
+09:09:15.1 (13205963)|STATEMENT_EXECUTE|[10]
+09:09:15.1 (13207981)|STATEMENT_EXECUTE|[11]
+09:09:15.1 (13209646)|STATEMENT_EXECUTE|[12]
+09:09:15.1 (13217879)|HEAP_ALLOCATE|[12]|Bytes:4
+09:09:15.1 (13248188)|HEAP_ALLOCATE|[12]|Bytes:4
+09:09:15.1 (13257613)|HEAP_ALLOCATE|[12]|Bytes:1
+09:09:15.1 (13262004)|HEAP_ALLOCATE|[12]|Bytes:1
+09:09:15.1 (13265606)|HEAP_ALLOCATE|[12]|Bytes:5
+09:09:15.1 (13283597)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+09:09:15.1 (13300256)|VARIABLE_ASSIGNMENT|[12]|this.arg0_type_info|"List of size 6 too large to display"|0x3f61c097
+09:09:15.1 (13306110)|STATEMENT_EXECUTE|[13]
+09:09:15.1 (13312551)|HEAP_ALLOCATE|[13]|Bytes:4
+09:09:15.1 (13339455)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+09:09:15.1 (13349393)|VARIABLE_ASSIGNMENT|[13]|this.apex_schema_type_info|["http://parks.service (2 more) ...","false","false"]|0x3f61c097
+09:09:15.1 (13355158)|STATEMENT_EXECUTE|[14]
+09:09:15.1 (13360414)|HEAP_ALLOCATE|[14]|Bytes:4
+09:09:15.1 (13382412)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:09:15.1 (13389657)|VARIABLE_ASSIGNMENT|[14]|this.field_order_type_info|["arg0"]|0x3f61c097
+09:09:15.1 (13397008)|CONSTRUCTOR_EXIT|[26]|01p1r000007YpCS|<init>()
+09:09:15.1 (13401886)|VARIABLE_SCOPE_BEGIN|[26]|request_x|ParkService.byCountry|true|false
+09:09:15.1 (13421253)|VARIABLE_ASSIGNMENT|[26]|request_x|{"apex_schema_type_inf (1 more) ...":"0x73bb029d","arg0_type_info":"0x77f837d9","field_order_type_inf (1 more) ...":"0x462c24c9"}|0x3f61c097
+09:09:15.1 (13428059)|STATEMENT_EXECUTE|[27]
+09:09:15.1 (13434467)|VARIABLE_ASSIGNMENT|[27]|this.arg0|"Salesforce"|0x3f61c097
+09:09:15.1 (13439260)|STATEMENT_EXECUTE|[28]
+09:09:15.1 (13548184)|VARIABLE_SCOPE_BEGIN|[28]|response_x|ParkService.byCountryResponse|true|false
+09:09:15.1 (13560750)|VARIABLE_ASSIGNMENT|[28]|response_x|null|
+09:09:15.1 (13565521)|STATEMENT_EXECUTE|[29]
+09:09:15.1 (13598449)|HEAP_ALLOCATE|[29]|Bytes:4
+09:09:15.1 (13629389)|VARIABLE_SCOPE_BEGIN|[29]|response_map_x|Map<String,ParkService.byCountryResponse>|true|false
+09:09:15.1 (13647137)|VARIABLE_ASSIGNMENT|[29]|response_map_x|{}|0x34a90ffe
+09:09:15.1 (13652864)|STATEMENT_EXECUTE|[30]
+09:09:15.1 (13656049)|HEAP_ALLOCATE|[30]|Bytes:10
+09:09:15.1 (13697769)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+09:09:15.1 (13706509)|STATEMENT_EXECUTE|[31]
+09:09:15.1 (13713346)|HEAP_ALLOCATE|[35]|Bytes:4
+09:09:15.1 (13734006)|HEAP_ALLOCATE|[38]|Bytes:9
+09:09:15.1 (13739018)|HEAP_ALLOCATE|[40]|Bytes:17
+09:09:15.1 (13742560)|HEAP_ALLOCATE|[41]|Bytes:31
+09:09:15.1 (13772841)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+09:09:15.1 (291899151)|CALLOUT_REQUEST|[31]|<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><env:Header /><env:Body><m:byCountry xmlns:m="http://parks.services/"><arg0>Salesforce</arg0></m:byCountry></env:Body></env:Envelope>
+09:09:15.1 (291957526)|CALLOUT_REQUEST|[31]|byCountry:[apex_schema_type_info=(http://parks.services/, false, false), arg0=Salesforce, arg0_type_info=(arg0, http://parks.services/, null, 0, 1, false), field_order_type_info=(arg0)]::SOAPAction="" Accept=text/xml User-Agent=SFDC-Callout/42.0 SFDC_STACK_DEPTH=1 Content-Type=text/xml; charset=UTF-8 
+09:09:15.1 (389516763)|CALLOUT_RESPONSE|[31]|<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:byCountryResponse xmlns:ns2="http://parks.services/"><return>Trailhead</return><return>is</return><return>awesome!</return></ns2:byCountryResponse></soap:Body></soap:Envelope>
+09:09:15.1 (390099250)|EXCEPTION_THROWN|[31]|System.CalloutException: Web service callout failed: Unable to find Apex package for :parksServices
+09:09:15.1 (390229402)|HEAP_ALLOCATE|[31]|Bytes:78
+09:09:15.1 (390265705)|METHOD_EXIT|[6]|01p1r000007YpCS|ParkService.ParksImplPort.byCountry(String)
+09:09:15.1 (390276270)|METHOD_EXIT|[1]|01p1r000007YpF6|ParkLocator.country(String)
+09:09:15.1 (390287576)|SYSTEM_MODE_EXIT|false
+09:09:15.1 (390374516)|FATAL_ERROR|System.CalloutException: Web service callout failed: Unable to find Apex package for :parksServices
+
+Class.ParkService.ParksImplPort.byCountry: line 31, column 1
+Class.ParkLocator.country: line 6, column 1
+AnonymousBlock: line 1, column 1
+AnonymousBlock: line 1, column 1
+09:09:15.390 (390414458)|CUMULATIVE_LIMIT_USAGE
+09:09:15.390 (390414458)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:09:15.390 (390414458)|CUMULATIVE_LIMIT_USAGE_END
+
+09:09:15.1 (390464576)|CODE_UNIT_FINISHED|execute_anonymous_apex
+09:09:15.1 (392120515)|EXECUTION_FINISHED

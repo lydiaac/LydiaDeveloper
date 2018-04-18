@@ -1,0 +1,187 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+09:34:02.0 (548645)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:34:02.0 (756883)|EXECUTION_STARTED
+09:34:02.0 (761990)|CODE_UNIT_STARTED|[EXTERNAL]|01p1r000009rRfz|AccountProcessorTest.testFunc
+09:34:02.0 (1000719)|HEAP_ALLOCATE|[72]|Bytes:3
+09:34:02.0 (1064850)|HEAP_ALLOCATE|[77]|Bytes:152
+09:34:02.0 (1082372)|HEAP_ALLOCATE|[342]|Bytes:408
+09:34:02.0 (1100391)|HEAP_ALLOCATE|[355]|Bytes:408
+09:34:02.0 (1113636)|HEAP_ALLOCATE|[467]|Bytes:48
+09:34:02.0 (1174486)|HEAP_ALLOCATE|[139]|Bytes:6
+09:34:02.0 (1192711)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:50
+09:34:02.0 (1236527)|METHOD_ENTRY|[2]|01p1r000009rRfz|AccountProcessorTest.AccountProcessorTest()
+09:34:02.0 (1245109)|STATEMENT_EXECUTE|[2]
+09:34:02.0 (1250850)|STATEMENT_EXECUTE|[2]
+09:34:02.0 (1265782)|METHOD_EXIT|[2]|AccountProcessorTest
+09:34:02.0 (1415521)|HEAP_ALLOCATE|[50]|Bytes:5
+09:34:02.0 (1448968)|HEAP_ALLOCATE|[56]|Bytes:5
+09:34:02.0 (1457774)|HEAP_ALLOCATE|[64]|Bytes:7
+09:34:02.0 (1492247)|STATEMENT_EXECUTE|[5]
+09:34:02.0 (1494762)|STATEMENT_EXECUTE|[6]
+09:34:02.0 (1534520)|HEAP_ALLOCATE|[6]|Bytes:4
+09:34:02.0 (1624140)|VARIABLE_SCOPE_BEGIN|[6]|acc|Account|true|false
+09:34:02.0 (1765597)|VARIABLE_ASSIGNMENT|[6]|acc|{}|0x2fb242b0
+09:34:02.0 (1776819)|STATEMENT_EXECUTE|[7]
+09:34:02.0 (1782325)|HEAP_ALLOCATE|[7]|Bytes:8
+09:34:02.0 (1853931)|VARIABLE_ASSIGNMENT|[7]|this.Name|"MATW INC"|0x2fb242b0
+09:34:02.0 (1864999)|STATEMENT_EXECUTE|[8]
+09:34:02.0 (1914597)|HEAP_ALLOCATE|[8]|Bytes:8
+09:34:02.0 (1929311)|DML_BEGIN|[8]|Op:Insert|Type:Account|Rows:1
+09:34:02.0 (1964551)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:34:02.0 (23127786)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+09:34:02.0 (23147243)|DUPLICATE_DETECTION_BEGIN
+09:34:02.0 (23948134)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+09:34:02.0 (42818097)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+09:34:02.0 (42838082)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+09:34:02.0 (42991860)|DUPLICATE_DETECTION_END
+09:34:02.0 (43000365)|CODE_UNIT_FINISHED|DuplicateDetector
+09:34:02.0 (64576816)|DML_END|[8]
+09:34:02.0 (64600990)|STATEMENT_EXECUTE|[10]
+09:34:02.0 (64639341)|HEAP_ALLOCATE|[10]|Bytes:4
+09:34:02.0 (64735712)|VARIABLE_SCOPE_BEGIN|[10]|con|Contact|true|false
+09:34:02.0 (64761737)|VARIABLE_ASSIGNMENT|[10]|con|{}|0x91d9733
+09:34:02.0 (64773652)|STATEMENT_EXECUTE|[11]
+09:34:02.0 (64779430)|HEAP_ALLOCATE|[11]|Bytes:5
+09:34:02.0 (64838611)|VARIABLE_ASSIGNMENT|[11]|this.LastName|"Mann1"|0x91d9733
+09:34:02.0 (64847949)|STATEMENT_EXECUTE|[12]
+09:34:02.0 (64889331)|VARIABLE_ASSIGNMENT|[12]|this.AccountId|"0011r00001nohIhAAI"|0x91d9733
+09:34:02.0 (64896355)|STATEMENT_EXECUTE|[13]
+09:34:02.0 (64919026)|HEAP_ALLOCATE|[13]|Bytes:8
+09:34:02.0 (64929139)|DML_BEGIN|[13]|Op:Insert|Type:Contact|Rows:1
+09:34:02.0 (64958890)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:34:02.0 (72861113)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j4Bx|ContactTrigger on Contact trigger event BeforeInsert
+09:34:02.0 (72911093)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:34:02.0 (72967836)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:34:02.0 (72977404)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:34:02.0 (73013432)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7b6e3425
+09:34:02.0 (73047077)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:34:02.0 (73053840)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:34:02.0 (73066034)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7b6e3425
+09:34:02.0 (73076715)|STATEMENT_EXECUTE|[1]
+09:34:02.0 (73079116)|STATEMENT_EXECUTE|[3]
+09:34:02.0 (73631989)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"IsDeleted":false,"AccountId":"0011r00001nohIhAAI","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Mann1"}]|0x7b6e3425
+09:34:02.0 (73658203)|STATEMENT_EXECUTE|[5]
+09:34:02.0 (73666372)|STATEMENT_EXECUTE|[6]
+09:34:02.0 (73668234)|STATEMENT_EXECUTE|[7]
+09:34:02.0 (73981496)|HEAP_ALLOCATE|[7]|Bytes:1
+09:34:02.0 (74012030)|METHOD_ENTRY|[1]|01p1r000008aKc5|ContactMethods.ContactMethods()
+09:34:02.0 (74019941)|STATEMENT_EXECUTE|[1]
+09:34:02.0 (74024629)|STATEMENT_EXECUTE|[1]
+09:34:02.0 (74376402)|SYSTEM_MODE_ENTER|false
+09:34:02.0 (74392030)|HEAP_ALLOCATE|[7]|Bytes:5
+09:34:02.0 (74402441)|SYSTEM_MODE_EXIT|false
+09:34:02.0 (74413019)|METHOD_EXIT|[1]|ContactMethods
+09:34:02.0 (74426769)|METHOD_ENTRY|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:34:02.0 (74445017)|VARIABLE_SCOPE_BEGIN|[3]|listNew|List<Contact>|true|false
+09:34:02.0 (74776526)|VARIABLE_ASSIGNMENT|[3]|listNew|[{"IsDeleted":false,"AccountId":"0011r00001nohIhAAI","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Mann1"}]|0x16cf5205
+09:34:02.0 (74803633)|SYSTEM_MODE_ENTER|false
+09:34:02.0 (74811442)|HEAP_ALLOCATE|[5]|Bytes:5
+09:34:02.0 (74818091)|STATEMENT_EXECUTE|[3]
+09:34:02.0 (74879445)|STATEMENT_EXECUTE|[5]
+09:34:02.0 (75015944)|HEAP_ALLOCATE|[7]|Bytes:5
+09:34:02.0 (75047553)|HEAP_ALLOCATE|[7]|Bytes:4
+09:34:02.0 (75061685)|VARIABLE_SCOPE_BEGIN|[7]|inContact|Contact|true|false
+09:34:02.0 (75314983)|VARIABLE_ASSIGNMENT|[7]|inContact|{"IsDeleted":false,"AccountId":"0011r00001nohIhAAI","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Mann1"}|0x2c5a5cd8
+09:34:02.0 (75326476)|STATEMENT_EXECUTE|[7]
+09:34:02.0 (75702763)|HEAP_ALLOCATE|[8]|Bytes:1
+09:34:02.0 (75712447)|HEAP_ALLOCATE|[8]|Bytes:7
+09:34:02.0 (75720394)|METHOD_ENTRY|[1]|01p1r000009oduV|Utils.Utils()
+09:34:02.0 (75726388)|STATEMENT_EXECUTE|[1]
+09:34:02.0 (75731653)|STATEMENT_EXECUTE|[1]
+09:34:02.0 (75739876)|HEAP_ALLOCATE|[8]|Bytes:5
+09:34:02.0 (75749448)|METHOD_EXIT|[1]|Utils
+09:34:02.0 (75759158)|METHOD_ENTRY|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:34:02.0 (75775059)|VARIABLE_SCOPE_BEGIN|[3]|nif|String|false|false
+09:34:02.0 (75788684)|VARIABLE_ASSIGNMENT|[3]|nif|null
+09:34:02.0 (75808217)|HEAP_ALLOCATE|[5]|Bytes:5
+09:34:02.0 (75816010)|STATEMENT_EXECUTE|[3]
+09:34:02.0 (75819270)|STATEMENT_EXECUTE|[5]
+09:34:02.0 (75822653)|HEAP_ALLOCATE|[5]|Bytes:4
+09:34:02.0 (75842016)|HEAP_ALLOCATE|[5]|Bytes:8
+09:34:02.0 (75880240)|USER_DEBUG|[5]|DEBUG|NIF null
+09:34:02.0 (75962170)|HEAP_ALLOCATE|[7]|Bytes:41
+09:34:02.0 (75992463)|METHOD_EXIT|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:34:02.0 (76004101)|SYSTEM_MODE_EXIT|false
+09:34:02.0 (76014764)|METHOD_EXIT|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:34:02.0 (76131401)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:34:02.0 (76148940)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:34:02.76 (76180556)|CUMULATIVE_LIMIT_USAGE
+09:34:02.76 (76180556)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:34:02.76 (76180556)|CUMULATIVE_LIMIT_USAGE_END
+
+09:34:02.0 (77473005)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeInsert
+09:34:02.0 (78232533)|DML_END|[13]
+09:34:02.0 (78292169)|EXCEPTION_THROWN|[13]|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+09:34:02.0 (78633213)|HEAP_ALLOCATE|[13]|Bytes:351
+09:34:02.0 (78704375)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+
+Class.AccountProcessorTest.testFunc: line 13, column 1
+09:34:02.0 (78727497)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, ContactTrigger: execution of BeforeInsert
+
+caused by: System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1: []
+
+Class.AccountProcessorTest.testFunc: line 13, column 1
+09:34:02.78 (78746626)|CUMULATIVE_LIMIT_USAGE
+09:34:02.78 (78746626)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:34:02.78 (78746626)|CUMULATIVE_LIMIT_USAGE_END
+
+09:34:02.0 (78775014)|CODE_UNIT_FINISHED|AccountProcessorTest.testFunc
+09:34:02.0 (79768089)|EXECUTION_FINISHED
+09:34:02.332 (332133598)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:34:02.332 (332159367)|EXECUTION_STARTED
+09:34:02.332 (332163165)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+09:34:02.332 (332173940)|DUPLICATE_DETECTION_BEGIN
+09:34:02.332 (332224365)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+09:34:02.332 (342111557)|DUPLICATE_DETECTION_END
+09:34:02.332 (342123271)|CODE_UNIT_FINISHED|DuplicateDetector
+09:34:02.332 (342923146)|EXECUTION_FINISHED

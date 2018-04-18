@@ -55,7 +55,7 @@ private class TaskTest {
 
 		listTask.add(oTask2);
 
-		insert listTask;
+		upsert listTask;
 
 		for(Task inTask : listTask){
 			inTask.Status = 'Completed';
@@ -63,10 +63,10 @@ private class TaskTest {
 
 		update listTask;
 
-		//List<Account> listAccountCheck = [SELECT Id, Fecha_ultima_actividad_mas_reciente__c FROM Account WHERE Id = :oAccountParent.Id];
+		List<Account> listAccountCheckDos = [SELECT Id, Fecha_ultima_actividad_mas_reciente__c FROM Account WHERE Id = :oAccountParent.Id];
 
-		//System.debug(listAccountCheck);
+		System.debug(listAccountCheck);
 
-		//System.AssertEquals(listAccountCheck.get(0).Fecha_ultima_actividad_mas_reciente__c, listTask.get(0).ActivityDate);
+		System.AssertEquals(listAccountCheckDos.get(0).Fecha_ultima_actividad_mas_reciente__c, listTask.get(1).ActivityDate);
 	}
 }

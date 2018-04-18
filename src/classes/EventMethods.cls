@@ -4,26 +4,46 @@ public with sharing class EventMethods {
 		
 		if(!listEvent.isEmpty()){
 
-			List<Account> listAccountInsert = new List<Account>();
+			List<Account> listAcInsert = new List<Account>();
 
-			//MAPA ACCOUNT
-			Set<String> listAccountIds = new Set<String> ();
+			Set<String> setEventIds = new Set<String> ();
+
 			for (Event inEvent : listEvent) {
-				listAccountIds.add(inEvent.WhatId);
+				System.debug('EventMethods.CrearEvento.inEvent :: ' + inEvent);
+				setEventIds.add(inEvent.Id);
 			}
 
-			Map<String, Account> mapAccount = new Map<String, Account>([SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE id IN : listAccountIds]);
+			System.debug('EventMethods.CrearEvento.setEventIds :: ' + setEventIds);
 
-			//RECORRER EVENTOS
-			for(Event inEvent : listEvent){
-				//Si account tiene parent y su fecha es menor a la de Event
-				if(inEvent.IsAllDayEvent && mapAccount.get(inEvent.WhatId).ParentId!=null && (mapAccount.get(inEvent.WhatId).Fecha_ultima_actividad_mas_reciente__c < inEvent.ActivityDate)){
-					mapAccount.get(inEvent.WhatId).Fecha_ultima_actividad_mas_reciente__c = inEvent.ActivityDate;
-					listAccountInsert.add(mapAccount.get(inEvent.WhatId));
-				}
-			}
-			update listAccountInsert;
+			//Lista de tareas
+			List<Event> listEventType = new List<Event>([
+			SELECT WhatId, ActivityDate,
+			  	TYPEOF What
+			  	WHEN Account THEN Parent.Fecha_ultima_actividad_mas_reciente__c
+			  	WHEN Opportunity THEN Account.Parent.Fecha_ultima_actividad_mas_reciente__c
+			  	END
+			FROM Event WHERE Id IN : setEventIds]);
+
+			System.debug('EventMethods.CrearEvento.listEventType :: ' + listEventType);
+
+			//Dependiendo si recibe account u oportunity...
+			for(Event inEvent : listEventType){
+				if (inEvent.What instanceof Opportunity) {
+					System.debug('Opportunity');
+					if(inEvent.ActivityDate > ((Opportunity)inEvent.What).Account.Parent.Fecha_ultima_actividad_mas_reciente__c){
+						((Opportunity)inEvent.What).Account.Parent.Fecha_ultima_actividad_mas_reciente__c = inEvent.ActivityDate;
+						listAcInsert.add(((Opportunity)inEvent.What).Account.Parent);
+					}
+	            } else if (inEvent.What instanceof Account) {
+	            	System.debug('Account');
+	            	//System.debug('veamos.. ->'+((Account)inTask.What).Parent.Fecha_ultima_actividad_mas_reciente__c);
+					if(inEvent.ActivityDate > ((Account)inEvent.What).Parent.Fecha_ultima_actividad_mas_reciente__c){
+						((Account)inEvent.What).Parent.Fecha_ultima_actividad_mas_reciente__c = inEvent.ActivityDate;
+						listAcInsert.add(((Account)inEvent.What).Parent);
+					}
+	            }
+	        }
+			update listAcInsert;
 		}
-
 	}
 }

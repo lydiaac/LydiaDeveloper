@@ -1,8 +1,8 @@
-trigger EventTrigger on Event (before insert) {
+trigger EventTrigger on Event (after insert) {
 
 	List<Event> listNew = Trigger.new;
 
-	if (trigger.isBefore) {
+	if (trigger.isAfter) {
 		if (trigger.isInsert) {
 			EventMethods.CrearEvento(listNew);
 		}

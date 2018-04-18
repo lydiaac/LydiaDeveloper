@@ -4,11 +4,12 @@ public with sharing class AccountMethods {
 
 		if(!listAccount.isEmpty()){
 
-			//DE LAS ACCOUNTS QUE ACTUALIZO, ME QUEDO CON (id)-> SI UltimaActividad se ha modificado y no tiene parentId
+			//DE LAS ACCOUNTS QUE ACTUALIZO, ME QUEDO CON (id)
 			List<String> listAccountIds = new List<String>();
 			Map<String, Account> mapAccountParent = new Map<String, Account>();
 
 			for(Account inAccount : listAccount){
+				//Si no tiene parent y se ha modificado fecha
 				if((inAccount.ParentId == null) && (inAccount.Fecha_ultima_actividad_mas_reciente__c!=mapOld.get(inAccount.Id).Fecha_ultima_actividad_mas_reciente__c)){
 					listAccountIds.add(inAccount.Id);
 					mapAccountParent.put(inAccount.Id, inAccount);

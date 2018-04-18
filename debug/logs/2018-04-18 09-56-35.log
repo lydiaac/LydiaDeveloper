@@ -1,0 +1,201 @@
+33.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: String strStreet = '1 Street';
+Execute Anonymous: String strCity = 'Staines';
+Execute Anonymous: String strState = 'Middlesex';
+Execute Anonymous: String strPostCode = 'TW18 3AG';
+Execute Anonymous: String strCountry = 'UK';
+Execute Anonymous: Account acct = new Account(name='test1');
+Execute Anonymous: insert acct;
+Execute Anonymous: 
+Execute Anonymous: Contact ct1 = new Contact(LastName='Owen',AccountId=acct.Id);
+Execute Anonymous: Contact ct2 = new Contact(LastName='Jonathan',AccountId=acct.Id);
+Execute Anonymous: List<Contact> cts = new List<Contact>{ct1,ct2};
+Execute Anonymous: insert cts; 
+Execute Anonymous: 
+Execute Anonymous: acct.ShippingStreet = strStreet;
+Execute Anonymous: acct.ShippingCity = strCity;
+Execute Anonymous: acct.ShippingState = strState;
+Execute Anonymous: acct.ShippingPostalCode = strPostCode;
+Execute Anonymous: acct.ShippingCountry = strCountry;
+Execute Anonymous: update acct;
+Execute Anonymous: 
+Execute Anonymous: for(Contact c : [select Name, (Select MailingStreet,MailingCity,MailingState,MailingPostalCode,MailingCountry from Contacts) from Account where Id =: acct.Id][0].Contacts){
+Execute Anonymous: Boolean isValid = (c.MailingStreet == strStreet && c.MailingCity == strCity && c.MailingState == strState && c.MailingPostalCode == strPostCode && c.MailingCountry == strCountry);
+Execute Anonymous: system.debug('///'+isValid);
+Execute Anonymous: System.assert(isValid);
+Execute Anonymous: }
+Execute Anonymous: System.assertEquals('test','success');
+09:56:34.1 (1451258)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+09:56:34.1 (1469945)|EXECUTION_STARTED
+09:56:34.1 (1473807)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+09:56:34.1 (1623431)|VARIABLE_SCOPE_BEGIN|[6]|acct|Account|true|false
+09:56:34.1 (1647058)|VARIABLE_SCOPE_BEGIN|[9]|ct1|Contact|true|false
+09:56:34.1 (1659729)|VARIABLE_SCOPE_BEGIN|[10]|ct2|Contact|true|false
+09:56:34.1 (1737683)|VARIABLE_SCOPE_BEGIN|[11]|cts|List<Contact>|true|false
+09:56:34.1 (1759473)|VARIABLE_SCOPE_BEGIN|[2]|strCity|String|false|false
+09:56:34.1 (1766774)|VARIABLE_SCOPE_BEGIN|[5]|strCountry|String|false|false
+09:56:34.1 (1773421)|VARIABLE_SCOPE_BEGIN|[4]|strPostCode|String|false|false
+09:56:34.1 (1780818)|VARIABLE_SCOPE_BEGIN|[3]|strState|String|false|false
+09:56:34.1 (1787582)|VARIABLE_SCOPE_BEGIN|[1]|strStreet|String|false|false
+09:56:34.1 (1881862)|HEAP_ALLOCATE|[72]|Bytes:3
+09:56:34.1 (1918373)|HEAP_ALLOCATE|[77]|Bytes:152
+09:56:34.1 (1934364)|HEAP_ALLOCATE|[342]|Bytes:408
+09:56:34.1 (1945619)|HEAP_ALLOCATE|[355]|Bytes:408
+09:56:34.1 (1956089)|HEAP_ALLOCATE|[467]|Bytes:48
+09:56:34.1 (1980676)|HEAP_ALLOCATE|[139]|Bytes:6
+09:56:34.1 (1997195)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:57
+09:56:34.1 (2237254)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (2241219)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (2244657)|HEAP_ALLOCATE|[1]|Bytes:8
+09:56:34.1 (2281527)|VARIABLE_ASSIGNMENT|[1]|strStreet|"1 Street"
+09:56:34.1 (2288302)|STATEMENT_EXECUTE|[2]
+09:56:34.1 (2291004)|HEAP_ALLOCATE|[2]|Bytes:7
+09:56:34.1 (2299739)|VARIABLE_ASSIGNMENT|[2]|strCity|"Staines"
+09:56:34.1 (2304159)|STATEMENT_EXECUTE|[3]
+09:56:34.1 (2306254)|HEAP_ALLOCATE|[3]|Bytes:9
+09:56:34.1 (2312598)|VARIABLE_ASSIGNMENT|[3]|strState|"Middlesex"
+09:56:34.1 (2316256)|STATEMENT_EXECUTE|[4]
+09:56:34.1 (2318517)|HEAP_ALLOCATE|[4]|Bytes:8
+09:56:34.1 (2324467)|VARIABLE_ASSIGNMENT|[4]|strPostCode|"TW18 3AG"
+09:56:34.1 (2328030)|STATEMENT_EXECUTE|[5]
+09:56:34.1 (2329822)|HEAP_ALLOCATE|[5]|Bytes:2
+09:56:34.1 (2335369)|VARIABLE_ASSIGNMENT|[5]|strCountry|"UK"
+09:56:34.1 (2338796)|STATEMENT_EXECUTE|[6]
+09:56:34.1 (2364099)|HEAP_ALLOCATE|[6]|Bytes:4
+09:56:34.1 (2447483)|HEAP_ALLOCATE|[6]|Bytes:5
+09:56:34.1 (2494897)|VARIABLE_ASSIGNMENT|[6]|this.Name|"test1"|0xa5651c6
+09:56:34.1 (2534047)|VARIABLE_ASSIGNMENT|[6]|acct|{"Name":"test1"}|0xa5651c6
+09:56:34.1 (2540233)|STATEMENT_EXECUTE|[7]
+09:56:34.1 (2576235)|HEAP_ALLOCATE|[50]|Bytes:5
+09:56:34.1 (2595871)|HEAP_ALLOCATE|[56]|Bytes:5
+09:56:34.1 (2603449)|HEAP_ALLOCATE|[64]|Bytes:7
+09:56:34.1 (2636263)|HEAP_ALLOCATE|[7]|Bytes:8
+09:56:34.1 (2648964)|DML_BEGIN|[7]|Op:Insert|Type:Account|Rows:1
+09:56:34.1 (2686933)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:56:34.1 (33046917)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+09:56:34.1 (33075414)|DUPLICATE_DETECTION_BEGIN
+09:56:34.1 (33663321)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+09:56:34.1 (59239659)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+09:56:34.1 (59265866)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+09:56:34.1 (59388453)|DUPLICATE_DETECTION_END
+09:56:34.1 (59395206)|CODE_UNIT_FINISHED|DuplicateDetector
+09:56:34.1 (83505158)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Account
+09:56:34.1 (91731059)|WF_RULE_EVAL_BEGIN|Workflow
+09:56:34.1 (91755613)|WF_CRITERIA_BEGIN|[Account: test1 0011r00001nohjY]|PruebaProcess3011r000000gjFE|01Q1r000000mVFX|ON_ALL_CHANGES|0
+09:56:34.1 (91961207)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+09:56:34.1 (91968719)|WF_CRITERIA_END|true
+09:56:34.1 (100927966)|WF_SPOOL_ACTION_BEGIN|Workflow
+09:56:34.1 (100958523)|WF_ACTION| Flow Trigger: 1;
+09:56:34.1 (100964829)|WF_RULE_EVAL_END
+09:56:34.1 (105892406)|WF_FLOW_ACTION_BEGIN|09L1r000000Xt57
+09:56:34.106 (106001069)|FLOW_CREATE_INTERVIEW_BEGIN|00D1r000001H7aI|3001r000000gDp4|3011r000000gjFE
+09:56:34.106 (198169602)|FLOW_CREATE_INTERVIEW_END|21242744843c333e14261f26ece8162d7951621-7275|PruebaProcess
+09:56:34.198 (198631334)|FLOW_START_INTERVIEWS_BEGIN|1
+09:56:34.198 (198669404)|FLOW_START_INTERVIEW_BEGIN|21242744843c333e14261f26ece8162d7951621-7275|PruebaProcess
+09:56:34.198 (216337995)|FLOW_START_INTERVIEW_END|21242744843c333e14261f26ece8162d7951621-7275|PruebaProcess
+09:56:34.198 (503763821)|FLOW_START_INTERVIEWS_END|1
+09:56:34.1 (504663154)|WF_FLOW_ACTION_END|09L1r000000Xt57
+09:56:34.1 (504774875)|WF_ACTIONS_END| Flow Trigger: 1;
+09:56:34.1 (504786370)|CODE_UNIT_FINISHED|Workflow:Account
+09:56:34.1 (508454477)|DML_END|[7]
+09:56:34.1 (508487915)|STATEMENT_EXECUTE|[9]
+09:56:34.1 (508529774)|HEAP_ALLOCATE|[9]|Bytes:4
+09:56:34.1 (508659796)|HEAP_ALLOCATE|[9]|Bytes:4
+09:56:34.1 (508716537)|VARIABLE_ASSIGNMENT|[9]|this.LastName|"Owen"|0x492518f1
+09:56:34.1 (508781339)|VARIABLE_ASSIGNMENT|[9]|this.AccountId|"0011r00001nohjYAAQ"|0x492518f1
+09:56:34.1 (508848403)|VARIABLE_ASSIGNMENT|[9]|ct1|{"LastName":"Owen","AccountId":"0011r00001nohjYAAQ"}|0x492518f1
+09:56:34.1 (508858501)|STATEMENT_EXECUTE|[10]
+09:56:34.1 (508874296)|HEAP_ALLOCATE|[10]|Bytes:4
+09:56:34.1 (508886263)|HEAP_ALLOCATE|[10]|Bytes:8
+09:56:34.1 (508910287)|VARIABLE_ASSIGNMENT|[10]|this.LastName|"Jonathan"|0x3d650b79
+09:56:34.1 (508944861)|VARIABLE_ASSIGNMENT|[10]|this.AccountId|"0011r00001nohjYAAQ"|0x3d650b79
+09:56:34.1 (508976235)|VARIABLE_ASSIGNMENT|[10]|ct2|{"LastName":"Jonathan","AccountId":"0011r00001nohjYAAQ"}|0x3d650b79
+09:56:34.1 (508987633)|STATEMENT_EXECUTE|[11]
+09:56:34.1 (509034481)|HEAP_ALLOCATE|[11]|Bytes:4
+09:56:34.1 (509162741)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+09:56:34.1 (509192457)|VARIABLE_ASSIGNMENT|[11]|cts|[{"LastName":"Owen","AccountId":"0011r00001nohjYAAQ"},{"LastName":"Jonathan","AccountId":"0011r00001nohjYAAQ"}]|0x29b97cf8
+09:56:34.1 (509201994)|STATEMENT_EXECUTE|[12]
+09:56:34.1 (509260692)|DML_BEGIN|[12]|Op:Insert|Type:Contact|Rows:2
+09:56:34.1 (509299208)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+09:56:34.1 (526675685)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j4Bx|ContactTrigger on Contact trigger event BeforeInsert
+09:56:34.1 (526717880)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+09:56:34.1 (526818220)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:56:34.1 (526834125)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:56:34.1 (526892257)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2c7c5a8d
+09:56:34.1 (526955259)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+09:56:34.1 (526963535)|VARIABLE_SCOPE_BEGIN|[1]|this|ContactTrigger|true|false
+09:56:34.1 (526984432)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2c7c5a8d
+09:56:34.1 (527002142)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (527007266)|STATEMENT_EXECUTE|[3]
+09:56:34.1 (527741197)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"IsDeleted":false,"AccountId":"0011r00001nohjYAAQ","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Owen"},{"IsDeleted":false,"AccountId":"0011r00001nohjYAAQ","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Jonathan"}]|0x2c7c5a8d
+09:56:34.1 (527766057)|STATEMENT_EXECUTE|[5]
+09:56:34.1 (527773441)|STATEMENT_EXECUTE|[6]
+09:56:34.1 (527775211)|STATEMENT_EXECUTE|[7]
+09:56:34.1 (529112235)|HEAP_ALLOCATE|[7]|Bytes:1
+09:56:34.1 (529151577)|METHOD_ENTRY|[1]|01p1r000008aKc5|ContactMethods.ContactMethods()
+09:56:34.1 (529159150)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (529164570)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (529523239)|SYSTEM_MODE_ENTER|false
+09:56:34.1 (529537645)|HEAP_ALLOCATE|[7]|Bytes:5
+09:56:34.1 (529546349)|SYSTEM_MODE_EXIT|false
+09:56:34.1 (529556097)|METHOD_EXIT|[1]|ContactMethods
+09:56:34.1 (529578657)|METHOD_ENTRY|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:56:34.1 (529607637)|VARIABLE_SCOPE_BEGIN|[3]|listNew|List<Contact>|true|false
+09:56:34.1 (530036220)|VARIABLE_ASSIGNMENT|[3]|listNew|[{"IsDeleted":false,"AccountId":"0011r00001nohjYAAQ","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Owen"},{"IsDeleted":false,"AccountId":"0011r00001nohjYAAQ","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Jonathan"}]|0x7678d22a
+09:56:34.1 (530060452)|SYSTEM_MODE_ENTER|false
+09:56:34.1 (530067550)|HEAP_ALLOCATE|[5]|Bytes:5
+09:56:34.1 (530073552)|STATEMENT_EXECUTE|[3]
+09:56:34.1 (530121144)|STATEMENT_EXECUTE|[5]
+09:56:34.1 (530253520)|HEAP_ALLOCATE|[7]|Bytes:5
+09:56:34.1 (530272309)|HEAP_ALLOCATE|[7]|Bytes:4
+09:56:34.1 (530281408)|VARIABLE_SCOPE_BEGIN|[7]|inContact|Contact|true|false
+09:56:34.1 (530558019)|VARIABLE_ASSIGNMENT|[7]|inContact|{"IsDeleted":false,"AccountId":"0011r00001nohjYAAQ","IsEmailBounced":false,"CleanStatus":"Pending","DoNotCall":false,"OwnerId":"0051r000007Oz5QAAS","Premium__c":false,"HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"LastName":"Owen"}|0x421d8354
+09:56:34.1 (530569898)|STATEMENT_EXECUTE|[7]
+09:56:34.1 (531771276)|HEAP_ALLOCATE|[8]|Bytes:1
+09:56:34.1 (531781735)|HEAP_ALLOCATE|[8]|Bytes:7
+09:56:34.1 (531793826)|METHOD_ENTRY|[1]|01p1r000009oduV|Utils.Utils()
+09:56:34.1 (531799463)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (531804330)|STATEMENT_EXECUTE|[1]
+09:56:34.1 (531814097)|HEAP_ALLOCATE|[8]|Bytes:5
+09:56:34.1 (531823215)|METHOD_EXIT|[1]|Utils
+09:56:34.1 (531841533)|METHOD_ENTRY|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:56:34.1 (531859484)|VARIABLE_SCOPE_BEGIN|[3]|nif|String|false|false
+09:56:34.1 (531870422)|VARIABLE_ASSIGNMENT|[3]|nif|null
+09:56:34.1 (531882319)|HEAP_ALLOCATE|[5]|Bytes:5
+09:56:34.1 (531887516)|STATEMENT_EXECUTE|[3]
+09:56:34.1 (531889267)|STATEMENT_EXECUTE|[5]
+09:56:34.1 (531892640)|HEAP_ALLOCATE|[5]|Bytes:4
+09:56:34.1 (531905517)|HEAP_ALLOCATE|[5]|Bytes:8
+09:56:34.1 (532102364)|USER_DEBUG|[5]|DEBUG|NIF null
+09:56:34.1 (532181391)|HEAP_ALLOCATE|[7]|Bytes:41
+09:56:34.1 (532202773)|METHOD_EXIT|[8]|01p1r000009oduV|Utils.isNifNie(String)
+09:56:34.1 (532210258)|SYSTEM_MODE_EXIT|false
+09:56:34.1 (532217318)|METHOD_EXIT|[7]|01p1r000008aKc5|ContactMethods.ValidarNif(List<Contact>)
+09:56:34.1 (532347561)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:56:34.1 (532362305)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.Utils.isNifNie: line 7, column 1
+Class.ContactMethods.ValidarNif: line 8, column 1
+Trigger.ContactTrigger: line 7, column 1
+09:56:34.532 (532415767)|CUMULATIVE_LIMIT_USAGE
+09:56:34.532 (532415767)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:56:34.532 (532415767)|CUMULATIVE_LIMIT_USAGE_END
+
+09:56:34.1 (533673634)|CODE_UNIT_FINISHED|ContactTrigger on Contact trigger event BeforeInsert
