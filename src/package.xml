@@ -23,6 +23,8 @@
 	<types>
 		<members>Books4EveryoneHome</members>
 		<members>Books4EveryoneRecommendations</members>
+		<members>Books4EveryoneMissingAuthors</members>
+		<members>MyContactList</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<version>36.0</version>
