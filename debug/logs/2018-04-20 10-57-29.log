@@ -1,0 +1,177 @@
+41.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: //Instantiate an object from the BankAcct class called chkAcct
+Execute Anonymous: BankAcct chkAcct = new BankAcct();
+Execute Anonymous:         
+Execute Anonymous: //Set the attribute accttype of the object chkAcct to Checking
+Execute Anonymous: chkAcct.accttype = 'Checking';
+Execute Anonymous:         
+Execute Anonymous: //Set the attribute acctName of the object chkAcct to D.Castillo-Chk
+Execute Anonymous: chkAcct.acctName = 'D.Castillo-Chk ';
+Execute Anonymous:         
+Execute Anonymous: //Invoke the makeDeposit method for $150
+Execute Anonymous: chkAcct.makeDeposit(150);
+Execute Anonymous:         
+Execute Anonymous: //Instantiate an object from the BankAcct class called savAcct
+Execute Anonymous: BankAcct savAcct = new BankAcct();
+Execute Anonymous:         
+Execute Anonymous: //Set the attribute accttype of the object savAcct to Savings
+Execute Anonymous: savAcct.accttype = 'Savings';
+Execute Anonymous:         
+Execute Anonymous: //Set the attribute acctName of the object savAcct to D.Castillo-Sav
+Execute Anonymous: savAcct.acctName = 'D.Castillo–Sav';
+Execute Anonymous:         
+Execute Anonymous: //Invoke the makeDeposit method for $220
+Execute Anonymous: savAcct.makeDeposit(220);
+Execute Anonymous:         
+Execute Anonymous: //Instantiate an BankAcct List object from the List class called bankAccts 
+Execute Anonymous: List<BankAcct> bankAccts = new List<BankAcct>();
+Execute Anonymous:         
+Execute Anonymous: System.debug('The BankAcct List has ' + bankAccts.size() + ' bank accounts.');
+Execute Anonymous:         
+Execute Anonymous: //Add the chkAcct object to the bankAccts list
+Execute Anonymous: bankAccts.add(chkAcct);
+Execute Anonymous:         
+Execute Anonymous: //Add the savAcct object to the bankAccts list
+Execute Anonymous: bankAccts.add(savAcct);
+Execute Anonymous:         
+Execute Anonymous: System.debug('The BankAcct List has ' + bankAccts.size() + ' bank accounts.');
+Execute Anonymous:         
+Execute Anonymous: System.debug('Here is the list: ' + bankAccts);
+Execute Anonymous:     
+10:57:29.10 (10956815)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:57:29.10 (10979634)|EXECUTION_STARTED
+10:57:29.10 (10984650)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+10:57:29.10 (12644181)|VARIABLE_SCOPE_BEGIN|[26]|bankAccts|List<BankAcct>|true|false
+10:57:29.10 (12775322)|VARIABLE_SCOPE_BEGIN|[2]|chkAcct|BankAcct|true|false
+10:57:29.10 (12785658)|VARIABLE_SCOPE_BEGIN|[14]|savAcct|BankAcct|true|false
+10:57:29.10 (12893388)|HEAP_ALLOCATE|[72]|Bytes:3
+10:57:29.10 (12942335)|HEAP_ALLOCATE|[77]|Bytes:152
+10:57:29.10 (12956028)|HEAP_ALLOCATE|[342]|Bytes:408
+10:57:29.10 (12968943)|HEAP_ALLOCATE|[355]|Bytes:408
+10:57:29.10 (12979295)|HEAP_ALLOCATE|[467]|Bytes:48
+10:57:29.10 (13007026)|HEAP_ALLOCATE|[139]|Bytes:6
+10:57:29.10 (13024399)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:38
+10:57:29.10 (13123818)|STATEMENT_EXECUTE|[1]
+10:57:29.10 (13127414)|STATEMENT_EXECUTE|[2]
+10:57:29.10 (13131724)|HEAP_ALLOCATE|[2]|Bytes:4
+10:57:29.10 (13165388)|METHOD_ENTRY|[1]|01p1r000009sHuu|BankAcct.BankAcct()
+10:57:29.10 (13173894)|STATEMENT_EXECUTE|[1]
+10:57:29.10 (13178754)|STATEMENT_EXECUTE|[1]
+10:57:29.10 (13185152)|METHOD_EXIT|[1]|BankAcct
+10:57:29.10 (13203103)|HEAP_ALLOCATE|[2]|Bytes:16
+10:57:29.10 (13244055)|HEAP_ALLOCATE|[50]|Bytes:5
+10:57:29.10 (13270526)|HEAP_ALLOCATE|[56]|Bytes:5
+10:57:29.10 (13278734)|HEAP_ALLOCATE|[64]|Bytes:7
+10:57:29.10 (13301428)|SYSTEM_MODE_ENTER|false
+10:57:29.10 (13322302)|HEAP_ALLOCATE|[2]|Bytes:5
+10:57:29.10 (13333049)|CONSTRUCTOR_ENTRY|[2]|01p1r000009sHuu|<init>()
+10:57:29.10 (13354934)|VARIABLE_SCOPE_BEGIN|[1]|this|BankAcct|true|false
+10:57:29.10 (13409159)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x39e179cf
+10:57:29.10 (13420459)|HEAP_ALLOCATE|[2]|Bytes:6
+10:57:29.10 (13455091)|STATEMENT_EXECUTE|[1]
+10:57:29.10 (13457457)|STATEMENT_EXECUTE|[2]
+10:57:29.10 (13462240)|HEAP_ALLOCATE|[2]|Bytes:4
+10:57:29.10 (13474346)|VARIABLE_ASSIGNMENT|[2]|this.balance|0|0x39e179cf
+10:57:29.10 (13480034)|STATEMENT_EXECUTE|[3]
+10:57:29.10 (13482293)|STATEMENT_EXECUTE|[6]
+10:57:29.10 (13490115)|CONSTRUCTOR_EXIT|[2]|01p1r000009sHuu|<init>()
+10:57:29.10 (13501099)|SYSTEM_MODE_EXIT|false
+10:57:29.10 (13525850)|VARIABLE_ASSIGNMENT|[2]|chkAcct|{"balance":0}|0x39e179cf
+10:57:29.10 (13531605)|STATEMENT_EXECUTE|[5]
+10:57:29.10 (13534981)|HEAP_ALLOCATE|[5]|Bytes:8
+10:57:29.10 (13548984)|VARIABLE_ASSIGNMENT|[5]|this.accttype|"Checking"|0x39e179cf
+10:57:29.10 (13554364)|STATEMENT_EXECUTE|[8]
+10:57:29.10 (13556537)|HEAP_ALLOCATE|[8]|Bytes:15
+10:57:29.10 (13563696)|VARIABLE_ASSIGNMENT|[8]|this.acctName|"D.Castillo-Chk "|0x39e179cf
+10:57:29.10 (13568654)|STATEMENT_EXECUTE|[11]
+10:57:29.10 (13593964)|SYSTEM_MODE_ENTER|false
+10:57:29.10 (13604809)|HEAP_ALLOCATE|[11]|Bytes:5
+10:57:29.10 (13630042)|METHOD_ENTRY|[11]|01p1r000009sHuu|BankAcct.makeDeposit(Integer)
+10:57:29.10 (13654269)|VARIABLE_SCOPE_BEGIN|[7]|this|BankAcct|true|false
+10:57:29.10 (13676180)|VARIABLE_ASSIGNMENT|[7]|this|{"acctName":"D.Castillo-Chk ","accttype":"Checking","balance":0}|0x39e179cf
+10:57:29.10 (13683502)|VARIABLE_SCOPE_BEGIN|[7]|deposit|Integer|false|false
+10:57:29.10 (13690555)|VARIABLE_ASSIGNMENT|[7]|deposit|150
+10:57:29.10 (13698426)|STATEMENT_EXECUTE|[7]
+10:57:29.10 (13700298)|STATEMENT_EXECUTE|[8]
+10:57:29.10 (13707446)|HEAP_ALLOCATE|[8]|Bytes:4
+10:57:29.10 (13716742)|VARIABLE_ASSIGNMENT|[8]|this.balance|150|0x39e179cf
+10:57:29.10 (13724845)|METHOD_EXIT|[11]|01p1r000009sHuu|BankAcct.makeDeposit(Integer)
+10:57:29.10 (13732692)|SYSTEM_MODE_EXIT|false
+10:57:29.10 (13737845)|STATEMENT_EXECUTE|[14]
+10:57:29.10 (13742306)|HEAP_ALLOCATE|[14]|Bytes:16
+10:57:29.10 (13764117)|SYSTEM_MODE_ENTER|false
+10:57:29.10 (13774089)|HEAP_ALLOCATE|[14]|Bytes:5
+10:57:29.10 (13780881)|CONSTRUCTOR_ENTRY|[14]|01p1r000009sHuu|<init>()
+10:57:29.10 (13791314)|VARIABLE_SCOPE_BEGIN|[1]|this|BankAcct|true|false
+10:57:29.10 (13806272)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2d028442
+10:57:29.10 (13821075)|STATEMENT_EXECUTE|[1]
+10:57:29.10 (13823793)|STATEMENT_EXECUTE|[2]
+10:57:29.10 (13827143)|HEAP_ALLOCATE|[2]|Bytes:4
+10:57:29.10 (13835885)|VARIABLE_ASSIGNMENT|[2]|this.balance|0|0x2d028442
+10:57:29.10 (13840777)|STATEMENT_EXECUTE|[3]
+10:57:29.10 (13842410)|STATEMENT_EXECUTE|[6]
+10:57:29.10 (13846117)|CONSTRUCTOR_EXIT|[14]|01p1r000009sHuu|<init>()
+10:57:29.10 (13852574)|SYSTEM_MODE_EXIT|false
+10:57:29.10 (13868126)|VARIABLE_ASSIGNMENT|[14]|savAcct|{"balance":0}|0x2d028442
+10:57:29.10 (13873724)|STATEMENT_EXECUTE|[17]
+10:57:29.10 (13877273)|HEAP_ALLOCATE|[17]|Bytes:7
+10:57:29.10 (13888868)|VARIABLE_ASSIGNMENT|[17]|this.accttype|"Savings"|0x2d028442
+10:57:29.10 (13894793)|STATEMENT_EXECUTE|[20]
+10:57:29.10 (13897170)|HEAP_ALLOCATE|[20]|Bytes:14
+10:57:29.10 (13903964)|VARIABLE_ASSIGNMENT|[20]|this.acctName|"D.Castillo–Sav"|0x2d028442
+10:57:29.10 (13913090)|STATEMENT_EXECUTE|[23]
+10:57:29.10 (13933897)|SYSTEM_MODE_ENTER|false
+10:57:29.10 (13944710)|HEAP_ALLOCATE|[23]|Bytes:5
+10:57:29.10 (13953643)|METHOD_ENTRY|[23]|01p1r000009sHuu|BankAcct.makeDeposit(Integer)
+10:57:29.10 (13965133)|VARIABLE_SCOPE_BEGIN|[7]|this|BankAcct|true|false
+10:57:29.10 (13982220)|VARIABLE_ASSIGNMENT|[7]|this|{"acctName":"D.Castillo–Sav","accttype":"Savings","balance":0}|0x2d028442
+10:57:29.10 (13988030)|VARIABLE_SCOPE_BEGIN|[7]|deposit|Integer|false|false
+10:57:29.10 (13998159)|VARIABLE_ASSIGNMENT|[7]|deposit|220
+10:57:29.10 (14004938)|STATEMENT_EXECUTE|[7]
+10:57:29.10 (14007534)|STATEMENT_EXECUTE|[8]
+10:57:29.10 (14011207)|HEAP_ALLOCATE|[8]|Bytes:4
+10:57:29.10 (14017528)|VARIABLE_ASSIGNMENT|[8]|this.balance|220|0x2d028442
+10:57:29.10 (14024636)|METHOD_EXIT|[23]|01p1r000009sHuu|BankAcct.makeDeposit(Integer)
+10:57:29.10 (14031119)|SYSTEM_MODE_EXIT|false
+10:57:29.10 (14036325)|STATEMENT_EXECUTE|[26]
+10:57:29.10 (14049859)|HEAP_ALLOCATE|[26]|Bytes:4
+10:57:29.10 (14123595)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:57:29.10 (14136320)|VARIABLE_ASSIGNMENT|[26]|bankAccts|[]|0x28f627fc
+10:57:29.10 (14142166)|STATEMENT_EXECUTE|[28]
+10:57:29.10 (14145734)|HEAP_ALLOCATE|[28]|Bytes:22
+10:57:29.10 (14197322)|HEAP_ALLOCATE|[28]|Bytes:1
+10:57:29.10 (14207230)|HEAP_ALLOCATE|[28]|Bytes:15
+10:57:29.10 (14218040)|HEAP_ALLOCATE|[28]|Bytes:38
+10:57:29.10 (14242931)|USER_DEBUG|[28]|DEBUG|The BankAcct List has 0 bank accounts.
+10:57:29.10 (14251412)|STATEMENT_EXECUTE|[31]
+10:57:29.10 (14276054)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:57:29.10 (14285624)|STATEMENT_EXECUTE|[34]
+10:57:29.10 (14298762)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:57:29.10 (14304721)|STATEMENT_EXECUTE|[36]
+10:57:29.10 (14322311)|HEAP_ALLOCATE|[36]|Bytes:1
+10:57:29.10 (14335003)|HEAP_ALLOCATE|[36]|Bytes:38
+10:57:29.10 (14343824)|USER_DEBUG|[36]|DEBUG|The BankAcct List has 2 bank accounts.
+10:57:29.10 (14350024)|STATEMENT_EXECUTE|[38]
+10:57:29.10 (14352480)|HEAP_ALLOCATE|[38]|Bytes:18
+10:57:29.10 (14421087)|HEAP_ALLOCATE|[38]|Bytes:136
+10:57:29.10 (14437948)|HEAP_ALLOCATE|[38]|Bytes:154
+10:57:29.10 (14448559)|USER_DEBUG|[38]|DEBUG|Here is the list: (BankAcct:[acctName=D.Castillo-Chk , accttype=Checking, balance=150], BankAcct:[acctName=D.Castillo–Sav, accttype=Savings, balance=220])
+10:57:29.14 (14478982)|CUMULATIVE_LIMIT_USAGE
+10:57:29.14 (14478982)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:57:29.14 (14478982)|CUMULATIVE_LIMIT_USAGE_END
+
+10:57:29.10 (14516112)|CODE_UNIT_FINISHED|execute_anonymous_apex
+10:57:29.10 (15583588)|EXECUTION_FINISHED

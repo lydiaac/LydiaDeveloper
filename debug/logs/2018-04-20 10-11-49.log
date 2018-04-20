@@ -1,0 +1,320 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+10:11:48.0 (96130)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:11:48.0 (272777)|EXECUTION_STARTED
+10:11:48.0 (278057)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+10:11:48.0 (305841)|DUPLICATE_DETECTION_BEGIN
+10:11:48.0 (440623)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+10:11:48.0 (555272)|DUPLICATE_DETECTION_END
+10:11:48.0 (570191)|CODE_UNIT_FINISHED|DuplicateDetector
+10:11:48.0 (581252)|EXECUTION_FINISHED
+10:11:48.24 (24026048)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:11:48.24 (24050326)|EXECUTION_STARTED
+10:11:48.24 (24055246)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j8Jg|AccountTrigger on Account trigger event AfterUpdate
+10:11:48.24 (24107496)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+10:11:48.24 (24151204)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+10:11:48.24 (25068941)|HEAP_ALLOCATE|[72]|Bytes:3
+10:11:48.24 (25143860)|HEAP_ALLOCATE|[77]|Bytes:152
+10:11:48.24 (25160996)|HEAP_ALLOCATE|[342]|Bytes:408
+10:11:48.24 (25174796)|HEAP_ALLOCATE|[355]|Bytes:408
+10:11:48.24 (25185599)|HEAP_ALLOCATE|[467]|Bytes:48
+10:11:48.24 (25243128)|HEAP_ALLOCATE|[139]|Bytes:6
+10:11:48.24 (25376878)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (25398460)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+10:11:48.24 (25570331)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x50ac2006
+10:11:48.24 (25642705)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (25657914)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+10:11:48.24 (25672158)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x50ac2006
+10:11:48.24 (25684812)|STATEMENT_EXECUTE|[1]
+10:11:48.24 (25687705)|STATEMENT_EXECUTE|[3]
+10:11:48.24 (25733293)|HEAP_ALLOCATE|[50]|Bytes:5
+10:11:48.24 (25760468)|HEAP_ALLOCATE|[56]|Bytes:5
+10:11:48.24 (25769422)|HEAP_ALLOCATE|[64]|Bytes:7
+10:11:48.24 (26538096)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"LastModifiedDate":"2018-04-20T08:11:48.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-20T08:11:48.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}]|0x50ac2006
+10:11:48.24 (26566406)|STATEMENT_EXECUTE|[5]
+10:11:48.24 (27048013)|VARIABLE_ASSIGNMENT|[5]|this.mapOld|{"0011r00001mvH7mAAE":{"LastModifiedDate":"2018-04-20T08:11:30.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-20T08:11:30.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}}|0x50ac2006
+10:11:48.24 (27086235)|STATEMENT_EXECUTE|[7]
+10:11:48.24 (27092586)|STATEMENT_EXECUTE|[8]
+10:11:48.24 (27094516)|STATEMENT_EXECUTE|[9]
+10:11:48.24 (27223973)|HEAP_ALLOCATE|[9]|Bytes:4
+10:11:48.24 (27234591)|HEAP_ALLOCATE|[9]|Bytes:2
+10:11:48.24 (27266013)|METHOD_ENTRY|[1]|01p1r000009p8Bf|AccountMethods.AccountMethods()
+10:11:48.24 (27274439)|STATEMENT_EXECUTE|[1]
+10:11:48.24 (27279033)|STATEMENT_EXECUTE|[1]
+10:11:48.24 (27649315)|SYSTEM_MODE_ENTER|false
+10:11:48.24 (27665275)|HEAP_ALLOCATE|[9]|Bytes:5
+10:11:48.24 (27675636)|SYSTEM_MODE_EXIT|false
+10:11:48.24 (27703084)|METHOD_EXIT|[1]|AccountMethods
+10:11:48.24 (27732002)|METHOD_ENTRY|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+10:11:48.24 (27760341)|VARIABLE_SCOPE_BEGIN|[31]|listAccount|List<Account>|true|false
+10:11:48.24 (28088376)|VARIABLE_ASSIGNMENT|[31]|listAccount|[{"LastModifiedDate":"2018-04-20T08:11:48.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-20T08:11:48.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}]|0x56f308c1
+10:11:48.24 (28111939)|VARIABLE_SCOPE_BEGIN|[31]|mapOld|Map<Id,Account>|true|false
+10:11:48.24 (28473469)|VARIABLE_ASSIGNMENT|[31]|mapOld|{"0011r00001mvH7mAAE":{"LastModifiedDate":"2018-04-20T08:11:30.000Z","Ownership":"Public","Description":"Chain of hotels and  (62 more) ...","BillingCity":"Chicago","Rating":"Warm","Website":"www.grandhotels.com","NumberOfEmployees":5600,"SLA__c":"Gold","Name":"Grand Hotels & Resor (6 more) ...","Industry":"Hospitality","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5572","TickerSymbol":"GHTL","Phone":"(312) 596-1000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":57,"IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z","Sic":"2268","SystemModstamp":"2018-04-20T08:11:30.000Z","ShippingStreet":"2334 N. Michigan Ave (39 more) ...","AccountNumber":"CD439877","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"2334 N. Michigan Ave (39 more) ...","LastActivityDate":"2047-04-20T00:00:00.000Z","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7mAAE","Fax":"(312) 596-1500","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":500000000,"BillingState":"IL","Active__c":"Yes"}}|0x183ff5f6
+10:11:48.24 (28512554)|SYSTEM_MODE_ENTER|false
+10:11:48.24 (28520236)|HEAP_ALLOCATE|[33]|Bytes:5
+10:11:48.24 (28526927)|STATEMENT_EXECUTE|[31]
+10:11:48.24 (28641245)|STATEMENT_EXECUTE|[33]
+10:11:48.24 (28644010)|STATEMENT_EXECUTE|[35]
+10:11:48.24 (28661160)|HEAP_ALLOCATE|[35]|Bytes:4
+10:11:48.24 (28740051)|VARIABLE_SCOPE_BEGIN|[35]|listAccUpdate|List<Account>|true|false
+10:11:48.24 (28753356)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (28763054)|VARIABLE_ASSIGNMENT|[35]|listAccUpdate|[]|0x30cc8900
+10:11:48.24 (28772076)|HEAP_ALLOCATE|[37]|Bytes:175
+10:11:48.24 (28788580)|HEAP_ALLOCATE|[37]|Bytes:4
+10:11:48.24 (28798933)|HEAP_ALLOCATE|[37]|Bytes:7
+10:11:48.24 (29211552)|SOQL_EXECUTE_BEGIN|[37]|Aggregations:1|SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId, (SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM ChildAccounts) FROM Account 
+10:11:48.24 (34059690)|SOQL_EXECUTE_END|[37]|Rows:1
+10:11:48.24 (34088644)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+10:11:48.24 (34281124)|HEAP_ALLOCATE|[37]|Bytes:54
+10:11:48.24 (34291559)|HEAP_ALLOCATE|[37]|Bytes:8
+10:11:48.24 (34305544)|SYSTEM_METHOD_ENTRY|[7]|QueryLocatorIterator.QueryLocatorIterator()
+10:11:48.24 (34312139)|STATEMENT_EXECUTE|[7]
+10:11:48.24 (34322621)|SYSTEM_METHOD_EXIT|[7]|QueryLocatorIterator
+10:11:48.24 (34331219)|HEAP_ALLOCATE|[37]|Bytes:28
+10:11:48.24 (34363882)|HEAP_ALLOCATE|[37]|Bytes:8
+10:11:48.24 (34378106)|HEAP_ALLOCATE|[37]|Bytes:8
+10:11:48.24 (34382594)|HEAP_ALLOCATE|[37]|Bytes:8
+10:11:48.24 (34387526)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:11:48.24 (34435367)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x2e084958
+10:11:48.24 (34443106)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:11:48.24 (34489529)|VARIABLE_ASSIGNMENT|[15]|values|[{"Id":"0011r00001mvH7mAAE","Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","ChildAccounts":[{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"},{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001np50hAAA","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"}]}]|0x609ccdc2
+10:11:48.24 (34500472)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:11:48.24 (34522380)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT Id, Fecha_ult (155 more) ..."}|0x16110332
+10:11:48.24 (34528136)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:11:48.24 (34537155)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|1
+10:11:48.24 (34541899)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:11:48.24 (34548847)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49999
+10:11:48.24 (34652212)|HEAP_ALLOCATE|[37]|Bytes:28
+10:11:48.24 (34700824)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (34754798)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (34763596)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:11:48.24 (34841328)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:11:48.24 (34851511)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:11:48.24 (34879698)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001mvH7mAAE","Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","ChildAccounts":[{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"},{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001np50hAAA","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"}]}|0x5f2e453c
+10:11:48.24 (34891796)|STATEMENT_EXECUTE|[40]
+10:11:48.24 (34894066)|STATEMENT_EXECUTE|[42]
+10:11:48.24 (34899391)|HEAP_ALLOCATE|[42]|Bytes:13
+10:11:48.24 (34904558)|HEAP_ALLOCATE|[42]|Bytes:7
+10:11:48.24 (34937686)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (34957908)|HEAP_ALLOCATE|[42]|Bytes:12
+10:11:48.24 (35178286)|USER_DEBUG|[42]|DEBUG|(Account:{ParentId=0011r00001mvH7mAAE, Id=0011r00001nnRDqAAM, Fecha_ultima_actividad_mas_reciente__c=2015-04-26 00:00:00}, Account:{ParentId=0011r00001mvH7mAAE, Id=0011r00001np50hAAA, Fecha_ultima_actividad_mas_reciente__c=2015-04-26 00:00:00})
+10:11:48.24 (35209322)|HEAP_ALLOCATE|[44]|Bytes:12
+10:11:48.24 (35278508)|HEAP_ALLOCATE|[44]|Bytes:28
+10:11:48.24 (35309502)|HEAP_ALLOCATE|[44]|Bytes:12
+10:11:48.24 (35325012)|HEAP_ALLOCATE|[44]|Bytes:8
+10:11:48.24 (35329000)|HEAP_ALLOCATE|[44]|Bytes:8
+10:11:48.24 (35333180)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:11:48.24 (35353553)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x35f4bc67
+10:11:48.24 (35360140)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:11:48.24 (35383948)|VARIABLE_ASSIGNMENT|[15]|values|[{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"},{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001np50hAAA","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"}]|0x2be22178
+10:11:48.24 (35394257)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:11:48.24 (35413512)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x6c8869d
+10:11:48.24 (35422320)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:11:48.24 (35432474)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|2
+10:11:48.24 (35436549)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:11:48.24 (35443390)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:11:48.24 (35484943)|HEAP_ALLOCATE|[44]|Bytes:28
+10:11:48.24 (35498865)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35521451)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35527452)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.next()
+10:11:48.24 (35575735)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.next()
+10:11:48.24 (35582937)|VARIABLE_SCOPE_BEGIN|[44]|inAccountChild|Account|true|false
+10:11:48.24 (35601948)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"}|0x31d7eb89
+10:11:48.24 (35610224)|STATEMENT_EXECUTE|[44]
+10:11:48.24 (35612141)|STATEMENT_EXECUTE|[45]
+10:11:48.24 (35700314)|VARIABLE_ASSIGNMENT|[45]|this.Fecha_ultima_actividad_mas_reciente__c|"2000-04-15T00:00:00.000Z"|0x31d7eb89
+10:11:48.24 (35709031)|STATEMENT_EXECUTE|[46]
+10:11:48.24 (35760165)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (35774746)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35794753)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35800744)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.next()
+10:11:48.24 (35852456)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.next()
+10:11:48.24 (35859142)|VARIABLE_SCOPE_BEGIN|[44]|inAccountChild|Account|true|false
+10:11:48.24 (35877435)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|{"ParentId":"0011r00001mvH7mAAE","Id":"0011r00001np50hAAA","Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z"}|0x21506e50
+10:11:48.24 (35884842)|STATEMENT_EXECUTE|[44]
+10:11:48.24 (35886502)|STATEMENT_EXECUTE|[45]
+10:11:48.24 (35917660)|VARIABLE_ASSIGNMENT|[45]|this.Fecha_ultima_actividad_mas_reciente__c|"2000-04-15T00:00:00.000Z"|0x21506e50
+10:11:48.24 (35924424)|STATEMENT_EXECUTE|[46]
+10:11:48.24 (35931714)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (35939789)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35952539)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35960152)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:11:48.24 (35966768)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35975706)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (35981768)|VARIABLE_ASSIGNMENT|[37]|inAccount|null|
+10:11:48.24 (35997596)|STATEMENT_EXECUTE|[50]
+10:11:48.24 (36044883)|DML_BEGIN|[50]|Op:Update|Type:Account|Rows:2
+10:11:48.24 (36078287)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (41621132)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+10:11:48.24 (41638711)|DUPLICATE_DETECTION_BEGIN
+10:11:48.24 (41709816)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+10:11:48.24 (41784158)|DUPLICATE_DETECTION_END
+10:11:48.24 (41789831)|CODE_UNIT_FINISHED|DuplicateDetector
+10:11:48.24 (55599124)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j8Jg|AccountTrigger on Account trigger event AfterUpdate
+10:11:48.24 (55663217)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (55707697)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (55790749)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (55804172)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+10:11:48.24 (55857092)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x19583667
+10:11:48.24 (55912564)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (55922558)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+10:11:48.24 (55939777)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x19583667
+10:11:48.24 (55953642)|STATEMENT_EXECUTE|[1]
+10:11:48.24 (55957432)|STATEMENT_EXECUTE|[3]
+10:11:48.24 (57343499)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:48.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:48.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-30T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"},{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:48.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:48.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"CreatedDate":"2018-04-20T07:34:01.000Z","Id":"0011r00001np50hAAA","LastModifiedById":"0051r000007Oz5QAAS"}]|0x19583667
+10:11:48.24 (57379274)|STATEMENT_EXECUTE|[5]
+10:11:48.24 (58715052)|VARIABLE_ASSIGNMENT|[5]|this.mapOld|{"0011r00001nnRDqAAM":{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:30.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:30.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-30T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"},"0011r00001np50hAAA":{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:30.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:30.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"CreatedDate":"2018-04-20T07:34:01.000Z","Id":"0011r00001np50hAAA","LastModifiedById":"0051r000007Oz5QAAS"}}|0x19583667
+10:11:48.24 (58749033)|STATEMENT_EXECUTE|[7]
+10:11:48.24 (58754706)|STATEMENT_EXECUTE|[8]
+10:11:48.24 (58756712)|STATEMENT_EXECUTE|[9]
+10:11:48.24 (58775052)|METHOD_ENTRY|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+10:11:48.24 (58786026)|VARIABLE_SCOPE_BEGIN|[31]|listAccount|List<Account>|true|false
+10:11:48.24 (59731385)|VARIABLE_ASSIGNMENT|[31]|listAccount|[{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:48.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:48.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-30T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"},{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:48.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:48.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"CreatedDate":"2018-04-20T07:34:01.000Z","Id":"0011r00001np50hAAA","LastModifiedById":"0051r000007Oz5QAAS"}]|0x3d81eb7d
+10:11:48.24 (59760705)|VARIABLE_SCOPE_BEGIN|[31]|mapOld|Map<Id,Account>|true|false
+10:11:48.24 (60558561)|VARIABLE_ASSIGNMENT|[31]|mapOld|{"0011r00001nnRDqAAM":{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:30.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:30.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"LastActivityDate":"2048-04-30T00:00:00.000Z","CreatedDate":"2018-04-12T09:07:46.000Z","Id":"0011r00001nnRDqAAM","LastModifiedById":"0051r000007Oz5QAAS"},"0011r00001np50hAAA":{"ParentId":"0011r00001mvH7mAAE","LastModifiedDate":"2018-04-20T08:11:30.000Z","IsDeleted":false,"Fecha_ultima_activid (18 more) ...":"2015-04-26T00:00:00.000Z","SystemModstamp":"2018-04-20T08:11:30.000Z","Name":"prueba","CleanStatus":"Pending","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","Match_Billing_Addres (4 more) ...":false,"CreatedDate":"2018-04-20T07:34:01.000Z","Id":"0011r00001np50hAAA","LastModifiedById":"0051r000007Oz5QAAS"}}|0x1f0d5dd0
+10:11:48.24 (60602369)|HEAP_ALLOCATE|[33]|Bytes:5
+10:11:48.24 (60610382)|STATEMENT_EXECUTE|[31]
+10:11:48.24 (60635193)|STATEMENT_EXECUTE|[33]
+10:11:48.24 (60637370)|STATEMENT_EXECUTE|[35]
+10:11:48.24 (60655802)|HEAP_ALLOCATE|[35]|Bytes:4
+10:11:48.24 (60674870)|VARIABLE_SCOPE_BEGIN|[35]|listAccUpdate|List<Account>|true|false
+10:11:48.24 (60685442)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (60693300)|VARIABLE_ASSIGNMENT|[35]|listAccUpdate|[]|0x5b41073b
+10:11:48.24 (60714243)|HEAP_ALLOCATE|[37]|Bytes:4
+10:11:48.24 (61094209)|SOQL_EXECUTE_BEGIN|[37]|Aggregations:1|SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId, (SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM ChildAccounts) FROM Account 
+10:11:48.24 (65556200)|SOQL_EXECUTE_END|[37]|Rows:2
+10:11:48.24 (65580376)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (65698981)|HEAP_ALLOCATE|[37]|Bytes:28
+10:11:48.24 (65733602)|HEAP_ALLOCATE|[37]|Bytes:12
+10:11:48.24 (65749630)|HEAP_ALLOCATE|[37]|Bytes:8
+10:11:48.24 (65754221)|HEAP_ALLOCATE|[37]|Bytes:8
+10:11:48.24 (65760865)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:11:48.24 (65792595)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x3145c374
+10:11:48.24 (65799646)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:11:48.24 (65838007)|VARIABLE_ASSIGNMENT|[15]|values|[{"Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","ParentId":"0011r00001mvH7mAAE"},{"Id":"0011r00001np50hAAA","Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","ParentId":"0011r00001mvH7mAAE"}]|0x61ed2382
+10:11:48.24 (65847422)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:11:48.24 (65868354)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT Id, Fecha_ult (155 more) ..."}|0x45c82e37
+10:11:48.24 (65874453)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:11:48.24 (65883563)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|2
+10:11:48.24 (65887739)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:11:48.24 (65895518)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49997
+10:11:48.24 (65955319)|HEAP_ALLOCATE|[37]|Bytes:28
+10:11:48.24 (65972350)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66006090)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66014691)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:11:48.24 (66074820)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:11:48.24 (66084828)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:11:48.24 (66103663)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001nnRDqAAM","Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","ParentId":"0011r00001mvH7mAAE"}|0x384704e4
+10:11:48.24 (66112516)|STATEMENT_EXECUTE|[40]
+10:11:48.24 (66114659)|STATEMENT_EXECUTE|[42]
+10:11:48.24 (66136072)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (66156353)|HEAP_ALLOCATE|[42]|Bytes:4
+10:11:48.24 (66182346)|USER_DEBUG|[42]|DEBUG|()
+10:11:48.24 (66244959)|HEAP_ALLOCATE|[44]|Bytes:28
+10:11:48.24 (66257727)|HEAP_ALLOCATE|[44]|Bytes:8
+10:11:48.24 (66261246)|HEAP_ALLOCATE|[44]|Bytes:8
+10:11:48.24 (66264928)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:11:48.24 (66281884)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x2f7fe8ba
+10:11:48.24 (66287889)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:11:48.24 (66296183)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:11:48.24 (66299679)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:11:48.24 (66311034)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x2bc2d2f4
+10:11:48.24 (66316895)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:11:48.24 (66324186)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:11:48.24 (66327767)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:11:48.24 (66334510)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:11:48.24 (66368839)|HEAP_ALLOCATE|[44]|Bytes:28
+10:11:48.24 (66379948)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66392244)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66400183)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:11:48.24 (66405910)|STATEMENT_EXECUTE|[44]
+10:11:48.24 (66409330)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66425478)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66430315)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:11:48.24 (66474236)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:11:48.24 (66480710)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:11:48.24 (66499789)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001np50hAAA","Fecha_ultima_activid (18 more) ...":"2000-04-15T00:00:00.000Z","ParentId":"0011r00001mvH7mAAE"}|0x2ba2834c
+10:11:48.24 (66507732)|STATEMENT_EXECUTE|[40]
+10:11:48.24 (66510076)|STATEMENT_EXECUTE|[42]
+10:11:48.24 (66520732)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (66539561)|HEAP_ALLOCATE|[42]|Bytes:4
+10:11:48.24 (66555416)|USER_DEBUG|[42]|DEBUG|()
+10:11:48.24 (66608746)|HEAP_ALLOCATE|[44]|Bytes:28
+10:11:48.24 (66620611)|HEAP_ALLOCATE|[44]|Bytes:8
+10:11:48.24 (66624409)|HEAP_ALLOCATE|[44]|Bytes:8
+10:11:48.24 (66627654)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:11:48.24 (66643524)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x6d2f040f
+10:11:48.24 (66649113)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:11:48.24 (66659943)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:11:48.24 (66666825)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:11:48.24 (66683739)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x50c72e2c
+10:11:48.24 (66692099)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:11:48.24 (66703937)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:11:48.24 (66709859)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:11:48.24 (66721880)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:11:48.24 (66767335)|HEAP_ALLOCATE|[44]|Bytes:28
+10:11:48.24 (66779393)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66792191)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66800215)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:11:48.24 (66805942)|STATEMENT_EXECUTE|[44]
+10:11:48.24 (66809733)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66825012)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:11:48.24 (66831335)|VARIABLE_ASSIGNMENT|[37]|inAccount|null|
+10:11:48.24 (66842052)|STATEMENT_EXECUTE|[50]
+10:11:48.24 (66900490)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:11:48.24 (66914829)|METHOD_EXIT|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+10:11:48.66 (66927991)|CUMULATIVE_LIMIT_USAGE
+10:11:48.66 (66927991)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:11:48.66 (66927991)|CUMULATIVE_LIMIT_USAGE_END
+
+10:11:48.24 (68007111)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event AfterUpdate
+10:11:48.24 (69136035)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Account
+10:11:48.24 (69227064)|CODE_UNIT_FINISHED|Workflow:Account
+10:11:48.24 (70077201)|DML_END|[50]
+10:11:48.24 (70103714)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:11:48.24 (70119147)|SYSTEM_MODE_EXIT|false
+10:11:48.24 (70132262)|METHOD_EXIT|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+10:11:48.70 (70147997)|CUMULATIVE_LIMIT_USAGE
+10:11:48.70 (70147997)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:11:48.70 (70147997)|CUMULATIVE_LIMIT_USAGE_END
+
+10:11:48.24 (71419573)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event AfterUpdate
+10:11:48.24 (72286719)|EXECUTION_FINISHED
+10:11:48.75 (75306706)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:11:48.75 (75327148)|EXECUTION_STARTED
+10:11:48.75 (75331039)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Account
+10:11:48.75 (75355151)|CODE_UNIT_FINISHED|Workflow:Account
+10:11:48.75 (79833826)|EXECUTION_FINISHED
+10:11:48.83 (83571172)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:11:48.83 (83589222)|EXECUTION_STARTED
+10:11:48.83 (83592788)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+10:11:48.83 (83602340)|DUPLICATE_DETECTION_BEGIN
+10:11:48.83 (83674507)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+10:11:48.83 (96420767)|DUPLICATE_DETECTION_END
+10:11:48.83 (96432642)|CODE_UNIT_FINISHED|DuplicateDetector
+10:11:48.83 (97430930)|EXECUTION_FINISHED

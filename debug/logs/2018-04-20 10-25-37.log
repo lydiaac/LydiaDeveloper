@@ -1,0 +1,334 @@
+42.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: OlderAccountsUtility.updateOlderAccounts();
+10:25:35.1 (1156147)|USER_INFO|[EXTERNAL]|0051r000007Oz5Q|lydia.abril@gmail.com|hora estándar de Europa central|GMT+02:00
+10:25:35.1 (1185553)|EXECUTION_STARTED
+10:25:35.1 (1191259)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+10:25:35.1 (1379520)|HEAP_ALLOCATE|[72]|Bytes:3
+10:25:35.1 (1413470)|HEAP_ALLOCATE|[77]|Bytes:152
+10:25:35.1 (1432772)|HEAP_ALLOCATE|[342]|Bytes:408
+10:25:35.1 (1454626)|HEAP_ALLOCATE|[355]|Bytes:408
+10:25:35.1 (1476466)|HEAP_ALLOCATE|[467]|Bytes:48
+10:25:35.1 (1511189)|HEAP_ALLOCATE|[139]|Bytes:6
+10:25:35.1 (1536674)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+10:25:35.1 (1606371)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (1614430)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (1663981)|HEAP_ALLOCATE|[50]|Bytes:5
+10:25:35.1 (1693472)|HEAP_ALLOCATE|[56]|Bytes:5
+10:25:35.1 (1706638)|HEAP_ALLOCATE|[64]|Bytes:7
+10:25:35.1 (1736697)|SYSTEM_MODE_ENTER|false
+10:25:35.1 (1754680)|HEAP_ALLOCATE|[1]|Bytes:5
+10:25:35.1 (2702851)|HEAP_ALLOCATE|[1]|Bytes:1
+10:25:35.1 (2737498)|METHOD_ENTRY|[1]|01p1r000009sH22|OlderAccountsUtility.OlderAccountsUtility()
+10:25:35.1 (2750097)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (2758050)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (2767654)|METHOD_EXIT|[1]|OlderAccountsUtility
+10:25:35.1 (2795407)|METHOD_ENTRY|[1]|01p1r000009sH22|OlderAccountsUtility.updateOlderAccounts()
+10:25:35.1 (2833647)|STATEMENT_EXECUTE|[3]
+10:25:35.1 (2837020)|STATEMENT_EXECUTE|[5]
+10:25:35.1 (2841369)|HEAP_ALLOCATE|[5]|Bytes:80
+10:25:35.1 (2860565)|HEAP_ALLOCATE|[5]|Bytes:4
+10:25:35.1 (3153956)|SOQL_EXECUTE_BEGIN|[5]|Aggregations:0|SELECT Id, Description FROM Account ORDER BY CreatedDate ASC NULLS FIRST LIMIT 5
+10:25:35.1 (10416882)|SOQL_EXECUTE_END|[5]|Rows:5
+10:25:35.1 (10453222)|HEAP_ALLOCATE|[5]|Bytes:24
+10:25:35.1 (10475293)|HEAP_ALLOCATE|[5]|Bytes:145
+10:25:35.1 (10577153)|HEAP_ALLOCATE|[5]|Bytes:24
+10:25:35.1 (10598902)|VARIABLE_SCOPE_BEGIN|[5]|oldAccounts|List<Account>|true|false
+10:25:35.1 (10668740)|VARIABLE_ASSIGNMENT|[5]|oldAccounts|[{"Id":"0011r00001mvH7sAAE"},{"Id":"0011r00001mvH7jAAE"},{"Id":"0011r00001mvH7iAAE"},{"Id":"0011r00001mvH7rAAE"},{"Id":"0011r00001mvH7qAAE"}]|0x45a5cd86
+10:25:35.1 (10840911)|HEAP_ALLOCATE|[7]|Bytes:5
+10:25:35.1 (10866421)|HEAP_ALLOCATE|[7]|Bytes:8
+10:25:35.1 (10879700)|VARIABLE_SCOPE_BEGIN|[7]|acct|Account|true|false
+10:25:35.1 (10900997)|VARIABLE_ASSIGNMENT|[7]|acct|{"Id":"0011r00001mvH7sAAE"}|0x1929f0c7
+10:25:35.1 (10918404)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (10922566)|STATEMENT_EXECUTE|[8]
+10:25:35.1 (10932285)|HEAP_ALLOCATE|[8]|Bytes:16
+10:25:35.1 (10992169)|HEAP_ALLOCATE|[8]|Bytes:-4
+10:25:35.1 (11037383)|VARIABLE_ASSIGNMENT|[8]|this.Description|"Heritage Account"|0x1929f0c7
+10:25:35.1 (11066568)|HEAP_ALLOCATE|[7]|Bytes:5
+10:25:35.1 (11086797)|HEAP_ALLOCATE|[7]|Bytes:8
+10:25:35.1 (11098357)|VARIABLE_SCOPE_BEGIN|[7]|acct|Account|true|false
+10:25:35.1 (11118719)|VARIABLE_ASSIGNMENT|[7]|acct|{"Id":"0011r00001mvH7jAAE"}|0x5016e7c1
+10:25:35.1 (11130591)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (11133906)|STATEMENT_EXECUTE|[8]
+10:25:35.1 (11163095)|HEAP_ALLOCATE|[8]|Bytes:-4
+10:25:35.1 (11177785)|VARIABLE_ASSIGNMENT|[8]|this.Description|"Heritage Account"|0x5016e7c1
+10:25:35.1 (11195446)|HEAP_ALLOCATE|[7]|Bytes:5
+10:25:35.1 (11206971)|HEAP_ALLOCATE|[7]|Bytes:8
+10:25:35.1 (11213340)|VARIABLE_SCOPE_BEGIN|[7]|acct|Account|true|false
+10:25:35.1 (11225472)|VARIABLE_ASSIGNMENT|[7]|acct|{"Id":"0011r00001mvH7iAAE"}|0x469836ae
+10:25:35.1 (11232732)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (11234990)|STATEMENT_EXECUTE|[8]
+10:25:35.1 (11251205)|HEAP_ALLOCATE|[8]|Bytes:-4
+10:25:35.1 (11259862)|VARIABLE_ASSIGNMENT|[8]|this.Description|"Heritage Account"|0x469836ae
+10:25:35.1 (11273049)|HEAP_ALLOCATE|[7]|Bytes:5
+10:25:35.1 (11282461)|HEAP_ALLOCATE|[7]|Bytes:8
+10:25:35.1 (11288553)|VARIABLE_SCOPE_BEGIN|[7]|acct|Account|true|false
+10:25:35.1 (11304284)|VARIABLE_ASSIGNMENT|[7]|acct|{"Id":"0011r00001mvH7rAAE"}|0x2b63171d
+10:25:35.1 (11313837)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (11316497)|STATEMENT_EXECUTE|[8]
+10:25:35.1 (11343374)|HEAP_ALLOCATE|[8]|Bytes:-4
+10:25:35.1 (11356720)|VARIABLE_ASSIGNMENT|[8]|this.Description|"Heritage Account"|0x2b63171d
+10:25:35.1 (11379293)|HEAP_ALLOCATE|[7]|Bytes:5
+10:25:35.1 (11399870)|HEAP_ALLOCATE|[7]|Bytes:8
+10:25:35.1 (11409951)|VARIABLE_SCOPE_BEGIN|[7]|acct|Account|true|false
+10:25:35.1 (11429415)|VARIABLE_ASSIGNMENT|[7]|acct|{"Id":"0011r00001mvH7qAAE"}|0x7d9a757e
+10:25:35.1 (11439302)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (11442124)|STATEMENT_EXECUTE|[8]
+10:25:35.1 (11465456)|HEAP_ALLOCATE|[8]|Bytes:-4
+10:25:35.1 (11478925)|VARIABLE_ASSIGNMENT|[8]|this.Description|"Heritage Account"|0x7d9a757e
+10:25:35.1 (11499423)|HEAP_ALLOCATE|[7]|Bytes:5
+10:25:35.1 (11517568)|VARIABLE_ASSIGNMENT|[7]|acct|null|
+10:25:35.1 (11527259)|STATEMENT_EXECUTE|[11]
+10:25:35.1 (11591760)|DML_BEGIN|[11]|Op:Update|Type:Account|Rows:5
+10:25:35.1 (11637741)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+10:25:35.1 (40900061)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+10:25:35.1 (40932299)|DUPLICATE_DETECTION_BEGIN
+10:25:35.1 (41587611)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+10:25:35.1 (41718950)|DUPLICATE_DETECTION_END
+10:25:35.1 (41728964)|CODE_UNIT_FINISHED|DuplicateDetector
+10:25:35.1 (69914172)|CODE_UNIT_STARTED|[EXTERNAL]|01q1r000000j8Jg|AccountTrigger on Account trigger event AfterUpdate
+10:25:35.1 (69963197)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+10:25:35.1 (70017022)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+10:25:35.1 (70177913)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:25:35.1 (70195994)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+10:25:35.1 (70277475)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x616a0e7c
+10:25:35.1 (70347255)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+10:25:35.1 (70358049)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+10:25:35.1 (70380956)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x616a0e7c
+10:25:35.1 (70395457)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (70401182)|STATEMENT_EXECUTE|[3]
+10:25:35.1 (72765309)|VARIABLE_ASSIGNMENT|[3]|this.listNew|[{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","BillingCity":"Austin","Rating":"Hot","Website":"http://edgecomm.com","NumberOfEmployees":1000,"SLA__c":"Silver","Name":"Edge Communications","Industry":"Electronics","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2657","TickerSymbol":"EDGE","Phone":"(512) 757-6000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":2.0,"IsDeleted":false,"Sic":"6576","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"312 Constitution Pla (23 more) ...","AccountNumber":"CD451796","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"312 Constitution Pla (23 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Medium","Id":"0011r00001mvH7iAAE","Fax":"(512) 757-9000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":139000000,"BillingState":"TX","Active__c":"Yes"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","BillingCity":"Burlington","Rating":"Warm","Website":"www.burlington.com","NumberOfEmployees":9000,"SLA__c":"Silver","Name":"Burlington Textiles  (15 more) ...","Industry":"Apparel","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5367","TickerSymbol":"BTXT","Phone":"(336) 222-7000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"BillingPostalCode":"27215","IsDeleted":false,"Sic":"546732","SystemModstamp":"2018-04-20T08:25:35.000Z","AccountNumber":"CD656092","Type":"Customer - Direct","CleanStatus":"Pending","BillingCountry":"USA","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"525 S. Lexington Ave","CreatedDate":"2018-03-21T12:29:14.000Z","Id":"0011r00001mvH7jAAE","Fax":"(336) 222-8000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":350000000,"BillingState":"NC"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","Website":"http://www.uos.com","NumberOfEmployees":24000,"SLA__c":"Platinum","Name":"United Oil & Gas, UK","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"3479","TickerSymbol":"UOS","Phone":"+44 191 4956203","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"No","NumberofLocations__c":34.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"Kings Park, 17th Ave (81 more) ...","AccountNumber":"CD355119-A","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"Kings Park, 17th Ave (81 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7qAAE","Fax":"+44 191 4956620","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"UK","Active__c":"Yes"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","BillingCity":"Singapore","Website":"http://www.uos.com","NumberOfEmployees":3000,"SLA__c":"Platinum","Name":"United Oil & Gas, Si (7 more) ...","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2457","TickerSymbol":"UOS","Phone":"(650) 450-8810","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"9 Tagore Lane\nSingap (31 more) ...","AccountNumber":"CD355120-B","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"9 Tagore Lane\nSingap (31 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7rAAE","Fax":"(650) 450-8820","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"Singapore","Active__c":"Yes"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Private","Description":"Heritage Account","BillingCity":"Mountain View","Rating":"Cold","Website":"www.genepoint.com","NumberOfEmployees":265,"SLA__c":"Bronze","Name":"GenePoint","Industry":"Biotechnology","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"7324","Phone":"(650) 867-3450","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":1.0,"IsDeleted":false,"Sic":"3712","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"345 Shoreline Park\nM (26 more) ...","AccountNumber":"CC978213","Type":"Customer - Channel","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"345 Shoreline Park\nM (26 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Low","Id":"0011r00001mvH7sAAE","Fax":"(650) 867-9895","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":30000000,"BillingState":"CA","Active__c":"Yes"}]|0x616a0e7c
+10:25:35.1 (72850924)|STATEMENT_EXECUTE|[5]
+10:25:35.1 (75022326)|VARIABLE_ASSIGNMENT|[5]|this.mapOld|{"0011r00001mvH7iAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","BillingCity":"Austin","Rating":"Hot","Website":"http://edgecomm.com","NumberOfEmployees":1000,"SLA__c":"Silver","Name":"Edge Communications","Industry":"Electronics","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2657","TickerSymbol":"EDGE","Phone":"(512) 757-6000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":2.0,"IsDeleted":false,"Sic":"6576","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"312 Constitution Pla (23 more) ...","AccountNumber":"CD451796","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"312 Constitution Pla (23 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Medium","Id":"0011r00001mvH7iAAE","Fax":"(512) 757-9000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":139000000,"BillingState":"TX","Active__c":"Yes"},"0011r00001mvH7jAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","BillingCity":"Burlington","Rating":"Warm","Website":"www.burlington.com","NumberOfEmployees":9000,"SLA__c":"Silver","Name":"Burlington Textiles  (15 more) ...","Industry":"Apparel","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5367","TickerSymbol":"BTXT","Phone":"(336) 222-7000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"BillingPostalCode":"27215","IsDeleted":false,"Sic":"546732","SystemModstamp":"2018-04-20T08:24:41.000Z","AccountNumber":"CD656092","Type":"Customer - Direct","CleanStatus":"Pending","BillingCountry":"USA","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"525 S. Lexington Ave","CreatedDate":"2018-03-21T12:29:14.000Z","Id":"0011r00001mvH7jAAE","Fax":"(336) 222-8000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":350000000,"BillingState":"NC"},"0011r00001mvH7qAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","Website":"http://www.uos.com","NumberOfEmployees":24000,"SLA__c":"Platinum","Name":"United Oil & Gas, UK","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"3479","TickerSymbol":"UOS","Phone":"+44 191 4956203","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"No","NumberofLocations__c":34.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"Kings Park, 17th Ave (81 more) ...","AccountNumber":"CD355119-A","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"Kings Park, 17th Ave (81 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7qAAE","Fax":"+44 191 4956620","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"UK","Active__c":"Yes"},"0011r00001mvH7rAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","BillingCity":"Singapore","Website":"http://www.uos.com","NumberOfEmployees":3000,"SLA__c":"Platinum","Name":"United Oil & Gas, Si (7 more) ...","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2457","TickerSymbol":"UOS","Phone":"(650) 450-8810","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"9 Tagore Lane\nSingap (31 more) ...","AccountNumber":"CD355120-B","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"9 Tagore Lane\nSingap (31 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7rAAE","Fax":"(650) 450-8820","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"Singapore","Active__c":"Yes"},"0011r00001mvH7sAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Private","BillingCity":"Mountain View","Rating":"Cold","Website":"www.genepoint.com","NumberOfEmployees":265,"SLA__c":"Bronze","Name":"GenePoint","Industry":"Biotechnology","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"7324","Phone":"(650) 867-3450","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":1.0,"IsDeleted":false,"Sic":"3712","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"345 Shoreline Park\nM (26 more) ...","AccountNumber":"CC978213","Type":"Customer - Channel","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"345 Shoreline Park\nM (26 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Low","Id":"0011r00001mvH7sAAE","Fax":"(650) 867-9895","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":30000000,"BillingState":"CA","Active__c":"Yes"}}|0x616a0e7c
+10:25:35.1 (75135430)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (75143677)|STATEMENT_EXECUTE|[8]
+10:25:35.1 (75145539)|STATEMENT_EXECUTE|[9]
+10:25:35.1 (77262220)|HEAP_ALLOCATE|[9]|Bytes:4
+10:25:35.1 (77312062)|METHOD_ENTRY|[1]|01p1r000009p8Bf|AccountMethods.AccountMethods()
+10:25:35.1 (77322435)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (77329469)|STATEMENT_EXECUTE|[1]
+10:25:35.1 (77758795)|SYSTEM_MODE_ENTER|false
+10:25:35.1 (77775931)|HEAP_ALLOCATE|[9]|Bytes:5
+10:25:35.1 (77787997)|SYSTEM_MODE_EXIT|false
+10:25:35.1 (77804207)|METHOD_EXIT|[1]|AccountMethods
+10:25:35.1 (77844624)|METHOD_ENTRY|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+10:25:35.1 (77882083)|VARIABLE_SCOPE_BEGIN|[31]|listAccount|List<Account>|true|false
+10:25:35.1 (79896606)|VARIABLE_ASSIGNMENT|[31]|listAccount|[{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","BillingCity":"Austin","Rating":"Hot","Website":"http://edgecomm.com","NumberOfEmployees":1000,"SLA__c":"Silver","Name":"Edge Communications","Industry":"Electronics","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2657","TickerSymbol":"EDGE","Phone":"(512) 757-6000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":2.0,"IsDeleted":false,"Sic":"6576","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"312 Constitution Pla (23 more) ...","AccountNumber":"CD451796","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"312 Constitution Pla (23 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Medium","Id":"0011r00001mvH7iAAE","Fax":"(512) 757-9000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":139000000,"BillingState":"TX","Active__c":"Yes"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","BillingCity":"Burlington","Rating":"Warm","Website":"www.burlington.com","NumberOfEmployees":9000,"SLA__c":"Silver","Name":"Burlington Textiles  (15 more) ...","Industry":"Apparel","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5367","TickerSymbol":"BTXT","Phone":"(336) 222-7000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"BillingPostalCode":"27215","IsDeleted":false,"Sic":"546732","SystemModstamp":"2018-04-20T08:25:35.000Z","AccountNumber":"CD656092","Type":"Customer - Direct","CleanStatus":"Pending","BillingCountry":"USA","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"525 S. Lexington Ave","CreatedDate":"2018-03-21T12:29:14.000Z","Id":"0011r00001mvH7jAAE","Fax":"(336) 222-8000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":350000000,"BillingState":"NC"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","Website":"http://www.uos.com","NumberOfEmployees":24000,"SLA__c":"Platinum","Name":"United Oil & Gas, UK","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"3479","TickerSymbol":"UOS","Phone":"+44 191 4956203","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"No","NumberofLocations__c":34.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"Kings Park, 17th Ave (81 more) ...","AccountNumber":"CD355119-A","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"Kings Park, 17th Ave (81 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7qAAE","Fax":"+44 191 4956620","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"UK","Active__c":"Yes"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Public","Description":"Heritage Account","BillingCity":"Singapore","Website":"http://www.uos.com","NumberOfEmployees":3000,"SLA__c":"Platinum","Name":"United Oil & Gas, Si (7 more) ...","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2457","TickerSymbol":"UOS","Phone":"(650) 450-8810","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"9 Tagore Lane\nSingap (31 more) ...","AccountNumber":"CD355120-B","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"9 Tagore Lane\nSingap (31 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7rAAE","Fax":"(650) 450-8820","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"Singapore","Active__c":"Yes"},{"LastModifiedDate":"2018-04-20T08:25:35.000Z","Ownership":"Private","Description":"Heritage Account","BillingCity":"Mountain View","Rating":"Cold","Website":"www.genepoint.com","NumberOfEmployees":265,"SLA__c":"Bronze","Name":"GenePoint","Industry":"Biotechnology","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"7324","Phone":"(650) 867-3450","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":1.0,"IsDeleted":false,"Sic":"3712","SystemModstamp":"2018-04-20T08:25:35.000Z","ShippingStreet":"345 Shoreline Park\nM (26 more) ...","AccountNumber":"CC978213","Type":"Customer - Channel","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"345 Shoreline Park\nM (26 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Low","Id":"0011r00001mvH7sAAE","Fax":"(650) 867-9895","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":30000000,"BillingState":"CA","Active__c":"Yes"}]|0x3443ac9c
+10:25:35.1 (80011972)|VARIABLE_SCOPE_BEGIN|[31]|mapOld|Map<Id,Account>|true|false
+10:25:35.1 (82373205)|VARIABLE_ASSIGNMENT|[31]|mapOld|{"0011r00001mvH7iAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","BillingCity":"Austin","Rating":"Hot","Website":"http://edgecomm.com","NumberOfEmployees":1000,"SLA__c":"Silver","Name":"Edge Communications","Industry":"Electronics","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2657","TickerSymbol":"EDGE","Phone":"(512) 757-6000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":2.0,"IsDeleted":false,"Sic":"6576","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"312 Constitution Pla (23 more) ...","AccountNumber":"CD451796","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"312 Constitution Pla (23 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Medium","Id":"0011r00001mvH7iAAE","Fax":"(512) 757-9000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":139000000,"BillingState":"TX","Active__c":"Yes"},"0011r00001mvH7jAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","BillingCity":"Burlington","Rating":"Warm","Website":"www.burlington.com","NumberOfEmployees":9000,"SLA__c":"Silver","Name":"Burlington Textiles  (15 more) ...","Industry":"Apparel","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"5367","TickerSymbol":"BTXT","Phone":"(336) 222-7000","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"BillingPostalCode":"27215","IsDeleted":false,"Sic":"546732","SystemModstamp":"2018-04-20T08:24:41.000Z","AccountNumber":"CD656092","Type":"Customer - Direct","CleanStatus":"Pending","BillingCountry":"USA","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"525 S. Lexington Ave","CreatedDate":"2018-03-21T12:29:14.000Z","Id":"0011r00001mvH7jAAE","Fax":"(336) 222-8000","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":350000000,"BillingState":"NC"},"0011r00001mvH7qAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","Website":"http://www.uos.com","NumberOfEmployees":24000,"SLA__c":"Platinum","Name":"United Oil & Gas, UK","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"3479","TickerSymbol":"UOS","Phone":"+44 191 4956203","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"No","NumberofLocations__c":34.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"Kings Park, 17th Ave (81 more) ...","AccountNumber":"CD355119-A","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-04-15T00:00:00.000Z","BillingStreet":"Kings Park, 17th Ave (81 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7qAAE","Fax":"+44 191 4956620","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"UK","Active__c":"Yes"},"0011r00001mvH7rAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Public","BillingCity":"Singapore","Website":"http://www.uos.com","NumberOfEmployees":3000,"SLA__c":"Platinum","Name":"United Oil & Gas, Si (7 more) ...","Industry":"Energy","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"2457","TickerSymbol":"UOS","Phone":"(650) 450-8810","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Maybe","NumberofLocations__c":6.0,"IsDeleted":false,"Sic":"4437","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"9 Tagore Lane\nSingap (31 more) ...","AccountNumber":"CD355120-B","Type":"Customer - Direct","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"9 Tagore Lane\nSingap (31 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"High","Id":"0011r00001mvH7rAAE","Fax":"(650) 450-8820","LastModifiedById":"0051r000007Oz5QAAS","BillingState":"Singapore","Active__c":"Yes"},"0011r00001mvH7sAAE":{"LastModifiedDate":"2018-04-20T08:24:41.000Z","Ownership":"Private","BillingCity":"Mountain View","Rating":"Cold","Website":"www.genepoint.com","NumberOfEmployees":265,"SLA__c":"Bronze","Name":"GenePoint","Industry":"Biotechnology","OwnerId":"0051r000007Oz5QAAS","CreatedById":"0051r000007Oz5QAAS","SLASerialNumber__c":"7324","Phone":"(650) 867-3450","Match_Billing_Addres (4 more) ...":false,"UpsellOpportunity__c":"Yes","NumberofLocations__c":1.0,"IsDeleted":false,"Sic":"3712","SystemModstamp":"2018-04-20T08:24:41.000Z","ShippingStreet":"345 Shoreline Park\nM (26 more) ...","AccountNumber":"CC978213","Type":"Customer - Channel","CleanStatus":"Pending","SLAExpirationDate__c":"2018-10-16T00:00:00.000Z","BillingStreet":"345 Shoreline Park\nM (26 more) ...","CreatedDate":"2018-03-21T12:29:14.000Z","CustomerPriority__c":"Low","Id":"0011r00001mvH7sAAE","Fax":"(650) 867-9895","LastModifiedById":"0051r000007Oz5QAAS","AnnualRevenue":30000000,"BillingState":"CA","Active__c":"Yes"}}|0x593e654e
+10:25:35.1 (82461071)|SYSTEM_MODE_ENTER|false
+10:25:35.1 (82470243)|HEAP_ALLOCATE|[33]|Bytes:5
+10:25:35.1 (82478676)|STATEMENT_EXECUTE|[31]
+10:25:35.1 (82538699)|STATEMENT_EXECUTE|[33]
+10:25:35.1 (82541275)|STATEMENT_EXECUTE|[35]
+10:25:35.1 (82558189)|HEAP_ALLOCATE|[35]|Bytes:4
+10:25:35.1 (82604297)|VARIABLE_SCOPE_BEGIN|[35]|listAccUpdate|List<Account>|true|false
+10:25:35.1 (82617394)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:25:35.1 (82628791)|VARIABLE_ASSIGNMENT|[35]|listAccUpdate|[]|0x67ff7494
+10:25:35.1 (82637477)|HEAP_ALLOCATE|[37]|Bytes:175
+10:25:35.1 (82649686)|HEAP_ALLOCATE|[37]|Bytes:4
+10:25:35.1 (82656884)|HEAP_ALLOCATE|[37]|Bytes:7
+10:25:35.1 (82995604)|SOQL_EXECUTE_BEGIN|[37]|Aggregations:1|SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId, (SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM ChildAccounts) FROM Account 
+10:25:35.1 (89172844)|SOQL_EXECUTE_END|[37]|Rows:5
+10:25:35.1 (89196697)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+10:25:35.1 (89358874)|HEAP_ALLOCATE|[37]|Bytes:54
+10:25:35.1 (89370037)|HEAP_ALLOCATE|[37]|Bytes:8
+10:25:35.1 (89385666)|SYSTEM_METHOD_ENTRY|[7]|QueryLocatorIterator.QueryLocatorIterator()
+10:25:35.1 (89393071)|STATEMENT_EXECUTE|[7]
+10:25:35.1 (89402604)|SYSTEM_METHOD_EXIT|[7]|QueryLocatorIterator
+10:25:35.1 (89411659)|HEAP_ALLOCATE|[37]|Bytes:28
+10:25:35.1 (89440299)|HEAP_ALLOCATE|[37]|Bytes:24
+10:25:35.1 (89454755)|HEAP_ALLOCATE|[37]|Bytes:8
+10:25:35.1 (89458479)|HEAP_ALLOCATE|[37]|Bytes:8
+10:25:35.1 (89464781)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:25:35.1 (89523815)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x2a15b3d4
+10:25:35.1 (89531933)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:25:35.1 (89553128)|VARIABLE_ASSIGNMENT|[15]|values|[{"Id":"0011r00001mvH7iAAE"},{"Id":"0011r00001mvH7jAAE"},{"Id":"0011r00001mvH7qAAE"},{"Id":"0011r00001mvH7rAAE"},{"Id":"0011r00001mvH7sAAE"}]|0xc001da4
+10:25:35.1 (89559735)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:25:35.1 (89579852)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT Id, Fecha_ult (155 more) ..."}|0x472cc19a
+10:25:35.1 (89586246)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:25:35.1 (89596030)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|5
+10:25:35.1 (89601301)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:25:35.1 (89609096)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49990
+10:25:35.1 (89755375)|HEAP_ALLOCATE|[37]|Bytes:28
+10:25:35.1 (89784111)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (89838093)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (89848124)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (89914120)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (89923779)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:25:35.1 (89938685)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001mvH7iAAE"}|0x328de1f7
+10:25:35.1 (89947059)|STATEMENT_EXECUTE|[40]
+10:25:35.1 (89952892)|HEAP_ALLOCATE|[44]|Bytes:13
+10:25:35.1 (89958253)|HEAP_ALLOCATE|[44]|Bytes:7
+10:25:35.1 (90049669)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (90063397)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (90067167)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (90070800)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:25:35.1 (90107745)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x35017f61
+10:25:35.1 (90118280)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:25:35.1 (90129603)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:25:35.1 (90135397)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:25:35.1 (90153576)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x39e0a958
+10:25:35.1 (90162818)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:25:35.1 (90177727)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:25:35.1 (90182144)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:25:35.1 (90189579)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:25:35.1 (90228606)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (90242649)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90256111)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90265245)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:25:35.1 (90271402)|STATEMENT_EXECUTE|[44]
+10:25:35.1 (90276459)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90294119)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90299444)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (90346011)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (90353570)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:25:35.1 (90367351)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001mvH7jAAE"}|0x18619fef
+10:25:35.1 (90374010)|STATEMENT_EXECUTE|[40]
+10:25:35.1 (90454915)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (90474689)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (90478853)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (90483558)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:25:35.1 (90504408)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x45be574d
+10:25:35.1 (90510890)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:25:35.1 (90519327)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:25:35.1 (90523659)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:25:35.1 (90536383)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x7b7ac2ec
+10:25:35.1 (90541389)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:25:35.1 (90549295)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:25:35.1 (90553251)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:25:35.1 (90560344)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:25:35.1 (90595655)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (90607173)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90618594)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90626972)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:25:35.1 (90633645)|STATEMENT_EXECUTE|[44]
+10:25:35.1 (90637568)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90654246)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (90659445)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (90718104)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (90729144)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:25:35.1 (90764286)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001mvH7qAAE"}|0x47ec1eb2
+10:25:35.1 (90775464)|STATEMENT_EXECUTE|[40]
+10:25:35.1 (90849170)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (90862022)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (90866307)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (90870467)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:25:35.1 (90890528)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x53e67f47
+10:25:35.1 (90896838)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:25:35.1 (90904973)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:25:35.1 (90908944)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:25:35.1 (90922236)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x64d54e49
+10:25:35.1 (90927587)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:25:35.1 (90935111)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:25:35.1 (90938811)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:25:35.1 (90946157)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:25:35.1 (90981301)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (90992158)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91003331)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91012250)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:25:35.1 (91018066)|STATEMENT_EXECUTE|[44]
+10:25:35.1 (91021943)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91061668)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91071379)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (91139070)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (91148950)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:25:35.1 (91163173)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001mvH7rAAE"}|0x49958d9d
+10:25:35.1 (91170703)|STATEMENT_EXECUTE|[40]
+10:25:35.1 (91244151)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (91257866)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (91262243)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (91265996)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:25:35.1 (91285689)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x6e2b1393
+10:25:35.1 (91292159)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:25:35.1 (91300576)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:25:35.1 (91304483)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:25:35.1 (91317059)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0xe575556
+10:25:35.1 (91322261)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:25:35.1 (91329974)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:25:35.1 (91334059)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:25:35.1 (91340917)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:25:35.1 (91375176)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (91386300)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91396982)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91404349)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:25:35.1 (91409517)|STATEMENT_EXECUTE|[44]
+10:25:35.1 (91413386)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91428881)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91434101)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (91477874)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.next()
+10:25:35.1 (91484463)|VARIABLE_SCOPE_BEGIN|[37]|inAccount|Account|true|false
+10:25:35.1 (91496465)|VARIABLE_ASSIGNMENT|[37]|inAccount|{"Id":"0011r00001mvH7sAAE"}|0x403ee5d3
+10:25:35.1 (91503229)|STATEMENT_EXECUTE|[40]
+10:25:35.1 (91553616)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (91565565)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (91569513)|HEAP_ALLOCATE|[44]|Bytes:8
+10:25:35.1 (91573466)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+10:25:35.1 (91591861)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x2522712c
+10:25:35.1 (91597903)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+10:25:35.1 (91605640)|VARIABLE_ASSIGNMENT|[15]|values|null|
+10:25:35.1 (91609847)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+10:25:35.1 (91623079)|VARIABLE_ASSIGNMENT|[15]|ql|{}|0x13235990
+10:25:35.1 (91630281)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+10:25:35.1 (91641832)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|0
+10:25:35.1 (91647998)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+10:25:35.1 (91657192)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|200
+10:25:35.1 (91705609)|HEAP_ALLOCATE|[44]|Bytes:28
+10:25:35.1 (91720564)|METHOD_ENTRY|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91737853)|METHOD_EXIT|[44]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91754700)|VARIABLE_ASSIGNMENT|[44]|inAccountChild|null|
+10:25:35.1 (91762804)|STATEMENT_EXECUTE|[44]
+10:25:35.1 (91768718)|METHOD_ENTRY|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91782561)|METHOD_EXIT|[37]||Database.QueryLocatorIterator.hasNext()
+10:25:35.1 (91792610)|VARIABLE_ASSIGNMENT|[37]|inAccount|null|
+10:25:35.1 (91818654)|STATEMENT_EXECUTE|[50]
+10:25:35.1 (91898010)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:25:35.1 (91910677)|SYSTEM_MODE_EXIT|false
+10:25:35.1 (91920427)|METHOD_EXIT|[9]|01p1r000009p8Bf|AccountMethods.ActualizarCuentaHija(List<Account>, Map<Id,Account>)
+10:25:35.91 (91931551)|CUMULATIVE_LIMIT_USAGE
+10:25:35.91 (91931551)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:25:35.91 (91931551)|CUMULATIVE_LIMIT_USAGE_END
+
+10:25:35.1 (93226354)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event AfterUpdate
+10:25:35.1 (93870572)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Account
+10:25:35.1 (94397686)|CODE_UNIT_FINISHED|Workflow:Account
+10:25:35.1 (95327105)|DML_END|[11]
+10:25:35.1 (95351874)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+10:25:35.1 (95367553)|METHOD_EXIT|[1]|01p1r000009sH22|OlderAccountsUtility.updateOlderAccounts()
+10:25:35.1 (95376932)|SYSTEM_MODE_EXIT|false
+10:25:35.1 (137441402)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+10:25:35.1 (137457601)|DUPLICATE_DETECTION_BEGIN
+10:25:35.1 (137503269)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1r0000018X88|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:UPDATE
+10:25:35.1 (149975023)|DUPLICATE_DETECTION_END
+10:25:35.1 (149989241)|CODE_UNIT_FINISHED|DuplicateDetector
+10:25:35.150 (150113472)|CUMULATIVE_LIMIT_USAGE
+10:25:35.150 (150113472)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:25:35.150 (150113472)|CUMULATIVE_LIMIT_USAGE_END
+
+10:25:35.1 (150182730)|CODE_UNIT_FINISHED|execute_anonymous_apex
+10:25:35.1 (151101736)|EXECUTION_FINISHED

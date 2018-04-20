@@ -7,28 +7,26 @@ public with sharing class TaskMethods {
 			//Lista de cuentas a actualizar
 			List<Account> listAcUpdate = new List<Account>();
 
-			//Lista de tareas
-			List<Task> listTaskType = new List<Task>([
-			SELECT WhatId, ActivityDate, Status,
-			  	TYPEOF What
-			  	WHEN Account THEN Id, Parent.Fecha_ultima_actividad_mas_reciente__c
-			  	WHEN Opportunity THEN Account.Parent.Fecha_ultima_actividad_mas_reciente__c
-			  	END
-			FROM Task WHERE Id IN : listTask]);
-
 			//Dependiendo si recibe account u oportunity...
-			for(Task inTask : listTaskType){
-				if(mapTaskOld.get(inTask.Id).Status != 'Completed' && inTask.Status == 'Completed'){
-					if (inTask.whatId.getSObjectType() == Opportunity.sObjectType  /*inTask.What instanceof Opportunity*/) {
-						System.debug('Opportunity');
-						listAcUpdate.addall(getListAccounts(inTask, ((Opportunity)inTask.What).Account.Parent));
+			for(Task inTask : [SELECT WhatId, ActivityDate, Status,
+								  	TYPEOF What
+								  	WHEN Account THEN Id, Parent.Fecha_ultima_actividad_mas_reciente__c
+								  	WHEN Opportunity THEN Account.Parent.Fecha_ultima_actividad_mas_reciente__c
+								  	END
+								FROM Task 
+								WHERE Id IN : listTask]){
 
-		            } else if (inTask.whatId.getSObjectType() == Account.sObjectType) {
-		            	System.debug('Account');
-		            	listAcUpdate.addall(getListAccounts(inTask, (((Account)inTask.What).Parent)));
-		            	//System.debug('veamos.. ->'+((Account)inTask.What).Parent.Fecha_ultima_actividad_mas_reciente__c);
-		            }
-		        }
+					if(mapTaskOld.get(inTask.Id).Status != inTask.Status && inTask.Status == 'Completed'){
+						if (inTask.whatId.getSObjectType() == Opportunity.sObjectType  /*inTask.What instanceof Opportunity*/) {
+							System.debug('Opportunity');
+							listAcUpdate.addall(getListAccounts(inTask, ((Opportunity)inTask.What).Account.Parent));
+
+			            } else if (inTask.whatId.getSObjectType() == Account.sObjectType) {
+			            	System.debug('Account');
+			            	listAcUpdate.addall(getListAccounts(inTask, (((Account)inTask.What).Parent)));
+			            	//System.debug('veamos.. ->'+((Account)inTask.What).Parent.Fecha_ultima_actividad_mas_reciente__c);
+			            }
+			        }
 	        }
 	        System.debug('listAcUpdate ' + listAcUpdate);
 	        update listAcUpdate;

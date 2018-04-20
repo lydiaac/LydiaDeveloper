@@ -32,32 +32,22 @@ public with sharing class AccountMethods {
 
 		if(!listAccount.isEmpty()){
 
-			//DE LAS ACCOUNTS QUE ACTUALIZO, ME QUEDO CON (id)
-			List<String> listAccountIds = new List<String>();
-			Map<String, Account> mapAccountParent = new Map<String, Account>();
+			List<Account> listAccUpdate = new List<Account>();
 
-			for(Account inAccount : listAccount){
-				//Si no tiene parent y se ha modificado fecha
-				if((inAccount.ParentId == null) && (inAccount.Fecha_ultima_actividad_mas_reciente__c!=mapOld.get(inAccount.Id).Fecha_ultima_actividad_mas_reciente__c)){
-					listAccountIds.add(inAccount.Id);
-					mapAccountParent.put(inAccount.Id, inAccount);
+			for(Account inAccount : [SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId, (SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId
+													FROM ChildAccounts)
+									FROM Account
+									WHERE Id IN :listAccount]){//CUentas padre (y sus hijas)
+
+				//System.debug(inAccount.ChildAccounts); //Lista cuentas hijas
+
+				for(Account inAccountChild : inAccount.ChildAccounts){
+					inAccountChild.Fecha_ultima_actividad_mas_reciente__c = inAccount.Fecha_ultima_actividad_mas_reciente__c;
+					listAccUpdate.add(inAccountChild);
 				}
+
 			}
-
-			List<Account> lalala = ([SELECT Id FROM Account WHERE Id IN :listAccount]);
-			List<Account> lalala2 = ([SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE ParentId IN (SELECT Id FROM Account WHERE Id IN :listAccount)]);
-			//for(Account inAccount : [SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE ParentId IN (SELECT Id FROM Account WHERE Id IN :listAccount)]){
-
-			//}
-
-
-			//RECORRO LA LISTA DE HIJAS Y LAS MODIFICO
-			//for(Account inAccount : [SELECT Id, Fecha_ultima_actividad_mas_reciente__c, ParentId FROM Account WHERE ParentId IN :listAccountIds]){
-			//	inAccount.Fecha_ultima_actividad_mas_reciente__c = mapAccountParent.get(inAccount.ParentId).Fecha_ultima_actividad_mas_reciente__c;
-			//}
-
-			//update listAccountChild;
+			update listAccUpdate;
 		}
-		
 	}
 }
