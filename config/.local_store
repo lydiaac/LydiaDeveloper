@@ -1738,5 +1738,37 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "TextFormat.cls": {
+        "id": "01p1r00000B5oDJAAZ",
+        "name": "TextFormat",
+        "createdDate": "2018-05-02T09:59:45.000+0000",
+        "createdById": "0051r000007Oz5QAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051r000007Oz5QAAS",
+        "lastModifiedDate": "2018-05-02T10:48:49.000+0000",
+        "fullName": "TextFormat",
+        "fileName": "unpackaged/classes/TextFormat.cls",
+        "createdByName": "Lydia Abril",
+        "lastModifiedByName": "Lydia Abril",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "TestTextFormat.cls": {
+        "id": "01p1r00000B5oTvAAJ",
+        "name": "TestTextFormat",
+        "createdDate": "2018-05-02T10:09:27.000+0000",
+        "createdById": "0051r000007Oz5QAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051r000007Oz5QAAS",
+        "lastModifiedDate": "2018-05-02T11:27:42.000+0000",
+        "fullName": "TestTextFormat",
+        "fileName": "unpackaged/classes/TestTextFormat.cls",
+        "createdByName": "Lydia Abril",
+        "lastModifiedByName": "Lydia Abril",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
